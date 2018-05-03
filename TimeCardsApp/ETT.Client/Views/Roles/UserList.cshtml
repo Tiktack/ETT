@@ -1,0 +1,64 @@
+﻿@model ETT.Web.Models.Users.RolesUsersListViewModel
+
+@{
+    ViewData["Title"] = "Список пользователей";
+}
+
+<div class="container">
+    <div class="section row" style="">
+        <div class="col s6 offset-s3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <form asp-action="UserList" method="get">
+                            <td>
+                                <div class="input-field">
+                                    <input id="last_name" type="text" class="validate" name="PageFilter" value="@Model.FilterName">
+                                    <label for="last_name">Expression</label>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn waves-effect waves-light">
+                                    <i class="material-icons left"></i>Фильтр
+                                </button>
+                            </td>
+                        </form>
+                    </tr>
+                </thead>
+                <tbody style="">
+                    <tr>
+                        <th><h5>User Login</h5></th>
+                        <th></th>
+                    </tr>
+                    @foreach (var user in Model.Users)
+                    {
+                        <tr>
+                            <td class="" style="font-size:large">@user.Email</td>
+                            <td>
+                                <a class="btn waves-effect waves-light
+                                   @(user.NormalizedUserName.CompareTo("ad1min@mail.com".ToUpper()) == 0 ? "disabled" : "")"
+                                   asp-action="Edit" asp-route-userid="@user.Id" asp-route-page="@Model.PageViewModel.PageNumber" 
+                                   asp-route-filter="@Model.FilterName">
+                                    <i class="material-icons left">edit</i>Права доступа
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @* Pagination *@
+            <page-filter-link page-model="Model.PageViewModel" page-action="UserList"
+                              page-filter="@Model.FilterName" anchor-count="5">
+            </page-filter-link>
+
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">UserList</a>
+}

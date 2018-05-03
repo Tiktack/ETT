@@ -1,0 +1,7 @@
+<Playlist Version="1.0">
+  <Add Test="ETT.Tests.Projects.TaskServiceTest.CreateTask" />
+  <Add Test="ETT.Tests.Projects.TaskServiceTest.UpdateTask" />
+  <Add Test="ETT.Tests.Projects.TaskServiceTest.GetTask" />
+  <Add Test="ETT.Tests.Projects.TaskServiceTest.GetTasks" />
+  <Add Test="ETT.Tests.Projects.TaskServiceTest.DeleteTask" />
+</Playlist>

@@ -1,0 +1,99 @@
+﻿@model ETT.Web.Models.Projects.User.MainViewModel
+
+@{
+    Layout = null;
+}
+
+@if (Model.Admin)
+{
+    <nav id="search-form" class="hide @Design.Color darken-2">
+        <div class="container nav-wrapper">
+            <div class="input-field">
+                <input id="search-input" type="search" class="autocomplete" required placeholder="user@mail.com" autocomplete="off">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </div>
+    </nav>
+}
+<div class="container">
+    <div class="row">
+        <h4 class="col s12">
+            <span>@Localizer["Users"]</span>
+            <span class="right">
+                @if (Model.Admin)
+                {
+                    <button id="btn-user-add" class="btn @Design.Color">@Localizer["AddNew"]</button>
+                    <button id="btn-user-add-cancel" onclick="HideSearch()" class="btn hide @Design.Color lighten-3">@Localizer["Cancel"]</button>
+                }
+                <button id="btn-user-list" onclick="UserListUpdate(@Model.ProjectId)" class="btn @Design.Color"><i class="material-icons">sync</i></button>
+            </span>
+        </h4>
+    </div>
+    <div id="user-list">
+        <div class="progress @Design.Color lighten-4">
+            <div class="indeterminate @Design.Color"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Init
+    $('#btn-user-list').click();
+
+    /// USERS
+    var searchForm = $('#search-form');
+    var searchInput = $('#search-input');
+    var btnUserAdd = $('#btn-user-add');
+    var btnUserList = $('#btn-user-list');
+    var btnUserAddCancel = $('#btn-user-add-cancel');
+    
+    // Show $ Hide search form
+    function ShowSearch() {
+        DisableBlock(btnUserAdd);
+        HideBlock(btnUserList);
+        ShowBlocks([searchForm, btnUserAddCancel]);
+    }
+    function HideSearch() {
+        HideBlocks([searchForm, btnUserAddCancel]);
+        ShowBlock(btnUserList);
+        EnableBlock(btnUserAdd);
+    }
+
+    // Add user by email
+    var usersearchInput = '';
+    function RememberUserEmail() {
+        usersearchInput = searchInput.val();
+        EnableBlock(btnUserAdd)
+        btnUserAdd.focus();
+    }
+    function AddNewUserByEmail() {
+        searchInput.val('');
+        UserAdd(@Model.ProjectId, usersearchInput);
+    }
+
+    // Buttons
+    $(function () {
+        btnUserAdd.on('click', function () {
+            if (IsHiddenBlock(searchForm)) {
+                ShowSearch();
+                searchInput.focus();
+            } else { // SEND "ADD NEW USER"
+                HideSearch();
+                AddNewUserByEmail();
+            }
+        });
+        // search
+        searchInput.on('input', function () {
+            UserSearch(
+                projectId = @Model.ProjectId,
+                email = searchInput.val(),
+                autocomplete = 'input.autocomplete',
+                onAutocomplete = RememberUserEmail
+            );
+            if (IsEnabledBlock(btnUserAdd)) {
+                DisableBlock(btnUserAdd);
+            }
+        });
+    });
+</script>

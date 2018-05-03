@@ -1,0 +1,95 @@
+﻿body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.text-expander {
+    text-align: justify !important;
+}
+
+/* breadcrumb arrow color */
+.breadcrumb:before {
+    color: red;
+}
+
+/* breadcrumb text color and size */
+.breadcrumb, .breadcrumb:last-child {
+    color: red;
+    font-size: small;
+}
+
+.adminnavlinks {
+    font-size: large;
+    margin-left: 30px;
+}
+
+/* margins for admin navs */
+.breadcrumbmargin1 {
+    margin-right: 90px;
+}
+
+.breadcrumbmargin2 {
+    margin-right: 180px;
+}
+
+.breadcrumbmargin3 {
+    margin-right: 270px;
+}
+
+.largetext {
+    font-size: large;
+}
+
+.paragraphs {
+    white-space: pre-line;
+}
+
+.avatar {
+    border-radius: 30%;
+    width: 200px;
+    height: 200px;
+}
+
+
+/*Validator error messages style*/
+    .field-validation-error {
+        color: #b94a48;
+    }
+
+    .field-validation-valid {
+        display: none;
+    }
+
+    input.input-validation-error {
+        border: 1px solid #b94a48;
+    }
+
+    input[type="checkbox"].input-validation-error {
+        border: 0 none;
+    }
+
+    .validation-summary-errors {
+        color: #b94a48;
+    }
+
+    .validation-summary-valid {
+        display: none;
+    }
+/**/

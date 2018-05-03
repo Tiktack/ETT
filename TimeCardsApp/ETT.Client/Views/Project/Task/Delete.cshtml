@@ -1,0 +1,24 @@
+﻿@model ETT.Web.Models.Projects.Task.TaskViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">@Localizer["Question"]</span>
+                    <h5>@Localizer["Task"] «@Model.Name»</h5>
+                </div>
+                <div class="card-action">
+                    <form id="form-task-delete" asp-action="Delete">
+                        <button id="btn-task-delete" onclick="TaskDelete(@Model.ProjectId, @Model.Id, true)" type="button" class="btn red darken-2">@Localizer["Delete"]</button>
+                        <button id="btn-task-details" onclick="TaskDetails(@Model.ProjectId, @Model.Id)" type="button" class="btn @Design.Color lighten-3">@Localizer["Cancel"]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

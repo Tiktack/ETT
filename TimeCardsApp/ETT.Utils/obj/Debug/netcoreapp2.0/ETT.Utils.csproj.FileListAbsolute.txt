@@ -1,0 +1,9 @@
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\bin\Debug\netcoreapp2.0\ETT.Utils.deps.json
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\bin\Debug\netcoreapp2.0\ETT.Utils.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\bin\Debug\netcoreapp2.0\ETT.Utils.pdb
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.csprojResolveAssemblyReference.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.csproj.CoreCompileInputs.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.AssemblyInfoInputs.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.AssemblyInfo.cs
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Utils\obj\Debug\netcoreapp2.0\ETT.Utils.pdb

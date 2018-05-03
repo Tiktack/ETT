@@ -1,0 +1,45 @@
+﻿@model ETT.Web.Models.Projects.ProjectViewModel
+
+@{
+    ViewData["Title"] = Localizer["Project"].Value + " «" + Model.Name + "»";
+}
+
+<nav class="nav-extended @Design.Color darken-1">
+    <div class="container nav-content">
+        <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#project">@Localizer["Project"]</a></li>
+            <li class="tab"><a href="#tasks">@Localizer["Tasks"]</a></li>
+            <li class="tab"><a href="#users">@Localizer["Users"]</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="project"></div>
+<div id="tasks"></div>
+<div id="users"></div>
+
+@section Scripts {
+    <environment include="Development">
+        <script src="~/js/project/project.js" asp-append-version="true"></script>
+        <script src="~/js/project/tasks.js" asp-append-version="true"></script>
+        <script src="~/js/project/users.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/project.min.js"></script>
+    </environment>
+    <script>
+        $(function () {
+            // Init
+            ProjectDetails(@Model.Id);
+            TaskMain(@Model.Id);
+            UserMain(@Model.Id);
+
+            // Fix -_-
+            $('.tabs').tabs({
+                onShow: function () {
+                    location.href = location.href.split('#')[0] + $("li.tab a.active").attr('href');
+                }
+            });
+        });
+    </script>
+}

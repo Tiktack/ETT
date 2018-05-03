@@ -1,0 +1,1596 @@
+2018-04-17 15:00:07.872 +03:00 [Debug] START WEB SERVER
+2018-04-17 15:00:11.524 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:00:39.635 +03:00 [Error] An error occurred using the connection to database '"ETT_Database"' on server '"(localdb)\mssqllocaldb"'.
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11
+2018-04-17 15:00:40.840 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11
+2018-04-17 15:00:41.534 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11
+2018-04-17 15:00:42.791 +03:00 [Error] An error occurred while seeding the database.
+System.AggregateException: One or more errors occurred. (Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259; ) ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+   --- End of inner exception stack trace ---
+   at System.ThrowHelper.ThrowAggregateException(List`1 exceptions)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   at ETT.Web.Program.Main(String[] args) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Program.cs:line 45
+---> (Inner Exception #0) System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24598; handshake=259;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+ClientConnectionId:f7062732-53e5-423b-bb0f-4f3f47ec484d
+Error Number:-2,State:0,Class:11<---
+
+2018-04-17 15:00:44.099 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:00:48.167 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:01:02.896 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:01:06.301 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 18494.52ms
+2018-04-17 15:01:06.613 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-17 15:01:06.997 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-17 15:01:07.056 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:01:07.071 +03:00 [Information] Request finished in 22287.4231ms 200 text/html; charset=utf-8
+2018-04-17 15:01:07.081 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-04-17 15:01:07.234 +03:00 [Information] Sending file. Request path: '"/css/materialize.fix.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\materialize.fix.css"'
+2018-04-17 15:01:07.487 +03:00 [Information] Request finished in 656.6692ms 304 application/javascript
+2018-04-17 15:01:07.511 +03:00 [Information] The file "/lib/materialize/dist/css/materialize.css" was not modified
+2018-04-17 15:01:07.794 +03:00 [Information] Request finished in 873.1ms 200 text/css
+2018-04-17 15:01:08.159 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-17 15:01:08.222 +03:00 [Information] Request finished in 1081.1116ms 304 text/css
+2018-04-17 15:01:08.230 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-17 15:01:08.246 +03:00 [Information] The file "/lib/materialize/dist/js/materialize.js" was not modified
+2018-04-17 15:01:08.327 +03:00 [Information] Request finished in 414.7855ms 304 application/javascript
+2018-04-17 15:01:08.351 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-17 15:01:08.373 +03:00 [Information] Request finished in 954.26ms 304 text/css
+2018-04-17 15:01:08.487 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=dXQyEwEL4ksQUKc1QbgMspTYkqytGFQWgnFM0wZsftA  
+2018-04-17 15:01:08.671 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-17 15:01:08.701 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-17 15:01:08.820 +03:00 [Information] The file "/img/fon.jpg" was not modified
+2018-04-17 15:01:08.987 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:01:09.587 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-17 15:01:10.222 +03:00 [Information] Request finished in 277.7909ms 304 application/javascript
+2018-04-17 15:01:10.266 +03:00 [Information] Request finished in 391.3631ms 304 image/jpeg
+2018-04-17 15:01:10.272 +03:00 [Information] Request finished in 589.1056ms 404 
+2018-04-17 15:01:10.302 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-17 15:01:10.714 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:01:11.278 +03:00 [Information] Request finished in 427.949ms 404 
+2018-04-17 15:01:11.407 +03:00 [Information] Request finished in 1879.0198ms 304 application/javascript
+2018-04-17 15:02:58.669 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-17 15:02:58.988 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-17 15:03:00.722 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-17 15:03:01.291 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 2194.9579ms
+2018-04-17 15:03:01.349 +03:00 [Information] Request finished in 2668.5545ms 200 text/html; charset=utf-8
+2018-04-17 15:03:01.365 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:03:01.373 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-17 15:03:01.516 +03:00 [Information] Request finished in 37.1962ms 304 text/css
+2018-04-17 15:03:01.560 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:03:01.885 +03:00 [Information] Request finished in 93.2204ms 404 
+2018-04-17 15:03:02.644 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:03:02.839 +03:00 [Information] Request finished in 787.3117ms 404 
+2018-04-17 15:03:04.670 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 225
+2018-04-17 15:03:05.387 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-17 15:03:05.566 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:03:07.601 +03:00 [Information] Executed DbCommand ("995"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:03:08.523 +03:00 [Information] Executed DbCommand ("273"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-17 15:03:08.786 +03:00 [Information] Executed DbCommand ("123"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-17 15:03:08.832 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-17 15:03:08.856 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-17 15:03:08.910 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 4132.5763ms
+2018-04-17 15:03:09.221 +03:00 [Information] Request finished in 4896.7223ms 302 
+2018-04-17 15:03:09.279 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:03:09.303 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:09.362 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:03:09.401 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:03:09.460 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 124.4976ms
+2018-04-17 15:03:09.810 +03:00 [Information] Request finished in 240.9496ms 200 text/html; charset=utf-8
+2018-04-17 15:03:10.091 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:03:10.324 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:10.711 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:03:10.717 +03:00 [Information] Request finished in 343.4624ms 404 
+2018-04-17 15:03:10.730 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:10.898 +03:00 [Information] Request finished in 49.6395ms 404 
+2018-04-17 15:03:14.581 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:03:14.590 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:14.652 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:03:18.574 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:03:18.587 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:18.643 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:03:19.560 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:03:19.576 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:03:20.223 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 1333.582ms
+2018-04-17 15:03:20.557 +03:00 [Information] Request finished in 1704.7377ms 200 text/html; charset=utf-8
+2018-04-17 15:03:20.821 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:03:20.837 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:21.072 +03:00 [Information] Request finished in 80.7578ms 404 
+2018-04-17 15:03:21.089 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 5417.16ms
+2018-04-17 15:03:21.099 +03:00 [Information] Request finished in 6526.1099ms 200 text/html; charset=utf-8
+2018-04-17 15:03:21.130 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:03:21.165 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:21.208 +03:00 [Information] Request finished in 53.1636ms 404 
+2018-04-17 15:03:22.900 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/2  
+2018-04-17 15:03:23.087 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:23.156 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-17 15:03:24.312 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-17 15:03:24.379 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1267.6703ms
+2018-04-17 15:03:24.407 +03:00 [Information] Request finished in 1499.4394ms 200 text/html; charset=utf-8
+2018-04-17 15:03:29.482 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=8  
+2018-04-17 15:03:29.492 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:03:29.542 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "4", "8"]) - ModelState is Valid
+2018-04-17 15:03:30.043 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:03:30.656 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1148.5454ms
+2018-04-17 15:03:30.839 +03:00 [Information] Request finished in 1181.9291ms 200 text/html; charset=utf-8
+2018-04-17 15:04:07.654 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3&userId=8  
+2018-04-17 15:04:07.713 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:07.816 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "3", "8"]) - ModelState is Valid
+2018-04-17 15:04:07.885 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:08.123 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 391.3305ms
+2018-04-17 15:04:08.221 +03:00 [Information] Request finished in 643.0341ms 200 text/html; charset=utf-8
+2018-04-17 15:04:14.107 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:04:14.142 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:14.223 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:04:15.405 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:04:15.796 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 1335.9819ms
+2018-04-17 15:04:15.936 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:04:16.462 +03:00 [Information] Request finished in 1719.0719ms 200 text/html; charset=utf-8
+2018-04-17 15:04:16.496 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-17 15:04:16.902 +03:00 [Information] Request finished in 698.9671ms 304 text/css
+2018-04-17 15:04:17.190 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:04:17.565 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:17.722 +03:00 [Information] Request finished in 589.5077ms 404 
+2018-04-17 15:04:17.789 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:04:17.807 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:17.855 +03:00 [Information] Request finished in 49.0255ms 404 
+2018-04-17 15:04:17.879 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/favicon.ico  
+2018-04-17 15:04:17.893 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\favicon.ico"'
+2018-04-17 15:04:18.106 +03:00 [Information] Request finished in 57.6265ms 200 image/x-icon
+2018-04-17 15:04:19.070 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/2  
+2018-04-17 15:04:19.107 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:19.257 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-17 15:04:20.374 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-17 15:04:20.421 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1268.082ms
+2018-04-17 15:04:20.622 +03:00 [Information] Request finished in 1381.2135ms 200 text/html; charset=utf-8
+2018-04-17 15:04:31.493 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=&userId=6  
+2018-04-17 15:04:31.502 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:31.577 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "6"]) - ModelState is Valid
+2018-04-17 15:04:31.592 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:31.660 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 142.1886ms
+2018-04-17 15:04:31.727 +03:00 [Information] Request finished in 180.6449ms 200 text/html; charset=utf-8
+2018-04-17 15:04:34.509 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=&userId=8  
+2018-04-17 15:04:34.523 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:34.578 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "8"]) - ModelState is Valid
+2018-04-17 15:04:34.617 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:34.928 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 385.2182ms
+2018-04-17 15:04:34.996 +03:00 [Information] Request finished in 568.4037ms 200 text/html; charset=utf-8
+2018-04-17 15:04:39.906 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=&userId=7  
+2018-04-17 15:04:39.913 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:39.962 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "7"]) - ModelState is Valid
+2018-04-17 15:04:39.975 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:40.268 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 331.4248ms
+2018-04-17 15:04:40.364 +03:00 [Information] Request finished in 440.2443ms 200 text/html; charset=utf-8
+2018-04-17 15:04:45.630 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=&userId=8  
+2018-04-17 15:04:45.642 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:45.725 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "8"]) - ModelState is Valid
+2018-04-17 15:04:45.745 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:46.028 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 365.5173ms
+2018-04-17 15:04:46.210 +03:00 [Information] Request finished in 431.7888ms 200 text/html; charset=utf-8
+2018-04-17 15:04:50.061 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3&userId=8  
+2018-04-17 15:04:50.072 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:04:50.113 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "3", "8"]) - ModelState is Valid
+2018-04-17 15:04:50.122 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:04:50.296 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 205.698ms
+2018-04-17 15:04:50.365 +03:00 [Information] Request finished in 256.7352ms 200 text/html; charset=utf-8
+2018-04-17 15:08:27.050 +03:00 [Debug] START WEB SERVER
+2018-04-17 15:08:28.506 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:08:34.275 +03:00 [Information] Executed DbCommand ("264"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:08:34.560 +03:00 [Information] Executed DbCommand ("141"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:08:34.695 +03:00 [Information] Executed DbCommand ("120"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:08:35.040 +03:00 [Information] Executed DbCommand ("257"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:08:35.396 +03:00 [Information] Executed DbCommand ("282"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:08:35.483 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:08:35.561 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:08:36.063 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:08:37.038 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:08:44.190 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:08:45.881 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 9146.5983ms
+2018-04-17 15:08:45.886 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:08:45.952 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-17 15:08:46.006 +03:00 [Information] Request finished in 9901.1055ms 200 text/html; charset=utf-8
+2018-04-17 15:08:46.056 +03:00 [Information] Request finished in 124.4994ms 304 text/css
+2018-04-17 15:08:46.104 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:08:46.184 +03:00 [Information] Request finished in 17.3468ms 404 
+2018-04-17 15:08:46.643 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:08:46.724 +03:00 [Information] Request finished in 104.4254ms 404 
+2018-04-17 15:08:48.887 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-17 15:08:49.205 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-17 15:08:50.812 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-17 15:08:51.504 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 2058.7355ms
+2018-04-17 15:08:51.692 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:08:51.757 +03:00 [Information] Request finished in 2631.3262ms 200 text/html; charset=utf-8
+2018-04-17 15:08:52.285 +03:00 [Information] Request finished in 210.7568ms 404 
+2018-04-17 15:08:52.361 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:08:52.476 +03:00 [Information] Request finished in 441.3854ms 404 
+2018-04-17 15:08:52.926 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 225
+2018-04-17 15:08:53.183 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-17 15:08:53.225 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:08:53.345 +03:00 [Information] Executed DbCommand ("86"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:08:54.045 +03:00 [Information] Executed DbCommand ("436"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-17 15:08:54.291 +03:00 [Information] Executed DbCommand ("98"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-17 15:08:54.319 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-17 15:08:54.337 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-17 15:08:54.351 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1378.8746ms
+2018-04-17 15:08:54.429 +03:00 [Information] Request finished in 1442.1987ms 302 
+2018-04-17 15:08:54.461 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:08:54.558 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:08:54.914 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:08:55.318 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:08:55.683 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 779.5862ms
+2018-04-17 15:08:56.023 +03:00 [Information] Request finished in 1262.7389ms 200 text/html; charset=utf-8
+2018-04-17 15:08:56.102 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:08:56.322 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:08:56.652 +03:00 [Information] Request finished in 685.573ms 404 
+2018-04-17 15:08:56.756 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:08:56.777 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:08:56.828 +03:00 [Information] Request finished in 226.2224ms 404 
+2018-04-17 15:09:03.425 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:09:04.014 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:04.615 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:09:07.031 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:09:07.104 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:07.337 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:09:09.510 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:09:09.521 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:09:10.157 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 2675.0388ms
+2018-04-17 15:09:10.427 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 5762.1215ms
+2018-04-17 15:09:10.736 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:09:10.807 +03:00 [Information] Request finished in 7360.4681ms 200 text/html; charset=utf-8
+2018-04-17 15:09:10.878 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:10.972 +03:00 [Information] Request finished in 3252.5814ms 200 text/html; charset=utf-8
+2018-04-17 15:09:11.052 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:09:11.076 +03:00 [Information] Request finished in 721.1965ms 404 
+2018-04-17 15:09:11.089 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:11.175 +03:00 [Information] Request finished in 98.7495ms 404 
+2018-04-17 15:09:13.596 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/2  
+2018-04-17 15:09:13.722 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:13.791 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-17 15:09:14.878 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-17 15:09:14.943 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1195.8134ms
+2018-04-17 15:09:15.066 +03:00 [Information] Request finished in 1392.0677ms 200 text/html; charset=utf-8
+2018-04-17 15:09:22.051 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:09:22.059 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:22.227 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", ""]) - ModelState is Invalid
+2018-04-17 15:09:22.596 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:09:22.876 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 802.2762ms
+2018-04-17 15:09:22.900 +03:00 [Information] Request finished in 840.0557ms 200 text/html; charset=utf-8
+2018-04-17 15:09:32.909 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=  
+2018-04-17 15:09:32.916 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:32.994 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "4", ""]) - ModelState is Valid
+2018-04-17 15:09:33.006 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:09:33.243 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 302.9666ms
+2018-04-17 15:09:33.276 +03:00 [Information] Request finished in 349.5198ms 200 text/html; charset=utf-8
+2018-04-17 15:09:40.813 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:09:40.821 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:09:40.880 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", ""]) - ModelState is Invalid
+2018-04-17 15:09:40.890 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:09:40.940 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 108.593ms
+2018-04-17 15:09:40.964 +03:00 [Information] Request finished in 142.8575ms 200 text/html; charset=utf-8
+2018-04-17 15:10:23.786 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:10:23.799 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:10:23.856 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", ""]) - ModelState is Invalid
+2018-04-17 15:11:15.099 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:11:15.163 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 51350.3137ms
+2018-04-17 15:11:15.294 +03:00 [Information] Request finished in 51436.4685ms 200 text/html; charset=utf-8
+2018-04-17 15:11:17.522 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=7  
+2018-04-17 15:11:17.532 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:11:17.573 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "7"]) - ModelState is Invalid
+2018-04-17 15:14:19.495 +03:00 [Debug] START WEB SERVER
+2018-04-17 15:14:20.911 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:14:26.816 +03:00 [Information] Executed DbCommand ("295"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:14:27.030 +03:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:14:27.148 +03:00 [Information] Executed DbCommand ("97"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:14:27.316 +03:00 [Information] Executed DbCommand ("99"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:14:27.476 +03:00 [Information] Executed DbCommand ("80"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:14:27.620 +03:00 [Information] Executed DbCommand ("102"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:14:27.714 +03:00 [Information] Executed DbCommand ("79"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:14:28.318 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:14:29.109 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:14:35.371 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:14:37.002 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:14:37.005 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 7965.4426ms
+2018-04-17 15:14:37.090 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-17 15:14:37.186 +03:00 [Information] Request finished in 8734.7452ms 200 text/html; charset=utf-8
+2018-04-17 15:14:37.850 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:14:38.112 +03:00 [Information] Request finished in 115.7722ms 304 text/css
+2018-04-17 15:14:38.250 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:14:38.335 +03:00 [Information] Request finished in 59.5011ms 404 
+2018-04-17 15:14:38.347 +03:00 [Information] Request finished in 462.5389ms 404 
+2018-04-17 15:14:41.728 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-17 15:14:41.908 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-17 15:14:42.054 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-17 15:14:42.209 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-17 15:14:43.438 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-17 15:14:43.593 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-17 15:14:44.022 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1964.4157ms
+2018-04-17 15:14:44.205 +03:00 [Information] Request finished in 2417.6636ms 200 text/html; charset=utf-8
+2018-04-17 15:14:44.352 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:14:44.668 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1867.1066ms
+2018-04-17 15:14:44.939 +03:00 [Information] Request finished in 2961.2997ms 200 text/html; charset=utf-8
+2018-04-17 15:14:45.292 +03:00 [Information] Request finished in 68.6461ms 404 
+2018-04-17 15:14:45.368 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:14:45.409 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 225
+2018-04-17 15:14:45.424 +03:00 [Information] Request finished in 26.6186ms 404 
+2018-04-17 15:14:45.591 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-17 15:14:45.619 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:14:45.793 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:14:46.819 +03:00 [Information] Executed DbCommand ("670"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-17 15:14:47.335 +03:00 [Information] Executed DbCommand ("268"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-17 15:14:47.491 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-17 15:14:47.505 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-17 15:14:47.585 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 2051.0432ms
+2018-04-17 15:14:47.961 +03:00 [Information] Request finished in 2245.0575ms 302 
+2018-04-17 15:14:48.290 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:14:48.416 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:48.813 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:14:48.927 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:14:49.248 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 533.8946ms
+2018-04-17 15:14:49.628 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:14:49.842 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:49.989 +03:00 [Information] Request finished in 1426.4342ms 200 text/html; charset=utf-8
+2018-04-17 15:14:50.023 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:14:50.029 +03:00 [Information] Request finished in 415.6959ms 404 
+2018-04-17 15:14:50.041 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:50.128 +03:00 [Information] Request finished in 40.8809ms 404 
+2018-04-17 15:14:54.847 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:14:54.867 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:54.910 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:14:57.470 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:14:58.022 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 2799.0558ms
+2018-04-17 15:14:58.162 +03:00 [Information] Request finished in 3193.687ms 200 text/html; charset=utf-8
+2018-04-17 15:14:58.179 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:14:58.286 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:58.612 +03:00 [Information] Request finished in 351.456ms 404 
+2018-04-17 15:14:58.751 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:14:58.779 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:14:58.841 +03:00 [Information] Request finished in 187.3477ms 404 
+2018-04-17 15:15:19.083 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/2  
+2018-04-17 15:15:19.097 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:15:19.155 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-17 15:15:19.879 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-17 15:15:19.949 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 826.7702ms
+2018-04-17 15:15:20.042 +03:00 [Information] Request finished in 877.3359ms 200 text/html; charset=utf-8
+2018-04-17 15:15:37.481 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:15:37.492 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:15:37.564 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", ""]) - ModelState is Invalid
+2018-04-17 15:15:48.048 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:15:48.521 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 11001.7013ms
+2018-04-17 15:15:48.795 +03:00 [Information] Request finished in 11084.9364ms 200 text/html; charset=utf-8
+2018-04-17 15:15:57.657 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=8  
+2018-04-17 15:15:57.670 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:15:57.724 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "", "8"]) - ModelState is Invalid
+2018-04-17 15:17:46.406 +03:00 [Debug] START WEB SERVER
+2018-04-17 15:17:47.373 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:17:52.446 +03:00 [Information] Executed DbCommand ("189"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:17:52.625 +03:00 [Information] Executed DbCommand ("90"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:17:52.691 +03:00 [Information] Executed DbCommand ("58"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-17 15:17:52.797 +03:00 [Information] Executed DbCommand ("69"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:17:52.920 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:17:53.080 +03:00 [Information] Executed DbCommand ("143"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:17:53.176 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:17:53.707 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:17:54.522 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:18:01.121 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:18:03.156 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-17 15:18:03.171 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 8403.7876ms
+2018-04-17 15:18:03.189 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-17 15:18:03.306 +03:00 [Information] Request finished in 177.7753ms 304 text/css
+2018-04-17 15:18:03.315 +03:00 [Information] Request finished in 9534.205ms 200 text/html; charset=utf-8
+2018-04-17 15:18:03.377 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:18:03.405 +03:00 [Information] Request finished in 38.5758ms 404 
+2018-04-17 15:18:04.004 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:18:04.481 +03:00 [Information] Request finished in 235.9826ms 404 
+2018-04-17 15:18:08.078 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-17 15:18:08.355 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-17 15:18:09.778 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-17 15:18:10.084 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1798.3953ms
+2018-04-17 15:18:10.356 +03:00 [Information] Request finished in 2121.0483ms 200 text/html; charset=utf-8
+2018-04-17 15:18:10.657 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:18:10.882 +03:00 [Information] Request finished in 305.6025ms 404 
+2018-04-17 15:18:10.906 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:18:11.178 +03:00 [Information] Request finished in 72.1919ms 404 
+2018-04-17 15:18:12.031 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 225
+2018-04-17 15:18:12.312 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-17 15:18:12.362 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-17 15:18:12.592 +03:00 [Information] Executed DbCommand ("142"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-17 15:18:13.343 +03:00 [Information] Executed DbCommand ("453"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-17 15:18:13.563 +03:00 [Information] Executed DbCommand ("95"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-17 15:18:13.594 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-17 15:18:13.608 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-17 15:18:13.625 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1544.4174ms
+2018-04-17 15:18:13.717 +03:00 [Information] Request finished in 1645.9647ms 302 
+2018-04-17 15:18:13.796 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-17 15:18:13.838 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:14.090 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:18:14.110 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-17 15:18:14.647 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 288.0866ms
+2018-04-17 15:18:14.946 +03:00 [Information] Request finished in 934.4812ms 200 text/html; charset=utf-8
+2018-04-17 15:18:14.968 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:18:15.202 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:15.441 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:18:15.447 +03:00 [Information] Request finished in 701.5584ms 404 
+2018-04-17 15:18:15.473 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:15.549 +03:00 [Information] Request finished in 154.7858ms 404 
+2018-04-17 15:18:19.122 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-17 15:18:19.132 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:19.439 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-17 15:18:22.173 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-17 15:18:22.810 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3256.0125ms
+2018-04-17 15:18:23.249 +03:00 [Information] Request finished in 3707.1956ms 200 text/html; charset=utf-8
+2018-04-17 15:18:23.929 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-17 15:18:24.200 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:24.532 +03:00 [Information] Request finished in 1340.5982ms 404 
+2018-04-17 15:18:24.586 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-17 15:18:24.642 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:24.784 +03:00 [Information] Request finished in 212.8735ms 404 
+2018-04-17 15:18:27.033 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/2  
+2018-04-17 15:18:27.050 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:27.161 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-17 15:18:28.622 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-17 15:18:28.688 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1615.5829ms
+2018-04-17 15:18:28.822 +03:00 [Information] Request finished in 1873.0964ms 200 text/html; charset=utf-8
+2018-04-17 15:18:31.418 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=  
+2018-04-17 15:18:31.427 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:31.530 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Valid
+2018-04-17 15:18:32.095 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:32.518 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1044.4364ms
+2018-04-17 15:18:32.543 +03:00 [Information] Request finished in 1107.9669ms 200 text/html; charset=utf-8
+2018-04-17 15:18:40.205 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:40.217 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:40.280 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:40.289 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:40.579 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 350.8251ms
+2018-04-17 15:18:40.916 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:41.320 +03:00 [Information] Request finished in 1091.5287ms 500 text/html; charset=utf-8
+2018-04-17 15:18:43.049 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:43.057 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:43.097 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:43.105 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:43.251 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 186.3274ms
+2018-04-17 15:18:43.351 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:43.555 +03:00 [Information] Request finished in 445.8616ms 500 text/html; charset=utf-8
+2018-04-17 15:18:47.934 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:47.947 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:47.986 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:47.995 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:48.189 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 236.2054ms
+2018-04-17 15:18:48.390 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:48.587 +03:00 [Information] Request finished in 644.1305ms 500 text/html; charset=utf-8
+2018-04-17 15:18:49.602 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:49.629 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:49.670 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:49.679 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:49.852 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 209.379ms
+2018-04-17 15:18:50.004 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:50.199 +03:00 [Information] Request finished in 586.117ms 500 text/html; charset=utf-8
+2018-04-17 15:18:51.957 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:51.966 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:52.012 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:52.020 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:52.167 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 191.0668ms
+2018-04-17 15:18:52.323 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:52.395 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:52.403 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:52.531 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:52.559 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:53.120 +03:00 [Information] Request finished in 1037.058ms 500 text/html; charset=utf-8
+2018-04-17 15:18:53.142 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 566.9088ms
+2018-04-17 15:18:53.387 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:53.491 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:53.503 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:53.557 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:53.605 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:54.001 +03:00 [Information] Request finished in 1399.3181ms 500 text/html; charset=utf-8
+2018-04-17 15:18:54.022 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 507.3454ms
+2018-04-17 15:18:54.188 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:54.303 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:54.390 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:54.562 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:54.573 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:54.754 +03:00 [Information] Request finished in 1042.9343ms 500 text/html; charset=utf-8
+2018-04-17 15:18:54.775 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 377.2282ms
+2018-04-17 15:18:54.977 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:55.205 +03:00 [Information] Request finished in 891.4691ms 500 text/html; charset=utf-8
+2018-04-17 15:18:55.350 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3&userId=  
+2018-04-17 15:18:55.366 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:55.407 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Valid
+2018-04-17 15:18:55.416 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:55.556 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 181.8433ms
+2018-04-17 15:18:55.583 +03:00 [Information] Request finished in 215.8808ms 200 text/html; charset=utf-8
+2018-04-17 15:18:58.319 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=3,4&userId=  
+2018-04-17 15:18:58.335 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:18:58.384 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Invalid
+2018-04-17 15:18:58.392 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:18:58.559 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 201.1421ms
+2018-04-17 15:18:58.729 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ETT.Web.Controllers.ReportController.<>c__DisplayClass6_0.<GetSearchList>b__5(RecordDTO x) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Controllers\ReportController.cs:line 87
+   at System.Linq.Utilities.<>c__DisplayClass1_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Report_GetSearchList_cshtml.<ExecuteAsync>d__10.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Report\GetSearchList.cshtml:line 19
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-17 15:18:58.879 +03:00 [Information] Request finished in 549.999ms 500 text/html; charset=utf-8
+2018-04-17 15:19:01.359 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=  
+2018-04-17 15:19:01.378 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:19:01.457 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", ""]) - ModelState is Valid
+2018-04-17 15:19:01.541 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:19:01.715 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 321.5264ms
+2018-04-17 15:19:01.749 +03:00 [Information] Request finished in 374.8228ms 200 text/html; charset=utf-8
+2018-04-17 15:19:05.165 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=7  
+2018-04-17 15:19:05.189 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:19:05.251 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", "7"]) - ModelState is Valid
+2018-04-17 15:19:05.305 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:19:05.462 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 261.0822ms
+2018-04-17 15:19:05.508 +03:00 [Information] Request finished in 407.43ms 200 text/html; charset=utf-8
+2018-04-17 15:19:09.785 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?projId=2&taskId=4&userId=8  
+2018-04-17 15:19:09.794 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-17 15:19:09.905 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["2", "System.Int32[]", "8"]) - ModelState is Valid
+2018-04-17 15:19:09.919 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-17 15:19:10.120 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 308.2005ms
+2018-04-17 15:19:10.150 +03:00 [Information] Request finished in 345.1009ms 200 text/html; charset=utf-8

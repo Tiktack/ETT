@@ -1,0 +1,62 @@
+/* Load fonts https://cdnjs.com/libraries/materialize */
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Thin.woff") format("woff"), url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Light.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+}
+/*@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+}*/
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Medium), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Bold), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/fonts/roboto/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+/* Vertical table */
+
+table.vertical.bordered {
+    border-top: 1px solid #d0d0d0;
+}
+
+table.vertical tr th {
+    text-align: right;
+    border-right: 1px solid #d0d0d0;
+}
+
+/* Tab icon */
+
+.tabs .tab .material-icons {
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+/* Nav search icon */
+
+.input-field .label-icon .material-icons {
+    margin-top: -10px;
+}
+
+/* New badge disabled */
+
+.new.badge.disabled {
+    cursor: default;
+    pointer-events: none;
+    background-color: #DFDFDF !important;
+    color: #9F9F9F !important;
+}
+
+/* Other fixes */

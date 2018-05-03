@@ -1,0 +1,36 @@
+﻿@model ETT.Web.Models.Projects.ListViewModel
+
+@{
+    ViewData["Title"] = Localizer["Projects"];
+}
+
+<div class="container">
+    <div class="row">
+        <h4 class="col s12">
+            <span>@ViewData["Title"]</span>
+            <span class="right">
+                <a asp-action="Create"><input type="button" class="btn @Design.Color" value="@Localizer["CreateNew"]"></a>
+            </span>
+        </h4>
+    </div>
+    <table class="bordered highlight">
+        <thead>
+            <tr>
+                <th>@Localizer["Name"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in Model.Projects)
+            {
+                <tr>
+                    <td>
+                        <span>@project.Name</span>
+                        <a href="@Url.Action("Main", new { id = project.Id })#users"><span class="new badge @Design.Color" data-badge-caption="@Localizer["Users"]"></span></a>
+                        <a href="@Url.Action("Main", new { id = project.Id })#tasks"><span class="new badge @Design.Color" data-badge-caption="@Localizer["Tasks"]"></span></a>
+                        <a href="@Url.Action("Main", new { id = project.Id })"><span class="new badge @Design.Color" data-badge-caption="@Localizer["Details"]"></span></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

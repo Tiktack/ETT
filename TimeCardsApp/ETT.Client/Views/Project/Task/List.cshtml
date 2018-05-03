@@ -1,0 +1,33 @@
+﻿@model ETT.Web.Models.Projects.Task.ListViewModel
+
+@{
+    Layout = null;
+}
+
+<table class="bordered highlight">
+    <thead>
+        <tr>
+            <th>@Localizer["CreationDate"]</th>
+            <th>@Localizer["Name"]</th>
+            @*<th>@Localizer["Description"]</th>*@
+            <th class="right-align">@Localizer["Actions"]</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model.Tasks)
+            {
+            <tr>
+                <td>@task.CreationDate</td>
+                <td>@task.Name</td>
+                @*<td>@task.Description</td>*@
+                <td>
+                    @if (Model.Manager)
+                    {
+                        <a class="hand" onclick="TaskAction(@Model.projectId, 'Edit', @task.Id, '#task-@task.Id-edit')"><span id="task-@task.Id-edit" class="new badge @Design.Color" data-badge-caption="@Localizer["Edit"]"></span></a>
+                    }
+                    <a class="hand" onclick="TaskAction(@Model.projectId, 'Details', @task.Id, '#task-@task.Id-details')"><span id="task-@task.Id-details" class="new badge @Design.Color" data-badge-caption="@Localizer["Details"]"></span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

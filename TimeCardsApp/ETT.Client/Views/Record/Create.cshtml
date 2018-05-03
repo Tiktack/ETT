@@ -1,0 +1,137 @@
+﻿@model ETT.Web.Models.Record.ProjectRecordViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 offset-l1 l10">
+            <form asp-action="Create">
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="card red lighten-3 white-text">
+                        <div class="card-content">
+                            <span class="card-title">@Localizer["SmthGoesWrong"]</span>
+                            <div asp-validation-summary="All"></div>
+                        </div>
+                    </div>
+                }
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">@Localizer["Title"]</span>
+                        <div class="input-field" id="pickercontainer">
+                            <select id="create-project-options">
+                                <option value="" disabled selected>@Localizer["ChooseProject"]</option>
+                                @foreach (var proj in Model.Projects)
+                                {
+                                    <option value="@proj.Id">@proj.Name</option>
+                                }
+                            </select>
+                            <label asp-for="ProjectId"></label>
+                            <input id="ProjId" type="hidden" asp-for="ProjectId" class="">
+                        </div>
+                        <input id="TaskId" type="hidden" asp-for="TaskId" class="">
+                        <div id="task-selector" class="input-field">
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Note" class="">
+                            <label asp-for="Note"></label>
+                            @*//<span asp-validation-for="Note"></span>*@
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Hours" class="" />
+                            <label asp-for="Hours"></label>
+                           @*// <span asp-validation-for="Hours"></span>*@
+                        </div>
+                        <div class="input-field">
+                            <label asp-for="Date"></label>
+                            <input id="date" type="text" class="datepicker " asp-for="Date">
+                           @*<span asp-validation-for="Date"></span>*@
+                        </div>
+                        <div class="input-field">
+                            <label asp-for="Time"></label>
+                            <input id="time" type="text" class="timepicker " asp-for="Time">
+                            @*<span asp-validation-for="Time"></span>*@
+                        </div>
+                        <div class="">
+                            <a id="pick-current-date-time" class="waves-effect waves-light btn"><i class="material-icons left">add_alarm</i>@Localizer["CurrentDateTime"]</a>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <input id="Create-btn" type="submit" class="btn @Design.Color" value="@Localizer["Create"]" />
+                        <a asp-action="UserList"><input type="button" class="btn @Design.Color " value="@Localizer["BacktoList"]" /></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 15, // Creates a dropdown of 15 years to control year,
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: false // Close upon selecting a date,
+            });
+        });
+        $(function () {
+            $('.timepicker').pickatime({
+                default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+                fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+                twelvehour: false, // Use AM/PM or 24-hour format
+                donetext: 'OK', // text for done-button
+                cleartext: 'Clear', // text for clear-button
+                canceltext: 'Cancel', // Text for cancel-button
+                autoclose: false, // automatic close timepicker
+                ampmclickable: true, // make AM PM clickable
+                aftershow: function () { } //Function for after opening timepicker
+            });
+            Materialize.updateTextFields();
+        });
+
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+        $('#time').on('change', function () {
+            Materialize.updateTextFields();
+        });
+        // Current DateTimePicker event
+        $('#pick-current-date-time').on('click', function () {
+            DateTimeFunction();
+        });
+
+        function DateTimeFunction() {
+            var date = new Date();
+            document.getElementById('date').value = date.toLocaleDateString("ru");
+            document.getElementById('time').value = date.toLocaleTimeString("ru");
+            Materialize.updateTextFields();
+        }
+
+        // Update task select
+        $('#create-project-options').on('change', function () {
+            $('#ProjId').val($(this).val());
+            UpdateTaskSelect($(this).val());
+        });
+
+        function UpdateTaskSelect(number) {
+            $('#task-selector').load(
+                url = '/Record/GetTaskList/' + number,
+                success = function (data) {
+                    console.log(data);
+                    $('#create-task-options').material_select();
+                    $('#create-task-options').on('change', function () {
+                        $('#TaskId').val($(this).val());
+                    });
+                }
+            )
+        }
+    </script>
+    @*<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>*@
+}

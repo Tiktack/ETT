@@ -1,0 +1,74 @@
+﻿@model ETT.Web.Models.Users.UsersIndexViewModel
+
+@{
+    ViewBag.Title = "Список пользователей";
+}
+
+<div class="container">
+    <div class="section row">
+        <div class="col s10 offset-s1">
+            <a asp-action="Create" class="btn waves-effect waves-light"><i class="material-icons left">add</i>Добавить пользователя</a>
+            <br />
+
+            <table class="">
+                <thead>
+                    <form asp-action="Index" method="get">
+                        <tr>
+                            <td>
+                                <div class="input-field">
+                                    <input id="last_name" type="text" class="validate" name="PageFilter" value="@Model.FilterName">
+                                    <label for="last_name">Expression</label>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn waves-effect waves-light">
+                                    <i class="material-icons left"></i>Фильтр
+                                </button>
+                            </td>
+                        </tr>
+                    </form>
+                </thead>
+                <tbody>
+                    <tr><th><h5>Email</h5></th><th></th></tr>
+                    @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td class="largetext">@user.Email</td>
+                    <td>
+                        <form asp-action="Delete" asp-route-id="@user.Id" asp-route-confirm="false" method="post">
+
+                            <a class="btn waves-effect waves-light
+                                           @(user.NormalizedUserName == "ad1min@mail.com".ToUpper() ? "disabled" :"")" asp-action="Edit" asp-route-id="@user.Id">
+                                <i class="material-icons left">edit</i><span class="hide-on-med-and-down">Изменить</span>
+                            </a>
+
+                            <a class="btn waves-effect waves-light" asp-action="ChangePassword" asp-route-id="@user.Id">
+                                <i class="material-icons left">vpn_key</i><span class="hide-on-med-and-down">Сменить пароль</span>
+</a>
+
+                            <button type="submit" class="btn waves-effect waves-light
+                                                @(user.NormalizedUserName == "ad1min@mail.com".ToUpper() ? "disabled" : "")">
+                                <i class="material-icons left">delete</i><span class="hide-on-med-and-down">Удалить</span>
+</button>
+
+                        </form>
+                    </td>
+                </tr>
+    }
+                </tbody>
+            </table>
+
+            @* Pagination *@
+            <page-filter-link page-model="Model.PageViewModel" page-action="Index"
+                       page-filter="@Model.FilterName" anchor-count="5">
+            </page-filter-link>
+
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs {
+    <a href="#" class="breadcrumb breadcrumbmargin3">
+        Index
+    </a>
+}

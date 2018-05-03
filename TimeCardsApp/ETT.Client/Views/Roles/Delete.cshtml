@@ -1,0 +1,42 @@
+﻿@model ETT.Web.Models.Users.DeleteRoleViewModel
+
+@{
+    ViewData["Title"] = "Удаление роли";
+}
+
+<div class="container">
+    <div class="section row">
+        <div class="col s6 offset-s3">
+            <form asp-action="Delete" method="post">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <h5>
+                    Вы действительно желаете удалить роль
+                    <span style="font-style:italic; font-size:xx-large;" class="yellow lighten-5">@Model.Name</span> ?
+                </h5>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="submit" class="btn waves-effect waves-light">
+                                    <i class="material-icons left">check</i>Удалить
+                                </button>
+                            </td>
+                            <td>
+                                <a asp-action="Index" class="btn waves-effect waves-light">
+                                    <i class="material-icons left">close</i>Отменить
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">Delete</a>
+} 

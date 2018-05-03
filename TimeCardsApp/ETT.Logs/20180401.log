@@ -1,0 +1,1075 @@
+2018-04-01 23:01:08.099 +03:00 [Debug] START WEB SERVER
+2018-04-01 23:01:09.330 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:01:20.899 +03:00 [Information] Executed DbCommand ("102"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""CREATE DATABASE [helloappdb];"
+2018-04-01 23:01:21.246 +03:00 [Information] Executed DbCommand ("346"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [helloappdb] SET READ_COMMITTED_SNAPSHOT ON;');"
+2018-04-01 23:01:21.476 +03:00 [Information] Executed DbCommand ("100"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);"
+2018-04-01 23:01:21.543 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-04-01 23:01:21.546 +03:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-04-01 23:01:21.553 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-04-01 23:03:44.417 +03:00 [Debug] START WEB SERVER
+2018-04-01 23:03:46.043 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:03:47.621 +03:00 [Information] Executed DbCommand ("463"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:47.833 +03:00 [Information] Executed DbCommand ("165"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:48.117 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:48.212 +03:00 [Information] Executed DbCommand ("67"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:48.298 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:48.375 +03:00 [Information] Executed DbCommand ("65"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:48.461 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:48.530 +03:00 [Information] Executed DbCommand ("55"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:03:48.613 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:48.758 +03:00 [Information] Executed DbCommand ("104"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:03:49.078 +03:00 [Information] Executed DbCommand ("99"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-01 23:03:49.370 +03:00 [Information] Executed DbCommand ("88"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:49.533 +03:00 [Information] Executed DbCommand ("122"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-01 23:03:49.665 +03:00 [Information] Executed DbCommand ("70"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:49.794 +03:00 [Information] Executed DbCommand ("94"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-01 23:03:49.873 +03:00 [Information] Executed DbCommand ("59"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:50.018 +03:00 [Information] Executed DbCommand ("99"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-01 23:03:50.122 +03:00 [Information] Executed DbCommand ("79"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:03:50.248 +03:00 [Information] Executed DbCommand ("82"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:50.336 +03:00 [Information] Executed DbCommand ("67"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-01 23:03:50.402 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:50.501 +03:00 [Information] Executed DbCommand ("86"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-01 23:03:50.567 +03:00 [Information] Executed DbCommand ("55"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:50.634 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-01 23:03:50.722 +03:00 [Information] Executed DbCommand ("77"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:03:50.835 +03:00 [Information] Executed DbCommand ("70"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:50.962 +03:00 [Information] Executed DbCommand ("80"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-01 23:03:51.040 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:51.115 +03:00 [Information] Executed DbCommand ("62"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-01 23:03:51.190 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:51.258 +03:00 [Information] Executed DbCommand ("58"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-01 23:03:51.328 +03:00 [Information] Executed DbCommand ("60"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:03:51.422 +03:00 [Information] Executed DbCommand ("65"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:03:51.491 +03:00 [Information] Executed DbCommand ("59"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-01 23:03:51.555 +03:00 [Information] Executed DbCommand ("53"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:51.640 +03:00 [Information] Executed DbCommand ("68"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-01 23:03:51.714 +03:00 [Information] Executed DbCommand ("63"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:03:51.830 +03:00 [Information] Executed DbCommand ("68"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-01 23:03:52.864 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:03:53.759 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:04:02.052 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:04:03.185 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 9666.9546ms
+2018-04-01 23:04:03.197 +03:00 [Information] Request finished in 10412.4496ms 200 text/html; charset=utf-8
+2018-04-01 23:04:03.345 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-01 23:04:03.356 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-01 23:04:03.371 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-01 23:04:03.379 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-01 23:04:03.431 +03:00 [Information] Request finished in 36.4567ms 304 text/css
+2018-04-01 23:04:03.451 +03:00 [Information] Request finished in 90.8785ms 304 text/css
+2018-04-01 23:04:03.471 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-01 23:04:03.487 +03:00 [Information] The file "/lib/materialize/dist/css/materialize.css" was not modified
+2018-04-01 23:04:03.501 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-01 23:04:03.522 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-04-01 23:04:03.774 +03:00 [Information] Request finished in 51.4368ms 304 text/css
+2018-04-01 23:04:03.887 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-01 23:04:03.897 +03:00 [Information] The file "/img/fon.jpg" was not modified
+2018-04-01 23:04:03.929 +03:00 [Information] Request finished in 52.811ms 304 image/jpeg
+2018-04-01 23:04:03.989 +03:00 [Information] Request finished in 104.7906ms 304 application/javascript
+2018-04-01 23:04:03.993 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-01 23:04:04.048 +03:00 [Information] The file "/lib/materialize/dist/js/materialize.js" was not modified
+2018-04-01 23:04:04.314 +03:00 [Information] Request finished in 93.8731ms 304 application/javascript
+2018-04-01 23:04:04.338 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=rGAKttZtslRFElPSKhgd6oht8tZfkBoR4hm9yzmDdds  
+2018-04-01 23:04:04.372 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:04:04.377 +03:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\site.js"'
+2018-04-01 23:04:04.561 +03:00 [Information] Request finished in 358.5047ms 404 
+2018-04-01 23:04:04.760 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:04:04.848 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:04:04.910 +03:00 [Information] Request finished in 142.3558ms 404 
+2018-04-01 23:04:04.918 +03:00 [Information] Request finished in 192.2882ms 200 application/javascript
+2018-04-01 23:04:04.931 +03:00 [Information] Request finished in 58.418ms 404 
+2018-04-01 23:04:04.963 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:04:05.039 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/favicon.ico  
+2018-04-01 23:04:05.088 +03:00 [Information] The file "/favicon.ico" was not modified
+2018-04-01 23:04:05.106 +03:00 [Information] Request finished in 59.6858ms 304 image/x-icon
+2018-04-01 23:04:05.129 +03:00 [Information] Request finished in 24.0665ms 404 
+2018-04-01 23:04:12.358 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-01 23:04:12.719 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-01 23:04:13.871 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:04:14.340 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1729.4612ms
+2018-04-01 23:04:14.568 +03:00 [Information] Request finished in 2266.5847ms 200 text/html; charset=utf-8
+2018-04-01 23:04:14.630 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:04:14.727 +03:00 [Information] Request finished in 207.8793ms 404 
+2018-04-01 23:04:14.791 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:04:14.841 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:04:14.982 +03:00 [Information] Request finished in 236.5338ms 404 
+2018-04-01 23:04:15.048 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:04:15.131 +03:00 [Information] Request finished in 47.6139ms 404 
+2018-04-01 23:04:15.153 +03:00 [Information] Request finished in 25.6641ms 404 
+2018-04-01 23:04:30.668 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-01 23:04:30.864 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-01 23:04:30.926 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:04:30.998 +03:00 [Information] Executed DbCommand ("60"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:04:31.023 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:04:31.180 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 320.0412ms
+2018-04-01 23:04:31.230 +03:00 [Information] Request finished in 531.3124ms 200 text/html; charset=utf-8
+2018-04-01 23:04:31.440 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:04:31.483 +03:00 [Information] Request finished in 172.6802ms 404 
+2018-04-01 23:04:31.516 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:04:31.566 +03:00 [Information] Request finished in 235.4283ms 404 
+2018-04-01 23:04:31.580 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:04:31.586 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:04:31.635 +03:00 [Information] Request finished in 89.6987ms 404 
+2018-04-01 23:04:31.678 +03:00 [Information] Request finished in 26.2141ms 404 
+2018-04-01 23:04:41.185 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Register  
+2018-04-01 23:04:41.263 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:04:41.672 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Register.cshtml".
+2018-04-01 23:04:42.063 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 542.0935ms
+2018-04-01 23:04:42.154 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:04:42.334 +03:00 [Information] Request finished in 962.3188ms 200 text/html; charset=utf-8
+2018-04-01 23:04:42.350 +03:00 [Information] Request finished in 105.5012ms 404 
+2018-04-01 23:04:42.370 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:04:42.406 +03:00 [Information] Request finished in 154.3994ms 404 
+2018-04-01 23:04:42.413 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:04:42.501 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:04:42.549 +03:00 [Information] Request finished in 52.7645ms 404 
+2018-04-01 23:04:42.556 +03:00 [Information] Request finished in 510.5109ms 404 
+2018-04-01 23:04:53.687 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Register application/x-www-form-urlencoded 269
+2018-04-01 23:04:53.782 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (["ETT.Web.Models.Users.RegisterViewModel"]) - ModelState is Valid
+2018-04-01 23:04:53.817 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:04:53.968 +03:00 [Information] Executed DbCommand ("142"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-01 23:04:54.031 +03:00 [Information] Executed DbCommand ("52"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-01 23:04:54.123 +03:00 [Information] Executed DbCommand ("80"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:04:54.197 +03:00 [Information] Executed DbCommand ("59"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-01 23:04:54.271 +03:00 [Information] Executed DbCommand ("67"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-01 23:04:54.335 +03:00 [Information] Executed DbCommand ("57"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-01 23:04:54.346 +03:00 [Warning] User "5" validation failed: "".
+2018-04-01 23:04:54.513 +03:00 [Information] Executed DbCommand ("95"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-01 23:04:54.732 +03:00 [Information] Executed DbCommand ("119"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-01 23:04:54.756 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-01 23:04:54.768 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:04:54.778 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 1051.4598ms
+2018-04-01 23:04:54.810 +03:00 [Information] Request finished in 1117.0383ms 302 
+2018-04-01 23:04:54.851 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:04:54.868 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:04:54.911 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:04:55.247 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:04:55.512 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 389.0761ms
+2018-04-01 23:04:55.856 +03:00 [Information] Request finished in 708.9664ms 200 text/html; charset=utf-8
+2018-04-01 23:04:55.907 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:04:55.918 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:04:55.929 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:04:55.973 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:04:56.037 +03:00 [Information] Request finished in 80.5628ms 404 
+2018-04-01 23:04:56.055 +03:00 [Information] Request finished in 493.0264ms 404 
+2018-04-01 23:04:56.071 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:04:56.081 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:04:56.115 +03:00 [Information] Request finished in 21.4312ms 404 
+2018-04-01 23:04:56.137 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:04:56.146 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:04:56.164 +03:00 [Information] Request finished in 27.9185ms 404 
+2018-04-01 23:05:04.757 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:05:04.775 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:04.821 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:05:05.260 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:05:05.511 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 640.5237ms
+2018-04-01 23:05:05.556 +03:00 [Information] Request finished in 775.0544ms 200 text/html; charset=utf-8
+2018-04-01 23:05:05.673 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:05:05.887 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.095 +03:00 [Information] Request finished in 264.9323ms 404 
+2018-04-01 23:05:06.136 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:05:06.178 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:05:06.197 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff2  
+2018-04-01 23:05:06.202 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.248 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.305 +03:00 [Information] Request finished in 607.4076ms 404 
+2018-04-01 23:05:06.333 +03:00 [Information] Request finished in 83.3491ms 404 
+2018-04-01 23:05:06.343 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.440 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff  
+2018-04-01 23:05:06.459 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:05:06.473 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.488 +03:00 [Information] Request finished in 534.9609ms 404 
+2018-04-01 23:05:06.509 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:06.601 +03:00 [Information] Request finished in 74.9009ms 404 
+2018-04-01 23:05:06.625 +03:00 [Information] Request finished in 202.0936ms 404 
+2018-04-01 23:05:22.114 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/Create application/x-www-form-urlencoded 299
+2018-04-01 23:05:22.123 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.230 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Invalid
+2018-04-01 23:05:22.241 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:05:22.283 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 121.3007ms
+2018-04-01 23:05:22.373 +03:00 [Information] Request finished in 229.1301ms 200 text/html; charset=utf-8
+2018-04-01 23:05:22.465 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:05:22.489 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.564 +03:00 [Information] Request finished in 35.7418ms 404 
+2018-04-01 23:05:22.594 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:05:22.623 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:05:22.643 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.709 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.747 +03:00 [Information] Request finished in 163.1036ms 404 
+2018-04-01 23:05:22.769 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff2  
+2018-04-01 23:05:22.771 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:05:22.779 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.820 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.868 +03:00 [Information] Request finished in 222.6844ms 404 
+2018-04-01 23:05:22.878 +03:00 [Information] Request finished in 66.8825ms 404 
+2018-04-01 23:05:22.884 +03:00 [Information] Request finished in 89.2133ms 404 
+2018-04-01 23:05:22.900 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff  
+2018-04-01 23:05:22.907 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:22.924 +03:00 [Information] Request finished in 33.1825ms 404 
+2018-04-01 23:05:41.067 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/Create application/x-www-form-urlencoded 315
+2018-04-01 23:05:41.098 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:41.146 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Valid
+2018-04-01 23:05:41.303 +03:00 [Information] Executing RedirectResult, redirecting to "/Record/List".
+2018-04-01 23:05:41.309 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 204.6909ms
+2018-04-01 23:05:41.325 +03:00 [Information] Request finished in 253.2818ms 302 
+2018-04-01 23:05:41.339 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/List  
+2018-04-01 23:05:41.347 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:41.391 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:05:41.970 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-01 23:05:42.183 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.List (ETT.Web)" in 741.3013ms
+2018-04-01 23:05:42.294 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=rGAKttZtslRFElPSKhgd6oht8tZfkBoR4hm9yzmDdds  
+2018-04-01 23:05:42.383 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-01 23:05:42.530 +03:00 [Information] Request finished in 859.5211ms 200 text/html; charset=utf-8
+2018-04-01 23:05:42.540 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:05:42.567 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:05:42.591 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:42.625 +03:00 [Information] Request finished in 121.9262ms 304 application/javascript
+2018-04-01 23:05:42.647 +03:00 [Information] Request finished in 276.4838ms 404 
+2018-04-01 23:05:42.652 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:42.728 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:05:42.739 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:05:42.745 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:42.778 +03:00 [Information] Request finished in 112.7981ms 404 
+2018-04-01 23:05:42.796 +03:00 [Information] Request finished in 105.4958ms 404 
+2018-04-01 23:05:42.827 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:05:42.835 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:42.859 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:42.929 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:05:42.978 +03:00 [Information] Request finished in 148.0184ms 404 
+2018-04-01 23:05:42.993 +03:00 [Information] Request finished in 80.2223ms 404 
+2018-04-01 23:05:43.006 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:43.065 +03:00 [Information] Request finished in 215.0869ms 404 
+2018-04-01 23:05:47.745 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Edit/1  
+2018-04-01 23:05:47.752 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:47.797 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Edit (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-01 23:05:48.281 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Edit.cshtml".
+2018-04-01 23:05:48.989 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Edit (ETT.Web)" in 991.9146ms
+2018-04-01 23:05:49.078 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:05:49.093 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:49.139 +03:00 [Information] Request finished in 107.5147ms 404 
+2018-04-01 23:05:49.174 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery-validation/dist/jquery.validate.js  
+2018-04-01 23:05:49.183 +03:00 [Information] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\jquery-validation\dist\jquery.validate.js"'
+2018-04-01 23:05:49.191 +03:00 [Information] Request finished in 1251.6818ms 200 text/html; charset=utf-8
+2018-04-01 23:05:49.209 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:05:49.223 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:49.299 +03:00 [Information] Request finished in 24.7445ms 404 
+2018-04-01 23:05:49.326 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2018-04-01 23:05:49.326 +03:00 [Information] Request finished in 112.5029ms 200 application/javascript
+2018-04-01 23:05:49.333 +03:00 [Information] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"'
+2018-04-01 23:05:49.400 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:05:49.506 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:49.729 +03:00 [Information] Request finished in 166.2678ms 404 
+2018-04-01 23:05:49.813 +03:00 [Information] Request finished in 89.5617ms 200 application/javascript
+2018-04-01 23:05:49.831 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:05:49.845 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:05:49.930 +03:00 [Information] Request finished in 109.0742ms 404 
+2018-04-01 23:07:36.987 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:07:37.034 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:37.090 +03:00 [Information] Request finished in 138.6808ms 404 
+2018-04-01 23:07:37.116 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:07:37.130 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:37.181 +03:00 [Information] Request finished in 31.8591ms 404 
+2018-04-01 23:07:41.452 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/LogOff  
+2018-04-01 23:07:41.466 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:41.522 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:07:41.539 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2018-04-01 23:07:41.550 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-04-01 23:07:41.562 +03:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2018-04-01 23:07:41.568 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:07:41.580 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" in 93.9226ms
+2018-04-01 23:07:41.601 +03:00 [Information] Request finished in 139.028ms 302 
+2018-04-01 23:07:41.630 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:07:41.712 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:07:41.722 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:07:42.098 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 92.7525ms
+2018-04-01 23:07:42.195 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:07:42.291 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:07:42.338 +03:00 [Information] Request finished in 534.4205ms 200 text/html; charset=utf-8
+2018-04-01 23:07:42.364 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=rGAKttZtslRFElPSKhgd6oht8tZfkBoR4hm9yzmDdds  
+2018-04-01 23:07:42.366 +03:00 [Information] Request finished in 195.997ms 404 
+2018-04-01 23:07:42.378 +03:00 [Information] Request finished in 182.6536ms 404 
+2018-04-01 23:07:42.421 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-01 23:07:42.529 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:07:42.579 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:07:42.679 +03:00 [Information] Request finished in 189.9203ms 404 
+2018-04-01 23:07:42.702 +03:00 [Information] Request finished in 143.8205ms 404 
+2018-04-01 23:07:42.738 +03:00 [Information] Request finished in 385.3673ms 304 application/javascript
+2018-04-01 23:07:44.322 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-01 23:07:44.451 +03:00 [Information] Executing action method "ETT.Web.Controllers.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:07:44.786 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-01 23:07:45.008 +03:00 [Information] Executed action "ETT.Web.Controllers.ProjectController.List (ETT.Web)" in 607.7227ms
+2018-04-01 23:07:45.052 +03:00 [Information] Request finished in 743.4114ms 200 text/html; charset=utf-8
+2018-04-01 23:07:45.156 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:07:45.264 +03:00 [Information] Request finished in 23.6053ms 404 
+2018-04-01 23:07:45.280 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:07:45.288 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:07:45.349 +03:00 [Information] Request finished in 150.0971ms 404 
+2018-04-01 23:07:45.406 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:07:45.419 +03:00 [Information] Request finished in 14.1802ms 404 
+2018-04-01 23:07:45.445 +03:00 [Information] Request finished in 36.3232ms 404 
+2018-04-01 23:07:45.488 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:07:45.528 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:07:45.589 +03:00 [Information] Request finished in 77.0001ms 404 
+2018-04-01 23:07:45.632 +03:00 [Information] Request finished in 23.0607ms 404 
+2018-04-01 23:07:52.351 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-01 23:07:52.454 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-01 23:07:52.485 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:07:52.539 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 136.8563ms
+2018-04-01 23:07:52.666 +03:00 [Information] Request finished in 199.1775ms 200 text/html; charset=utf-8
+2018-04-01 23:07:52.808 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:07:53.015 +03:00 [Information] Request finished in 100.9067ms 404 
+2018-04-01 23:07:53.043 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:07:53.109 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:07:53.242 +03:00 [Information] Request finished in 389.6974ms 404 
+2018-04-01 23:07:53.248 +03:00 [Information] Request finished in 155.0092ms 404 
+2018-04-01 23:07:53.260 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:07:53.313 +03:00 [Information] Request finished in 63.187ms 404 
+2018-04-01 23:07:53.748 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-01 23:07:53.804 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-01 23:07:53.827 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:07:53.922 +03:00 [Information] Executed DbCommand ("79"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:07:54.067 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-01 23:07:54.133 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-01 23:07:54.140 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-01 23:07:54.146 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:07:54.155 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 397.7157ms
+2018-04-01 23:07:54.172 +03:00 [Information] Request finished in 421.5052ms 302 
+2018-04-01 23:07:54.189 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:07:54.196 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:54.235 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:07:54.306 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:07:54.343 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 111.8629ms
+2018-04-01 23:07:54.404 +03:00 [Information] Request finished in 202.7885ms 200 text/html; charset=utf-8
+2018-04-01 23:07:54.745 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:07:54.898 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:07:54.913 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:54.956 +03:00 [Information] Request finished in 374.4962ms 404 
+2018-04-01 23:07:54.960 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:55.021 +03:00 [Information] Request finished in 414.8821ms 404 
+2018-04-01 23:07:55.064 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:07:55.071 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:07:55.084 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:55.114 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:55.158 +03:00 [Information] Request finished in 71.6147ms 404 
+2018-04-01 23:07:55.165 +03:00 [Information] Request finished in 170.5816ms 404 
+2018-04-01 23:07:58.437 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:07:58.447 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:58.485 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:07:58.494 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:07:58.591 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 53.94ms
+2018-04-01 23:07:58.655 +03:00 [Information] Request finished in 164.8219ms 200 text/html; charset=utf-8
+2018-04-01 23:07:58.709 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:07:58.818 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:07:58.882 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:58.971 +03:00 [Information] Request finished in 193.2125ms 404 
+2018-04-01 23:07:58.976 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:59.066 +03:00 [Information] Request finished in 284.4098ms 404 
+2018-04-01 23:07:59.121 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:07:59.129 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff2  
+2018-04-01 23:07:59.151 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:07:59.208 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:59.338 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:59.399 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:59.494 +03:00 [Information] Request finished in 367.5917ms 404 
+2018-04-01 23:07:59.520 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff  
+2018-04-01 23:07:59.523 +03:00 [Information] Request finished in 434.5745ms 404 
+2018-04-01 23:07:59.534 +03:00 [Information] Request finished in 284.4152ms 404 
+2018-04-01 23:07:59.558 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:07:59.622 +03:00 [Information] Request finished in 238.0957ms 404 
+2018-04-01 23:08:02.488 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/List  
+2018-04-01 23:08:02.499 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:02.541 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:02.549 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-01 23:08:02.720 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.List (ETT.Web)" in 94.929ms
+2018-04-01 23:08:02.801 +03:00 [Information] Request finished in 242.9649ms 200 text/html; charset=utf-8
+2018-04-01 23:08:02.845 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:02.948 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:02.969 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:08:03.054 +03:00 [Information] Request finished in 147.8227ms 404 
+2018-04-01 23:08:03.132 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:03.182 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:03.196 +03:00 [Information] Request finished in 314.0224ms 404 
+2018-04-01 23:08:03.221 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:03.247 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:03.267 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:03.315 +03:00 [Information] Request finished in 105.9142ms 404 
+2018-04-01 23:08:03.344 +03:00 [Information] Request finished in 64.0201ms 404 
+2018-04-01 23:08:05.644 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:05.677 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:08:05.683 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:05.712 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:05.758 +03:00 [Information] Request finished in 54.8704ms 404 
+2018-04-01 23:08:05.771 +03:00 [Information] Request finished in 77.1885ms 404 
+2018-04-01 23:08:17.697 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Edit/1  
+2018-04-01 23:08:17.708 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:17.747 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Edit (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-01 23:08:17.797 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Edit.cshtml".
+2018-04-01 23:08:17.925 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Edit (ETT.Web)" in 92.3051ms
+2018-04-01 23:08:17.984 +03:00 [Information] Request finished in 258.221ms 200 text/html; charset=utf-8
+2018-04-01 23:08:18.019 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:18.073 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:18.134 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:18.239 +03:00 [Information] Request finished in 131.5982ms 404 
+2018-04-01 23:08:18.249 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:18.310 +03:00 [Information] Request finished in 248.7005ms 404 
+2018-04-01 23:08:18.434 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:18.465 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:18.502 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:18.540 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:18.605 +03:00 [Information] Request finished in 215.8736ms 404 
+2018-04-01 23:08:18.624 +03:00 [Information] Request finished in 285.252ms 404 
+2018-04-01 23:08:21.342 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:08:21.358 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:21.423 +03:00 [Information] Request finished in 250.3325ms 404 
+2018-04-01 23:08:21.442 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:08:21.460 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:21.522 +03:00 [Information] Request finished in 47.7679ms 404 
+2018-04-01 23:08:26.478 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/LogOff  
+2018-04-01 23:08:26.498 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:26.548 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:26.560 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2018-04-01 23:08:26.576 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-04-01 23:08:26.641 +03:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2018-04-01 23:08:26.661 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:08:26.688 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" in 164.5115ms
+2018-04-01 23:08:26.736 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:08:26.800 +03:00 [Information] Request finished in 223.6426ms 302 
+2018-04-01 23:08:26.915 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:26.937 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:08:27.065 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 202.2077ms
+2018-04-01 23:08:27.150 +03:00 [Information] Request finished in 344.0661ms 200 text/html; charset=utf-8
+2018-04-01 23:08:27.246 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:27.325 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:27.432 +03:00 [Information] Request finished in 81.9768ms 404 
+2018-04-01 23:08:27.461 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:27.466 +03:00 [Information] Request finished in 197.2884ms 404 
+2018-04-01 23:08:27.528 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:27.619 +03:00 [Information] Request finished in 13.5426ms 404 
+2018-04-01 23:08:27.637 +03:00 [Information] Request finished in 36.8817ms 404 
+2018-04-01 23:08:29.400 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-01 23:08:29.510 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-01 23:08:29.523 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:08:29.543 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 123.1639ms
+2018-04-01 23:08:29.695 +03:00 [Information] Request finished in 156.239ms 200 text/html; charset=utf-8
+2018-04-01 23:08:29.761 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:29.873 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:29.942 +03:00 [Information] Request finished in 159.0042ms 404 
+2018-04-01 23:08:30.005 +03:00 [Information] Request finished in 79.9971ms 404 
+2018-04-01 23:08:30.083 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:30.274 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:30.356 +03:00 [Information] Request finished in 272.5745ms 404 
+2018-04-01 23:08:30.408 +03:00 [Information] Request finished in 40.3822ms 404 
+2018-04-01 23:08:30.415 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-01 23:08:30.461 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-01 23:08:30.469 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:08:30.540 +03:00 [Information] Executed DbCommand ("57"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:08:30.700 +03:00 [Information] Executed DbCommand ("123"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-01 23:08:30.845 +03:00 [Information] Executed DbCommand ("107"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-01 23:08:30.960 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-01 23:08:30.977 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:08:30.988 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 561.6218ms
+2018-04-01 23:08:31.029 +03:00 [Information] Request finished in 623.0036ms 302 
+2018-04-01 23:08:31.084 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:08:31.157 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:31.219 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:31.271 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:08:31.382 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 114.9233ms
+2018-04-01 23:08:31.519 +03:00 [Information] Request finished in 358.4389ms 200 text/html; charset=utf-8
+2018-04-01 23:08:31.689 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:31.716 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:31.845 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:31.888 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:31.944 +03:00 [Information] Request finished in 393.952ms 404 
+2018-04-01 23:08:31.981 +03:00 [Information] Request finished in 268.6846ms 404 
+2018-04-01 23:08:31.988 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:32.031 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:32.068 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:32.092 +03:00 [Information] Request finished in 62.259ms 404 
+2018-04-01 23:08:32.108 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:32.165 +03:00 [Information] Request finished in 156.9937ms 404 
+2018-04-01 23:08:32.883 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Update?name=khantsevitch.oleg@yandex.ru  
+2018-04-01 23:08:32.920 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:32.994 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Update (ETT.Web)" with arguments (["khantsevitch.oleg@yandex.ru"]) - ModelState is Valid
+2018-04-01 23:08:33.013 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:08:33.110 +03:00 [Information] Executed DbCommand ("69"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-01 23:08:33.608 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Update.cshtml".
+2018-04-01 23:08:33.810 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Update (ETT.Web)" in 710.6883ms
+2018-04-01 23:08:33.928 +03:00 [Information] Request finished in 1010.0475ms 200 text/html; charset=utf-8
+2018-04-01 23:08:33.950 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:33.966 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:34.044 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:34.093 +03:00 [Information] Request finished in 261.0321ms 404 
+2018-04-01 23:08:34.110 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:34.149 +03:00 [Information] Request finished in 167.8376ms 404 
+2018-04-01 23:08:34.161 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:34.175 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:34.191 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:34.317 +03:00 [Information] Request finished in 52.4475ms 404 
+2018-04-01 23:08:34.329 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:34.377 +03:00 [Information] Request finished in 224.9237ms 404 
+2018-04-01 23:08:42.344 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-01 23:08:42.352 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:42.409 +03:00 [Information] Executing action method "ETT.Web.Controllers.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:42.425 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-01 23:08:42.543 +03:00 [Information] Executed action "ETT.Web.Controllers.ProjectController.List (ETT.Web)" in 114.3969ms
+2018-04-01 23:08:42.585 +03:00 [Information] Request finished in 210.665ms 200 text/html; charset=utf-8
+2018-04-01 23:08:42.715 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:08:42.774 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:42.804 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:42.813 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:42.981 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.074 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.140 +03:00 [Information] Request finished in 364.6545ms 404 
+2018-04-01 23:08:43.146 +03:00 [Information] Request finished in 152.5048ms 404 
+2018-04-01 23:08:43.176 +03:00 [Information] Request finished in 406.589ms 404 
+2018-04-01 23:08:43.195 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:43.207 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.257 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:43.294 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:08:43.307 +03:00 [Information] Request finished in 50.783ms 404 
+2018-04-01 23:08:43.339 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.385 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.423 +03:00 [Information] Request finished in 206.9532ms 404 
+2018-04-01 23:08:43.431 +03:00 [Information] Request finished in 95.854ms 404 
+2018-04-01 23:08:43.494 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:08:43.507 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:43.571 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:08:43.631 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:08:43.945 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 124.8785ms
+2018-04-01 23:08:44.337 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:08:44.367 +03:00 [Information] Request finished in 653.8134ms 200 text/html; charset=utf-8
+2018-04-01 23:08:44.477 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:44.548 +03:00 [Information] Request finished in 587.3662ms 404 
+2018-04-01 23:08:44.552 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:08:44.577 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:08:44.592 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:44.624 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:44.658 +03:00 [Information] Request finished in 44.4811ms 404 
+2018-04-01 23:08:44.709 +03:00 [Information] Request finished in 440.4931ms 404 
+2018-04-01 23:08:44.774 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:08:44.785 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:08:44.835 +03:00 [Information] Request finished in 128.0814ms 404 
+2018-04-01 23:09:20.631 +03:00 [Debug] START WEB SERVER
+2018-04-01 23:09:21.872 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:09:23.268 +03:00 [Information] Executed DbCommand ("225"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:09:23.521 +03:00 [Information] Executed DbCommand ("132"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:09:23.602 +03:00 [Information] Executed DbCommand ("65"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:09:23.793 +03:00 [Information] Executed DbCommand ("144"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:09:23.974 +03:00 [Information] Executed DbCommand ("115"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:09:24.056 +03:00 [Information] Executed DbCommand ("67"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:09:24.132 +03:00 [Information] Executed DbCommand ("60"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:09:24.526 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:09:25.256 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:09:31.409 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:09:33.408 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 7958.7247ms
+2018-04-01 23:09:33.519 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=rGAKttZtslRFElPSKhgd6oht8tZfkBoR4hm9yzmDdds  
+2018-04-01 23:09:33.552 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-01 23:09:33.928 +03:00 [Information] Request finished in 8970.6663ms 200 text/html; charset=utf-8
+2018-04-01 23:09:34.136 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:09:34.188 +03:00 [Information] Request finished in 358.9944ms 304 application/javascript
+2018-04-01 23:09:34.241 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:09:34.245 +03:00 [Information] Request finished in 86.5532ms 404 
+2018-04-01 23:09:34.334 +03:00 [Information] Request finished in 63.6519ms 404 
+2018-04-01 23:09:34.385 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:09:34.390 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:09:34.488 +03:00 [Information] Request finished in 35.3228ms 404 
+2018-04-01 23:09:34.544 +03:00 [Information] Request finished in 110.071ms 404 
+2018-04-01 23:09:37.216 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-01 23:09:37.392 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-01 23:09:38.259 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:09:38.487 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1187.7601ms
+2018-04-01 23:09:38.637 +03:00 [Information] Request finished in 1423.791ms 200 text/html; charset=utf-8
+2018-04-01 23:09:38.669 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:09:38.705 +03:00 [Information] Request finished in 13.6133ms 404 
+2018-04-01 23:09:38.753 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:09:38.808 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:09:38.845 +03:00 [Information] Request finished in 131.6502ms 404 
+2018-04-01 23:09:38.857 +03:00 [Information] Request finished in 85.3699ms 404 
+2018-04-01 23:09:38.874 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:09:38.903 +03:00 [Information] Request finished in 82.7412ms 404 
+2018-04-01 23:09:39.532 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-01 23:09:39.689 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-01 23:09:39.708 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:09:39.793 +03:00 [Information] Executed DbCommand ("72"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:09:40.072 +03:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-01 23:09:40.215 +03:00 [Information] Executed DbCommand ("62"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-01 23:09:40.233 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-01 23:09:40.363 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:09:40.387 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 803.2718ms
+2018-04-01 23:09:40.463 +03:00 [Information] Request finished in 866.2342ms 302 
+2018-04-01 23:09:40.477 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:09:40.489 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:40.535 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:09:40.795 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:09:40.889 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 315.7141ms
+2018-04-01 23:09:40.954 +03:00 [Information] Request finished in 432.2773ms 200 text/html; charset=utf-8
+2018-04-01 23:09:40.975 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:09:41.146 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:41.456 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:09:41.534 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:41.626 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:09:41.672 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:09:41.726 +03:00 [Information] Request finished in 470.9841ms 404 
+2018-04-01 23:09:41.813 +03:00 [Information] Request finished in 395.308ms 404 
+2018-04-01 23:09:42.047 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:42.174 +03:00 [Information] Request finished in 446.9151ms 404 
+2018-04-01 23:09:42.181 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:42.220 +03:00 [Information] Request finished in 802.0788ms 404 
+2018-04-01 23:09:42.224 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-01 23:09:42.240 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:42.285 +03:00 [Information] Executing action method "ETT.Web.Controllers.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:09:43.112 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-01 23:09:43.340 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:09:43.349 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:43.404 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:09:43.442 +03:00 [Information] Executed action "ETT.Web.Controllers.ProjectController.List (ETT.Web)" in 1150.696ms
+2018-04-01 23:09:43.477 +03:00 [Information] Request finished in 1346.2203ms 200 text/html; charset=utf-8
+2018-04-01 23:09:43.860 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:09:44.209 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 750.8973ms
+2018-04-01 23:09:44.313 +03:00 [Information] Request finished in 1111.0835ms 200 text/html; charset=utf-8
+2018-04-01 23:09:44.346 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:09:44.452 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:44.625 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:09:44.658 +03:00 [Information] Request finished in 128.5861ms 404 
+2018-04-01 23:09:44.887 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:44.956 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:09:44.972 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:45.094 +03:00 [Information] Request finished in 559.0124ms 404 
+2018-04-01 23:09:45.098 +03:00 [Information] Request finished in 122.0578ms 404 
+2018-04-01 23:09:45.169 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff2  
+2018-04-01 23:09:45.218 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:09:45.254 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:45.510 +03:00 [Information] Request finished in 141.222ms 404 
+2018-04-01 23:09:45.599 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:45.674 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff  
+2018-04-01 23:09:45.690 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:09:45.740 +03:00 [Information] Request finished in 105.4982ms 404 
+2018-04-01 23:09:45.745 +03:00 [Information] Request finished in 419.1439ms 404 
+2018-04-01 23:10:23.445 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/Create application/x-www-form-urlencoded 314
+2018-04-01 23:10:23.454 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:23.538 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Valid
+2018-04-01 23:10:23.836 +03:00 [Information] Executing RedirectResult, redirecting to "/Record/List".
+2018-04-01 23:10:23.848 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 375.2708ms
+2018-04-01 23:10:23.874 +03:00 [Information] Request finished in 412.5311ms 302 
+2018-04-01 23:10:23.946 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/List  
+2018-04-01 23:10:23.955 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:24.002 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:10:24.561 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-01 23:10:24.842 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.List (ETT.Web)" in 737.8436ms
+2018-04-01 23:10:25.076 +03:00 [Information] Request finished in 972.2916ms 200 text/html; charset=utf-8
+2018-04-01 23:10:25.165 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff2  
+2018-04-01 23:10:25.318 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:25.433 +03:00 [Information] Request finished in 382.8823ms 404 
+2018-04-01 23:10:25.447 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:10:25.546 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:25.740 +03:00 [Information] Request finished in 409.8221ms 404 
+2018-04-01 23:10:25.750 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:10:25.781 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:25.841 +03:00 [Information] Request finished in 255.899ms 404 
+2018-04-01 23:10:25.916 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:10:25.952 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Bold.woff  
+2018-04-01 23:10:25.960 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:25.998 +03:00 [Information] Request finished in 93.7952ms 404 
+2018-04-01 23:10:26.019 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:10:26.038 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:26.080 +03:00 [Information] Request finished in 170.5122ms 404 
+2018-04-01 23:10:26.112 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:10:26.193 +03:00 [Information] Request finished in 103.3972ms 404 
+2018-04-01 23:58:07.975 +03:00 [Debug] START WEB SERVER
+2018-04-01 23:58:09.793 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:58:15.115 +03:00 [Information] Executed DbCommand ("246"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:58:15.335 +03:00 [Information] Executed DbCommand ("114"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:58:15.414 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-01 23:58:15.710 +03:00 [Information] Executed DbCommand ("244"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:58:15.894 +03:00 [Information] Executed DbCommand ("88"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:58:15.980 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:58:16.099 +03:00 [Information] Executed DbCommand ("82"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:58:16.884 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:58:17.840 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:58:24.827 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:58:26.417 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:58:26.660 +03:00 [Information] Request finished in 114.6794ms 404 
+2018-04-01 23:58:26.775 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:58:27.051 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 8793.8171ms
+2018-04-01 23:58:27.242 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:58:27.300 +03:00 [Information] Request finished in 199.0127ms 404 
+2018-04-01 23:58:27.375 +03:00 [Information] Request finished in 514.3839ms 404 
+2018-04-01 23:58:27.397 +03:00 [Information] Request finished in 10246.524ms 200 text/html; charset=utf-8
+2018-04-01 23:58:27.426 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:58:27.535 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=rGAKttZtslRFElPSKhgd6oht8tZfkBoR4hm9yzmDdds  
+2018-04-01 23:58:27.563 +03:00 [Information] Request finished in 57.1652ms 404 
+2018-04-01 23:58:27.581 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-01 23:58:27.943 +03:00 [Information] Request finished in 232.4809ms 304 application/javascript
+2018-04-01 23:58:29.720 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-01 23:58:30.016 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-01 23:58:31.446 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-01 23:58:32.137 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1899.1717ms
+2018-04-01 23:58:32.284 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:58:32.411 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:58:32.575 +03:00 [Information] Request finished in 297.1628ms 404 
+2018-04-01 23:58:32.583 +03:00 [Information] Request finished in 322.1458ms 404 
+2018-04-01 23:58:32.604 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:58:32.685 +03:00 [Information] Request finished in 2592.8808ms 200 text/html; charset=utf-8
+2018-04-01 23:58:32.733 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:58:32.834 +03:00 [Information] Request finished in 195.1065ms 404 
+2018-04-01 23:58:32.888 +03:00 [Information] Request finished in 18.852ms 404 
+2018-04-01 23:58:33.338 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-01 23:58:33.571 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-01 23:58:33.597 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-01 23:58:33.681 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-01 23:58:33.994 +03:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-01 23:58:34.162 +03:00 [Information] Executed DbCommand ("58"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-01 23:58:34.182 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-01 23:58:34.197 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-01 23:58:34.205 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 813.9442ms
+2018-04-01 23:58:34.267 +03:00 [Information] Request finished in 1046.5133ms 302 
+2018-04-01 23:58:34.296 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-01 23:58:34.320 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:34.365 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:58:34.669 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-01 23:58:34.796 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 363.3655ms
+2018-04-01 23:58:34.836 +03:00 [Information] Request finished in 532.0894ms 200 text/html; charset=utf-8
+2018-04-01 23:58:34.896 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:58:34.909 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:35.469 +03:00 [Information] Request finished in 41.2734ms 404 
+2018-04-01 23:58:35.577 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:58:35.817 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:58:35.848 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:35.887 +03:00 [Information] Request finished in 978.1497ms 404 
+2018-04-01 23:58:35.904 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:36.037 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:58:36.299 +03:00 [Information] Request finished in 279.2315ms 404 
+2018-04-01 23:58:36.362 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:36.433 +03:00 [Information] Request finished in 457.9897ms 404 
+2018-04-01 23:58:37.204 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:58:37.229 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:37.279 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:58:37.865 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:58:38.415 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 878.3756ms
+2018-04-01 23:58:38.711 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-01 23:58:38.744 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-01 23:58:38.764 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:38.862 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff2  
+2018-04-01 23:58:38.869 +03:00 [Information] Request finished in 350.4193ms 404 
+2018-04-01 23:58:38.888 +03:00 [Information] Request finished in 1223.0334ms 200 text/html; charset=utf-8
+2018-04-01 23:58:38.933 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-01 23:58:38.955 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:39.023 +03:00 [Information] Request finished in 593.295ms 404 
+2018-04-01 23:58:39.132 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:39.231 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-01 23:58:39.247 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:39.350 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:39.460 +03:00 [Information] Request finished in 349.9865ms 404 
+2018-04-01 23:58:39.479 +03:00 [Information] Request finished in 658.1574ms 404 
+2018-04-01 23:58:39.487 +03:00 [Information] Request finished in 297.9639ms 404 
+2018-04-01 23:58:39.493 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Medium.woff  
+2018-04-01 23:58:39.534 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:39.621 +03:00 [Information] Request finished in 205.2832ms 404 
+2018-04-01 23:58:41.268 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/SetCurrentDate  
+2018-04-01 23:58:41.284 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:41.456 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.SetCurrentDate (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Valid
+2018-04-01 23:58:41.467 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.SetCurrentDate (ETT.Web)" in 172.644ms
+2018-04-01 23:58:41.646 +03:00 [Information] Request finished in 410.5478ms 200 
+2018-04-01 23:58:45.464 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:58:45.473 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:45.522 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:58:45.534 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:58:45.837 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 73.6517ms
+2018-04-01 23:58:46.180 +03:00 [Information] Request finished in 403.3378ms 200 text/html; charset=utf-8
+2018-04-01 23:58:46.982 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/SetCurrentDate  
+2018-04-01 23:58:47.003 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:47.066 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.SetCurrentDate (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Valid
+2018-04-01 23:58:47.101 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.SetCurrentDate (ETT.Web)" in 63.2769ms
+2018-04-01 23:58:47.172 +03:00 [Information] Request finished in 131.4056ms 200 
+2018-04-01 23:58:48.688 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-01 23:58:48.702 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-01 23:58:48.764 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-01 23:58:48.772 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-01 23:58:48.884 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 81.6387ms
+2018-04-01 23:58:49.369 +03:00 [Information] Request finished in 213.5878ms 200 text/html; charset=utf-8

@@ -1,0 +1,30 @@
+﻿@model ETT.Web.Models.Projects.Task.MainViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div class="row">
+        <h4 class="col s12">
+            <span>@Localizer["Tasks"]</span>
+            <span class="right">
+                @if (Model.Manager)
+                {
+                    <button id="btn-task-create" onclick="TaskCreate(@Model.projectId)" class="btn @Design.Color">@Localizer["CreateNew"]</button>
+                }
+                <button id="btn-task-list" onclick="TaskListUpdate(@Model.projectId)" class="btn @Design.Color"><i class="material-icons">sync</i></button>
+            </span>
+        </h4>
+    </div>
+    <div id="task-list">
+        <div class="progress @Design.Color lighten-4">
+            <div class="indeterminate @Design.Color"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Init task list
+    $('#btn-task-list').click();
+</script>

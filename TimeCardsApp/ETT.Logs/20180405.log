@@ -1,0 +1,673 @@
+2018-04-05 19:28:45.195 +03:00 [Debug] START WEB SERVER
+2018-04-05 19:28:48.043 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-05 19:28:51.640 +03:00 [Information] Executed DbCommand ("430"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:51.884 +03:00 [Information] Executed DbCommand ("187"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:52.672 +03:00 [Information] Executed DbCommand ("457"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:52.860 +03:00 [Information] Executed DbCommand ("141"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:52.949 +03:00 [Information] Executed DbCommand ("77"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:53.106 +03:00 [Information] Executed DbCommand ("136"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:53.289 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:53.489 +03:00 [Information] Executed DbCommand ("144"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:28:53.639 +03:00 [Information] Executed DbCommand ("117"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:53.764 +03:00 [Information] Executed DbCommand ("85"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:28:54.242 +03:00 [Information] Executed DbCommand ("152"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-05 19:28:54.570 +03:00 [Information] Executed DbCommand ("86"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:54.761 +03:00 [Information] Executed DbCommand ("150"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-05 19:28:55.007 +03:00 [Information] Executed DbCommand ("181"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:55.223 +03:00 [Information] Executed DbCommand ("125"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-05 19:28:55.425 +03:00 [Information] Executed DbCommand ("124"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:55.568 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-05 19:28:55.718 +03:00 [Information] Executed DbCommand ("125"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:28:55.976 +03:00 [Information] Executed DbCommand ("90"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:56.125 +03:00 [Information] Executed DbCommand ("111"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-05 19:28:56.208 +03:00 [Information] Executed DbCommand ("73"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:56.308 +03:00 [Information] Executed DbCommand ("87"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-05 19:28:56.438 +03:00 [Information] Executed DbCommand ("98"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:56.641 +03:00 [Information] Executed DbCommand ("129"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-05 19:28:56.844 +03:00 [Information] Executed DbCommand ("98"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:28:56.976 +03:00 [Information] Executed DbCommand ("72"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:57.070 +03:00 [Information] Executed DbCommand ("79"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-05 19:28:57.151 +03:00 [Information] Executed DbCommand ("67"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:57.261 +03:00 [Information] Executed DbCommand ("96"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-05 19:28:57.339 +03:00 [Information] Executed DbCommand ("61"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:57.489 +03:00 [Information] Executed DbCommand ("118"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-05 19:28:57.603 +03:00 [Information] Executed DbCommand ("94"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:28:57.760 +03:00 [Information] Executed DbCommand ("125"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-05 19:28:57.852 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-05 19:28:57.971 +03:00 [Information] Executed DbCommand ("109"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:58.069 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-05 19:28:58.190 +03:00 [Information] Executed DbCommand ("106"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-05 19:28:58.461 +03:00 [Information] Executed DbCommand ("143"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-05 19:28:59.545 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:29:00.852 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:29:13.209 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:29:15.246 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 14728.3226ms
+2018-04-05 19:29:15.611 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:29:15.662 +03:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\site.css"'
+2018-04-05 19:29:15.673 +03:00 [Information] Request finished in 15845.1258ms 200 text/html; charset=utf-8
+2018-04-05 19:29:15.713 +03:00 [Information] Request finished in 269.8135ms 200 text/css
+2018-04-05 19:29:15.773 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-05 19:29:15.791 +03:00 [Information] The file "/lib/materialize/dist/css/materialize.css" was not modified
+2018-04-05 19:29:15.875 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-05 19:29:15.896 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-05 19:29:15.969 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-05 19:29:16.173 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-04-05 19:29:16.409 +03:00 [Information] Request finished in 127.8366ms 304 text/css
+2018-04-05 19:29:16.427 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-05 19:29:16.431 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-05 19:29:16.459 +03:00 [Information] Request finished in 61.3901ms 304 text/css
+2018-04-05 19:29:16.490 +03:00 [Information] Request finished in 403.0748ms 304 application/javascript
+2018-04-05 19:29:16.611 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-05 19:29:16.870 +03:00 [Information] The file "/img/fon.jpg" was not modified
+2018-04-05 19:29:17.011 +03:00 [Information] Request finished in 925.4077ms 304 image/jpeg
+2018-04-05 19:29:17.041 +03:00 [Information] Request finished in 644.772ms 304 application/javascript
+2018-04-05 19:29:17.065 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-05 19:29:17.087 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-05 19:29:17.125 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-05 19:29:17.142 +03:00 [Information] The file "/lib/materialize/dist/js/materialize.js" was not modified
+2018-04-05 19:29:17.180 +03:00 [Information] Request finished in 665.7624ms 304 application/javascript
+2018-04-05 19:29:17.374 +03:00 [Information] Request finished in 294.7434ms 304 application/javascript
+2018-04-05 19:29:41.583 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-05 19:29:41.840 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-05 19:29:43.009 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-05 19:29:43.517 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1577.4887ms
+2018-04-05 19:29:43.680 +03:00 [Information] Request finished in 1953.5845ms 200 text/html; charset=utf-8
+2018-04-05 19:30:00.582 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 224
+2018-04-05 19:30:00.856 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-05 19:30:01.068 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-05 19:30:01.371 +03:00 [Information] Executed DbCommand ("146"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:30:01.804 +03:00 [Information] Executed DbCommand ("182"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-05 19:30:02.048 +03:00 [Information] Executed DbCommand ("133"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-05 19:30:02.253 +03:00 [Information] Executed DbCommand ("169"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:30:02.498 +03:00 [Information] Executed DbCommand ("190"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-04-05 19:30:02.530 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-05 19:30:02.550 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-05 19:30:02.584 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1912.2334ms
+2018-04-05 19:30:02.623 +03:00 [Information] Request finished in 2022.5149ms 302 
+2018-04-05 19:30:02.707 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:30:02.732 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:02.782 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:30:03.262 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:30:03.616 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 548.466ms
+2018-04-05 19:30:04.180 +03:00 [Information] Request finished in 935.6303ms 200 text/html; charset=utf-8
+2018-04-05 19:30:08.018 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-05 19:30:08.124 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:08.250 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:30:09.916 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-05 19:30:10.481 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:30:10.551 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-05 19:30:10.880 +03:00 [Information] Request finished in 126.3858ms 304 text/css
+2018-04-05 19:30:11.289 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 2228.821ms
+2018-04-05 19:30:11.821 +03:00 [Information] Request finished in 3385.1955ms 200 text/html; charset=utf-8
+2018-04-05 19:30:11.970 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-05 19:30:11.989 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:12.058 +03:00 [Information] Request finished in 181.1208ms 404 
+2018-04-05 19:30:12.141 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-05 19:30:12.156 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:12.174 +03:00 [Information] Request finished in 99.2299ms 404 
+2018-04-05 19:30:41.563 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-05 19:30:41.578 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:41.631 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:30:42.224 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-05 19:30:42.443 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 734.5062ms
+2018-04-05 19:30:42.798 +03:00 [Information] Request finished in 888.2127ms 200 text/html; charset=utf-8
+2018-04-05 19:30:44.098 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Create  
+2018-04-05 19:30:44.115 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:44.209 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:30:45.173 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Create.cshtml".
+2018-04-05 19:30:45.759 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 1128.6957ms
+2018-04-05 19:30:46.096 +03:00 [Information] Request finished in 1669.0661ms 200 text/html; charset=utf-8
+2018-04-05 19:30:50.561 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/Create application/x-www-form-urlencoded 252
+2018-04-05 19:30:50.577 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:50.652 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Projects.ProjectViewModel"]) - ModelState is Valid
+2018-04-05 19:30:50.839 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/List".
+2018-04-05 19:30:50.853 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 258.8296ms
+2018-04-05 19:30:50.988 +03:00 [Information] Request finished in 388.021ms 302 
+2018-04-05 19:30:51.010 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-05 19:30:51.022 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:51.062 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:30:51.073 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-05 19:30:51.137 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 102.024ms
+2018-04-05 19:30:51.256 +03:00 [Information] Request finished in 189.6898ms 200 text/html; charset=utf-8
+2018-04-05 19:30:55.698 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-05 19:30:55.723 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:55.817 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:30:57.381 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:30:57.965 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 1724.1302ms
+2018-04-05 19:30:58.430 +03:00 [Information] Request finished in 2276.3594ms 200 text/html; charset=utf-8
+2018-04-05 19:30:58.576 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-05 19:30:58.617 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-05 19:30:58.815 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:59.057 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:30:59.201 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:30:59.215 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:00.712 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:31:00.968 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:31:01.080 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 2097.904ms
+2018-04-05 19:31:01.200 +03:00 [Information] Request finished in 2714.405ms 200 text/html; charset=utf-8
+2018-04-05 19:31:01.216 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 2132.0912ms
+2018-04-05 19:31:01.359 +03:00 [Information] Request finished in 2766.4558ms 200 text/html; charset=utf-8
+2018-04-05 19:31:06.012 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=ad  
+2018-04-05 19:31:06.029 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:06.076 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "ad", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:06.101 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:31:06.433 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 389.3233ms
+2018-04-05 19:31:06.457 +03:00 [Information] Request finished in 442.814ms 200 application/json; charset=utf-8
+2018-04-05 19:31:08.478 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=ad1  
+2018-04-05 19:31:08.486 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:08.540 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "ad1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:08.549 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:31:08.693 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 186.6759ms
+2018-04-05 19:31:08.785 +03:00 [Information] Request finished in 237.2179ms 200 application/json; charset=utf-8
+2018-04-05 19:31:11.718 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1/User/Add application/x-www-form-urlencoded; charset=UTF-8 23
+2018-04-05 19:31:11.734 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:11.803 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" with arguments (["1", "ad1min@mail.com", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:12.112 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" in 319.7663ms
+2018-04-05 19:31:12.184 +03:00 [Information] Request finished in 412.1002ms 200 
+2018-04-05 19:31:12.201 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-05 19:31:12.215 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:12.266 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:12.364 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:31:12.635 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 406.0682ms
+2018-04-05 19:31:12.664 +03:00 [Information] Request finished in 456.0505ms 200 text/html; charset=utf-8
+2018-04-05 19:31:15.851 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/Create  
+2018-04-05 19:31:15.860 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:15.914 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:16.553 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Create.cshtml".
+2018-04-05 19:31:16.943 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 799.8744ms
+2018-04-05 19:31:17.082 +03:00 [Information] Request finished in 1125.6389ms 200 text/html; charset=utf-8
+2018-04-05 19:31:17.186 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:31:17.202 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-05 19:31:17.446 +03:00 [Information] Request finished in 285.1288ms 304 text/css
+2018-04-05 19:31:23.984 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1/Task/Create application/x-www-form-urlencoded 260
+2018-04-05 19:31:24.004 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:24.103 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1", "ETT.Web.Models.Projects.Task.TaskViewModel"]) - ModelState is Valid
+2018-04-05 19:31:24.482 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Details/1".
+2018-04-05 19:31:24.520 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 468.1394ms
+2018-04-05 19:31:24.588 +03:00 [Information] Request finished in 569.4969ms 302 
+2018-04-05 19:31:24.681 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-05 19:31:24.697 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:24.743 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:24.822 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:31:25.121 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 131.447ms
+2018-04-05 19:31:25.553 +03:00 [Information] Request finished in 560.2245ms 200 text/html; charset=utf-8
+2018-04-05 19:31:25.700 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-05 19:31:25.851 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:25.934 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-05 19:31:25.972 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:25.988 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:31:26.076 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:26.138 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:26.188 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:31:26.301 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 298.8598ms
+2018-04-05 19:31:26.501 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 375.3049ms
+2018-04-05 19:31:26.559 +03:00 [Information] Request finished in 979.3681ms 200 text/html; charset=utf-8
+2018-04-05 19:31:26.560 +03:00 [Information] Request finished in 779.7056ms 200 text/html; charset=utf-8
+2018-04-05 19:31:30.331 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/Create  
+2018-04-05 19:31:30.345 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:30.405 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:30.421 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Create.cshtml".
+2018-04-05 19:31:30.935 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 78.1223ms
+2018-04-05 19:31:31.142 +03:00 [Information] Request finished in 682.3938ms 200 text/html; charset=utf-8
+2018-04-05 19:31:36.308 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1/Task/Create application/x-www-form-urlencoded 268
+2018-04-05 19:31:36.341 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:36.463 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1", "ETT.Web.Models.Projects.Task.TaskViewModel"]) - ModelState is Valid
+2018-04-05 19:31:36.573 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Details/1".
+2018-04-05 19:31:36.639 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 232.2189ms
+2018-04-05 19:31:36.698 +03:00 [Information] Request finished in 367.3373ms 302 
+2018-04-05 19:31:36.718 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-05 19:31:36.738 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:36.901 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:36.988 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:31:37.118 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 252.3278ms
+2018-04-05 19:31:37.807 +03:00 [Information] Request finished in 468.8071ms 200 text/html; charset=utf-8
+2018-04-05 19:31:38.169 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-05 19:31:38.198 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:38.338 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-05 19:31:38.365 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:38.449 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:31:38.464 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:31:38.570 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:31:38.839 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:31:38.942 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 607.9078ms
+2018-04-05 19:31:39.055 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 580.06ms
+2018-04-05 19:31:39.153 +03:00 [Information] Request finished in 1249.0972ms 200 text/html; charset=utf-8
+2018-04-05 19:31:39.172 +03:00 [Information] Request finished in 1328.1155ms 200 text/html; charset=utf-8
+2018-04-05 19:31:41.218 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:31:41.239 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:41.337 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:31:41.433 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:31:41.749 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 194.6453ms
+2018-04-05 19:31:42.140 +03:00 [Information] Request finished in 609.867ms 200 text/html; charset=utf-8
+2018-04-05 19:31:42.599 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-05 19:31:42.838 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:43.070 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:31:43.446 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-05 19:31:43.924 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 705.6586ms
+2018-04-05 19:31:44.004 +03:00 [Information] Request finished in 1483.7438ms 200 text/html; charset=utf-8
+2018-04-05 19:31:44.103 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-05 19:31:44.120 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:44.171 +03:00 [Information] Request finished in 51.5985ms 404 
+2018-04-05 19:31:44.182 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-05 19:31:44.188 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:31:44.259 +03:00 [Information] Request finished in 34.3344ms 404 
+2018-04-05 19:32:51.086 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/LogOff  
+2018-04-05 19:32:51.099 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:32:51.152 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:32:51.170 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2018-04-05 19:32:51.180 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-04-05 19:32:51.187 +03:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2018-04-05 19:32:51.198 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-05 19:32:51.204 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.LogOff (ETT.Web)" in 89.9201ms
+2018-04-05 19:32:51.244 +03:00 [Information] Request finished in 129.0712ms 302 
+2018-04-05 19:32:51.279 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:32:51.322 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:32:51.330 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:32:51.377 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 64.4861ms
+2018-04-05 19:32:51.536 +03:00 [Information] Request finished in 164.0348ms 200 text/html; charset=utf-8
+2018-04-05 19:32:51.575 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:32:51.621 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-05 19:32:51.794 +03:00 [Information] Request finished in 77.8313ms 304 text/css
+2018-04-05 19:32:54.582 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-05 19:32:54.722 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-05 19:32:54.748 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-05 19:32:55.139 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 168.5387ms
+2018-04-05 19:32:55.335 +03:00 [Information] Request finished in 598.1054ms 200 text/html; charset=utf-8
+2018-04-05 19:32:56.523 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 224
+2018-04-05 19:32:56.573 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-05 19:32:56.588 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-05 19:32:56.702 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-05 19:32:56.820 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-05 19:32:56.951 +03:00 [Information] Executed DbCommand ("101"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-05 19:32:57.067 +03:00 [Information] Executed DbCommand ("97"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-05 19:32:57.235 +03:00 [Information] Executed DbCommand ("149"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-04-05 19:32:57.253 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-05 19:32:57.266 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-05 19:32:57.278 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 741.6455ms
+2018-04-05 19:32:57.314 +03:00 [Information] Request finished in 764.4333ms 302 
+2018-04-05 19:32:57.327 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:32:57.342 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:32:57.590 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:32:57.932 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:32:58.312 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 591.2311ms
+2018-04-05 19:32:58.545 +03:00 [Information] Request finished in 994.4841ms 200 text/html; charset=utf-8
+2018-04-05 19:33:28.258 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-05 19:33:28.351 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:28.409 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:33:28.469 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-05 19:33:28.744 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 119.75ms
+2018-04-05 19:33:28.962 +03:00 [Information] Request finished in 502.8723ms 200 text/html; charset=utf-8
+2018-04-05 19:33:41.204 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-05 19:33:41.212 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:41.309 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:33:41.322 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-05 19:33:41.685 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 155.7085ms
+2018-04-05 19:33:41.945 +03:00 [Information] Request finished in 515.8987ms 200 text/html; charset=utf-8
+2018-04-05 19:33:43.196 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Create  
+2018-04-05 19:33:43.203 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:43.259 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:33:43.265 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Create.cshtml".
+2018-04-05 19:33:43.343 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 66.3215ms
+2018-04-05 19:33:43.404 +03:00 [Information] Request finished in 156.2851ms 200 text/html; charset=utf-8
+2018-04-05 19:33:45.826 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/Create application/x-www-form-urlencoded 250
+2018-04-05 19:33:45.859 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:46.110 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Projects.ProjectViewModel"]) - ModelState is Valid
+2018-04-05 19:33:46.170 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/List".
+2018-04-05 19:33:46.179 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 310.2259ms
+2018-04-05 19:33:46.223 +03:00 [Information] Request finished in 373.0258ms 302 
+2018-04-05 19:33:46.273 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-05 19:33:46.288 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:46.365 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:33:46.390 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-05 19:33:46.720 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 150.5761ms
+2018-04-05 19:33:46.847 +03:00 [Information] Request finished in 493.0529ms 200 text/html; charset=utf-8
+2018-04-05 19:33:49.418 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/2  
+2018-04-05 19:33:49.474 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:49.671 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-05 19:33:49.763 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:33:50.060 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 290.5776ms
+2018-04-05 19:33:50.276 +03:00 [Information] Request finished in 883.0012ms 200 text/html; charset=utf-8
+2018-04-05 19:33:50.365 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/List  
+2018-04-05 19:33:50.547 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:50.611 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/Task/List  
+2018-04-05 19:33:50.627 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["2", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:33:50.640 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:50.708 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:33:50.839 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-05 19:33:50.865 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:33:50.980 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 267.2591ms
+2018-04-05 19:33:51.019 +03:00 [Information] Request finished in 686.6931ms 200 text/html; charset=utf-8
+2018-04-05 19:33:51.083 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 327.9754ms
+2018-04-05 19:33:51.116 +03:00 [Information] Request finished in 829.2859ms 200 text/html; charset=utf-8
+2018-04-05 19:33:51.814 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/Task/Create  
+2018-04-05 19:33:51.821 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:51.860 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-05 19:33:51.866 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Create.cshtml".
+2018-04-05 19:33:51.921 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 48.5949ms
+2018-04-05 19:33:51.956 +03:00 [Information] Request finished in 112.6179ms 200 text/html; charset=utf-8
+2018-04-05 19:33:54.708 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/2/Task/Create application/x-www-form-urlencoded 255
+2018-04-05 19:33:54.725 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:54.864 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["2", "ETT.Web.Models.Projects.Task.TaskViewModel"]) - ModelState is Valid
+2018-04-05 19:33:54.926 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Details/2".
+2018-04-05 19:33:54.944 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 200.9859ms
+2018-04-05 19:33:54.993 +03:00 [Information] Request finished in 263.0033ms 302 
+2018-04-05 19:33:55.070 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/2  
+2018-04-05 19:33:55.197 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:55.279 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-05 19:33:55.380 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:33:55.676 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 184.2579ms
+2018-04-05 19:33:55.972 +03:00 [Information] Request finished in 695.9177ms 200 text/html; charset=utf-8
+2018-04-05 19:33:56.071 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/List  
+2018-04-05 19:33:56.116 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/Task/List  
+2018-04-05 19:33:56.142 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:56.180 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:56.309 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["2"]) - ModelState is Valid
+2018-04-05 19:33:56.326 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["2", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:33:56.361 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:33:56.365 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:33:56.513 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 351.597ms
+2018-04-05 19:33:56.538 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 315.848ms
+2018-04-05 19:33:56.576 +03:00 [Information] Request finished in 525.5001ms 200 text/html; charset=utf-8
+2018-04-05 19:33:56.596 +03:00 [Information] Request finished in 763.3767ms 200 text/html; charset=utf-8
+2018-04-05 19:33:58.814 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/Search?email=fs  
+2018-04-05 19:33:58.828 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:33:59.115 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["2", "fs", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:33:59.170 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:33:59.270 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 414.8732ms
+2018-04-05 19:33:59.393 +03:00 [Information] Request finished in 464.3521ms 200 application/json; charset=utf-8
+2018-04-05 19:34:00.253 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/Search?email=fsgf  
+2018-04-05 19:34:00.265 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:00.317 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["2", "fsgf", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:00.331 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:34:00.383 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 108.8777ms
+2018-04-05 19:34:00.422 +03:00 [Information] Request finished in 189.281ms 200 application/json; charset=utf-8
+2018-04-05 19:34:00.775 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/Search?email=fsg  
+2018-04-05 19:34:00.786 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:00.844 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["2", "fsg", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:00.858 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:34:00.988 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 145.402ms
+2018-04-05 19:34:01.012 +03:00 [Information] Request finished in 225.8445ms 200 application/json; charset=utf-8
+2018-04-05 19:34:01.588 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/Search?email=ad  
+2018-04-05 19:34:01.599 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:01.738 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["2", "ad", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:01.748 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:34:01.909 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 284.8191ms
+2018-04-05 19:34:01.933 +03:00 [Information] Request finished in 334.3172ms 200 application/json; charset=utf-8
+2018-04-05 19:34:02.705 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/Search?email=ad1  
+2018-04-05 19:34:02.711 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:02.755 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["2", "ad1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:02.798 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-05 19:34:02.885 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 166.259ms
+2018-04-05 19:34:02.927 +03:00 [Information] Request finished in 187.25ms 200 application/json; charset=utf-8
+2018-04-05 19:34:04.574 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/2/User/Add application/x-www-form-urlencoded; charset=UTF-8 23
+2018-04-05 19:34:04.592 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:04.640 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" with arguments (["2", "ad1min@mail.com", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:04.825 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" in 215.3097ms
+2018-04-05 19:34:04.866 +03:00 [Information] Request finished in 281.7502ms 200 
+2018-04-05 19:34:04.885 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/2/User/List  
+2018-04-05 19:34:04.897 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:04.966 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["2", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:34:05.046 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:34:05.159 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 248.0262ms
+2018-04-05 19:34:05.209 +03:00 [Information] Request finished in 320.2348ms 200 text/html; charset=utf-8
+2018-04-05 19:34:12.090 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-05 19:34:12.096 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:12.139 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:34:12.331 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-05 19:34:12.444 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 280.4509ms
+2018-04-05 19:34:12.509 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:34:12.516 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-05 19:34:12.580 +03:00 [Information] Request finished in 372.7493ms 200 text/html; charset=utf-8
+2018-04-05 19:34:12.657 +03:00 [Information] Request finished in 96.5341ms 304 text/css
+2018-04-05 19:34:12.870 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-05 19:34:12.886 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:12.931 +03:00 [Information] Request finished in 53.2878ms 404 
+2018-04-05 19:34:12.934 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-05 19:34:12.945 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:12.999 +03:00 [Information] Request finished in 25.9991ms 404 
+2018-04-05 19:34:35.301 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/Create application/x-www-form-urlencoded 305
+2018-04-05 19:34:35.320 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:35.398 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Record.RecordViewModel"]) - ModelState is Valid
+2018-04-05 19:34:35.553 +03:00 [Information] Executing RedirectResult, redirecting to "/Record/UserList".
+2018-04-05 19:34:35.571 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 213.6875ms
+2018-04-05 19:34:35.594 +03:00 [Information] Request finished in 281.8969ms 302 
+2018-04-05 19:34:35.606 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/UserList  
+2018-04-05 19:34:35.615 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:35.657 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:34:36.203 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-05 19:34:37.002 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" in 1287.5564ms
+2018-04-05 19:34:37.039 +03:00 [Information] Request finished in 1416.5154ms 200 text/html; charset=utf-8
+2018-04-05 19:34:41.454 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/PdfWriter application/x-www-form-urlencoded 478
+2018-04-05 19:34:41.468 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:34:41.539 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.PdfWriter (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Record.RecordViewModel]"]) - ModelState is Valid
+2018-04-05 19:34:46.288 +03:00 [Information] Executing PartialViewResult, running view at path "/Views/Record/PdfWriter.cshtml".
+2018-04-05 19:34:46.368 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.PdfWriter (ETT.Web)" in 4823.9174ms
+2018-04-05 19:34:46.438 +03:00 [Information] Request finished in 4930.5088ms 200 text/html; charset=utf-8
+2018-04-05 19:35:19.708 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/UserList  
+2018-04-05 19:35:19.715 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:19.764 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:35:19.828 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-05 19:35:20.007 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-05 19:35:20.150 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:20.425 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:35:20.842 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" in 1066.6167ms
+2018-04-05 19:35:20.887 +03:00 [Information] Request finished in 1145.7141ms 200 text/html; charset=utf-8
+2018-04-05 19:35:20.930 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-05 19:35:21.280 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 840.1847ms
+2018-04-05 19:35:21.529 +03:00 [Information] Request finished in 1335.4673ms 200 text/html; charset=utf-8
+2018-04-05 19:35:23.141 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/UserList  
+2018-04-05 19:35:23.150 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:23.245 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:35:23.314 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-05 19:35:24.693 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" in 1211.3087ms
+2018-04-05 19:35:24.824 +03:00 [Information] Request finished in 1613.8517ms 200 text/html; charset=utf-8
+2018-04-05 19:35:33.643 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-05 19:35:33.650 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:33.696 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-05 19:35:33.709 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-05 19:35:33.843 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 99.2275ms
+2018-04-05 19:35:33.885 +03:00 [Information] Request finished in 216.3005ms 200 text/html; charset=utf-8
+2018-04-05 19:35:33.924 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-05 19:35:33.956 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-05 19:35:34.094 +03:00 [Information] Request finished in 50.0227ms 304 text/css
+2018-04-05 19:35:39.863 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-05 19:35:39.874 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:39.929 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:35:39.981 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-05 19:35:40.032 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 108.5825ms
+2018-04-05 19:35:40.129 +03:00 [Information] Request finished in 186.607ms 200 text/html; charset=utf-8
+2018-04-05 19:35:40.651 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-05 19:35:40.668 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-05 19:35:40.893 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:40.940 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-05 19:35:41.019 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-05 19:35:41.029 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-05 19:35:41.040 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-05 19:35:41.098 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-05 19:35:41.283 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 371.1234ms
+2018-04-05 19:35:41.309 +03:00 [Information] Request finished in 904.7409ms 200 text/html; charset=utf-8
+2018-04-05 19:35:41.323 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 323.7492ms
+2018-04-05 19:35:41.335 +03:00 [Information] Request finished in 1047.5746ms 200 text/html; charset=utf-8

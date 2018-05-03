@@ -1,0 +1,46 @@
+﻿@model ETT.Web.Models.Users.LoginViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="section row">
+        <div class="col s6 offset-s3">
+            <h5>@Localizer["Title"]</h5>
+        </div>
+    </div>
+
+    <div class="section row">
+        <div class="col s6 offset-s3">
+            <form method="post" asp-controller="Account" asp-action="Login"
+                  asp-route-returnUrl="@Model.ReturnUrl">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <br />
+                <div class="input-field">
+                    <label>@Localizer["Email"]</label><br />
+                    <input asp-for="Email" class="validate" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="input-field">
+                    <label>@Localizer["Password"]</label><br />
+                    <input id ="password"asp-for="Password" class="validate" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <br />
+                <div class="">
+                        @Html.CheckBoxOnceMaterialize(Localizer["Remember"].Value, nameof(Model.RememberMe), Model.RememberMe)
+                </div>
+                <br />
+                <button type="submit" class="btn waves-effect waves-light">@Localizer["LogIn"]<i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{ 
+    <script>
+        $('password').on('change',function () {
+            Materialize.updateTextFields();
+        });
+    </script>
+} 

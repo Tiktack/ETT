@@ -1,0 +1,145 @@
+﻿@inherits Globals<TModel>
+@model ETT.Web.Models.Users.EditUserViewModel
+
+
+@{
+    ViewBag.Title = "Редактирование пользователя";
+}
+
+<div class="container">
+    <div class="section row">
+        <div class="col s8 offset-s2">
+            <form asp-action="Edit" asp-controller="Users">
+                <div asp-validation-summary="All" class="red-text"></div>
+                <br />
+                <input type="hidden" asp-for="Id" />
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label asp-for="Email" class="">Email</label>
+                        <input type="text" asp-for="Email" class="validate" />
+                    </div>
+                    <div class="input-field col s6">
+                        <label asp-for="NickName" class="control-label">NickName</label>
+                        <input type="text" asp-for="NickName" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label asp-for="FirstName" class="">Email</label>
+                        <input type="text" asp-for="FirstName" class="validate" />
+                    </div>
+                    <div class="input-field col s6">
+                        <label asp-for="LastName" class="control-label">NickName</label>
+                        <input type="text" asp-for="LastName" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" asp-for="Company" class="form-control" />
+                        <label asp-for="Company" class="control-label">Company</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" asp-for="Position" class="form-control" />
+                        <label asp-for="Position" class="control-label">Position</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea type="text" asp-for="About" class="materialize-textarea"></textarea>
+                        <label asp-for="About" class="control-label">About</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label class="center-align" for="scheduled_date">Date of Birth<br /></label>
+                        <input readonly="readonly" type="text" id="scheduled_date" class="datepicker" name="@nameof(Model.DateOfBirth)" />
+                        <a class="btn waves-effect waves-light" onclick="clearDate();">Сбросить дату</a>
+                    </div>
+                    <div class="input-field col s6">
+                        <div class="row">
+                            <div class="col s6">
+                                <img id="avatar" class="avatar" style="margin:auto; width:100px;height:100px" src="@(Model.AvatarPath)" />
+                            </div>
+                            <div class="col s6">
+                                <a class="btn waves-effect waves-light" onclick="delAvatar();" id="deleteavatar"
+                                   style="height: auto;min-height: 20px;line-height: 20px;padding-top: 8px;padding-bottom: 8px;width: 170px">
+                                    Удалить изображение
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <button type="submit" class="btn waves-effect waves-light">Сохранить<i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">Edit User</a>
+}
+
+@section Scripts {
+    <script>
+
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 30, // Creates a dropdown of 15 years to control year,
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        disablePicker: false,
+        closeOnSelect: false // Close upon selecting a date,
+    });
+
+    var $input = $('.datepicker').pickadate();
+    var picker = $input.pickadate('picker');
+    picker.set('select',
+    [   @(Model.DateOfBirth?.Year.ToString()),
+        @(Model.DateOfBirth?.Month.ToString()) - 1,
+        @(Model.DateOfBirth?.Day.ToString()),
+    ]);
+
+    picker.stop();
+
+    if ($("#avatar").attr("src").indexOf("__nope__") !== -1) {
+            $("#deleteavatar").attr("disabled", true);
+    }
+
+    function clearDate() {
+        picker.clear();
+    }
+
+    function delAvatar() {
+
+        if ($("#avatar").attr("src").indexOf("__nope__") !== -1) {
+            //console.log("nope");
+            return;
+        }
+
+        $.ajax({
+            url: "/Users/RemoveIMG",
+            data: JSON.stringify({
+                id: $("#Id").val()
+            }),
+            dataType: "json",
+            processData: false,
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            success: function (data) {
+                $("#avatar").attr("src", "/img/avatars/__nope__.png");
+                $("#deleteavatar").attr("disabled", true);
+            }
+        });
+    }
+
+    $(function () {
+
+    });
+
+    </script>
+}

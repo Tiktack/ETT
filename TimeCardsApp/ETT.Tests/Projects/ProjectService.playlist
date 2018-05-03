@@ -1,0 +1,6 @@
+<Playlist Version="1.0">
+  <Add Test="ETT.Tests.Projects.ProjectServiceTest.CreateProject" />
+  <Add Test="ETT.Tests.Projects.ProjectServiceTest.UpdateProject" />
+  <Add Test="ETT.Tests.Projects.ProjectServiceTest.GetProject" />
+  <Add Test="ETT.Tests.Projects.ProjectServiceTest.DeleteProject" />
+</Playlist>

@@ -1,0 +1,13 @@
+﻿@model ETT.Web.Models.Record.ProjectRecordViewModel
+
+@{
+    Layout = null;
+}
+<select id="create-task-options">
+    <option value="" disabled selected>@Localizer["ChooseTask"]</option>
+    @foreach (var task in Model.Tasks)
+    {
+        <option value="@task.Id">@task.Name</option>
+    }
+</select>
+<label asp-for="TaskId"></label>

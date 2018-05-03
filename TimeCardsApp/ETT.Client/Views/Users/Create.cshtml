@@ -1,0 +1,34 @@
+﻿@model ETT.Web.Models.Users.CreateUserViewModel
+
+@{
+    ViewBag.Title = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="section row" @*style="margin-top: -100px" *@>
+        <div class="col s6 offset-s3">
+            <form asp-action="Create" asp-controller="Users">
+                <div asp-validation-summary="All" class="red-text"></div>
+
+                <br />
+                <div class="input-field">
+                    <label asp-for="Email" class=""></label>
+                    <input asp-for="Email" class="" />
+                </div>
+                <div class="input-field">
+                    <label asp-for="Password" class=""></label>
+                    <input  asp-for="Password" class="" />
+                </div>
+                <br />
+                <button type="submit" class="btn waves-effect waves-light">@Localizer["AddBtn"]<i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">Create User</a>
+}

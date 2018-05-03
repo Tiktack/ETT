@@ -1,0 +1,62 @@
+﻿@model ETT.Web.Models.Projects.User.ListViewModel
+@using ETT.Utils.Enums;
+
+@{
+    Layout = null;
+}
+
+<style>
+    table.bordered.highlight tbody tr td span.role {
+        background: #9e9e9e;
+    }
+</style>
+
+<table class="bordered highlight">
+    <thead>
+        <tr>
+            <th>@Localizer["Email"]</th>
+            <th class="right-align">@Localizer["Roles"]</th>
+            @if (Model.Admin)
+            {
+                <th class="right-align"><i class="material-icons">delete_forever</i></th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr id="user-@user.UserId">
+                <td><span>@user.Email</span></td>
+                <td>
+                    @if (user.Role == ProjectRole.Owner)
+                    {
+                        <span class="role new badge @Design.Color" data-badge-caption="@ProjectRole.Owner"></span>
+                    }
+                    else
+                    {
+                        @foreach (var role in Model.Roles.Where(role => role != ProjectRole.Owner))
+                        {
+                            if (Model.Admin)
+                            {
+                                <span id="@((int)role)" onclick="UserRoleChange(@Model.ProjectId, @user.UserId, @((int)role), '@Design.Color')" class="role new badge hand @(user.Role == role ? @Design.Color : "")" data-badge-caption="@role"></span>
+                            }
+                            else
+                            {
+                                <span class="role new badge @(user.Role == role ? @Design.Color : "")" data-badge-caption="@role"></span>
+                            }
+                        }
+                    }
+                </td>
+                @if (Model.Admin)
+                {
+                    <td>
+                        @if (user.Role != ProjectRole.Owner)
+                        {
+                            <span onclick="UserDelete(@Model.ProjectId, @user.UserId)" class="new badge hand red darken-2" data-badge-caption="@Localizer["Delete"]"></span>
+                        }
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

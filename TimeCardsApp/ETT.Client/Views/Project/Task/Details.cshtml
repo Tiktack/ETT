@@ -1,0 +1,23 @@
+﻿@model ETT.Web.Models.Projects.Task.TaskViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h4>@Model.Name</h4>
+        </div>
+        <div class="col s12 text-expander">
+            <span class="paragraphs">@Model.Description</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <button id="btn-task-edit" onclick="TaskEdit(@Model.ProjectId, @Model.Id)" class="btn @Design.Color">@Localizer["Edit"]</button>
+            <button id="btn-task-main" onclick="TaskMain(@Model.ProjectId)" class="btn @Design.Color">@Localizer["Back"]</button>
+            <button id="btn-task-delete" onclick="TaskDelete(@Model.ProjectId, @Model.Id)" class="btn right red darken-2">@Localizer["Delete"]</button>
+        </div>
+    </div>
+</div>

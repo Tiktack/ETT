@@ -1,0 +1,106 @@
+﻿@model ETT.Web.Models.Record.RecordViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 offset-l1 l10">
+            <form asp-action="Edit">
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="card red lighten-3 white-text">
+                        <div class="card-content">
+                            <span class="card-title">@Localizer["SmthGoesWrong"]</span>
+                            <div asp-validation-summary="All"></div>
+                        </div>
+                    </div>
+                }
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">@Localizer["Title"]</span>
+                        <div class="input-field hide">
+                            <input type="hidden" asp-for="Id" class="" />
+                        </div>
+                        <blockquote>
+                            <h6>@Localizer["ProjectName"]: @Model.ProjectName</h6>
+                            <br />
+                            <h6 >@Localizer["TaskName"]: @Model.TaskName</h6>
+                        </blockquote>
+                        <br />
+                        <div class="input-field">
+                            <input asp-for="Note" class="">
+                            <label asp-for="Note"></label>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Hours" class="">
+                            <label asp-for="Hours"></label>
+                        </div>
+                        <div class="input-field">
+                            <input id="date" type="text" asp-for="Date" class="datepicker" />
+                            <label asp-for="Date"></label>
+                        </div>
+                        <div class="input-field">
+                            <input id="time" type="text" asp-for="Time" class="timepicker" />
+                            <label asp-for="Time"></label>
+                        </div>
+                        <div class="input-field">
+                            <input type="hidden" asp-for="Id" />
+                            <input type="hidden" asp-for="UserId" />
+                            <input type="hidden" asp-for="ProjectId" />
+                            <input type="hidden" asp-for="TaskId" />
+                        </div>
+                        <div class="">
+                            <a id="pick-current-date-time" class="waves-effect waves-light btn"><i class="material-icons left">add_alarm</i>@Localizer["CurrentDateTime"]</a>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <input type="submit" class="btn @Design.Color" value=@Localizer["Save"] />
+                        <a asp-action="UserList"><input type="button" class="btn @Design.Color" value=@Localizer["BacktoList"] /></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        $(function () {
+            $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 15, // Creates a dropdown of 15 years to control year,
+                today: 'Today',
+                clear: 'Clear',
+                close: 'Ok',
+                closeOnSelect: false // Close upon selecting a date,
+            });
+        });
+        $(function () {
+            $('.timepicker').pickatime({
+                default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+                fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+                twelvehour: false, // Use AM/PM or 24-hour format
+                donetext: 'OK', // text for done-button
+                cleartext: 'Clear', // text for clear-button
+                canceltext: 'Cancel', // Text for cancel-button
+                autoclose: false, // automatic close timepicker
+                ampmclickable: true, // make AM PM clickable
+                aftershow: function () { } //Function for after opening timepicker
+            });
+        });
+
+        //Current Date Time
+        $('#pick-current-date-time').on('click', function () {
+            DateTimeFunction();
+        });
+
+        function DateTimeFunction() {
+            var date = new Date();
+            document.getElementById('date').value = date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear();
+            document.getElementById('time').value = date.getHours() + ':' + date.getMinutes();
+            Materialize.updateTextFields();
+        }
+    </script>
+
+}

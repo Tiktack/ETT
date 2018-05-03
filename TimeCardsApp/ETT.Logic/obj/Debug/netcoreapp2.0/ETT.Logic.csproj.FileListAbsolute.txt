@@ -1,0 +1,13 @@
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Logic.deps.json
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Logic.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Logic.pdb
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Storage.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Storage.pdb
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.csprojResolveAssemblyReference.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.csproj.CoreCompileInputs.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.AssemblyInfoInputs.cache
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.AssemblyInfo.cs
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\obj\Debug\netcoreapp2.0\ETT.Logic.pdb
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Utils.dll
+D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Logic\bin\Debug\netcoreapp2.0\ETT.Utils.pdb

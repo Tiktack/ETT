@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="parallax-container valign-wrapper" style="height: 700px">
+    <div class="row">
+        <h4 class="">Username: @ViewBag.UserName</h4>
+        <h4 class="">Id:       @ViewBag.UserId</h4>
+    </div>
+    <div class="parallax"><img src="~/img/fon.jpg"></div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+}

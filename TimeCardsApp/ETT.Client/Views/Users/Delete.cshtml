@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container">
+    <div class="section row" @*style="margin-top: -100px" *@>
+        <div class="col s6 offset-s3">
+            <form asp-action="Delete" method="post">
+                <input type="hidden" name="confirm" value="true" />
+                <input type="hidden" name="id" value="@ViewBag.Id" />
+                <h5>
+                    Вы действительно желаете удалить пользователя
+                    <span style="font-style:italic; font-size:xx-large;" class="yellow lighten-5">@ViewBag.Name</span> ?
+                </h5>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button type="submit" class="btn waves-effect waves-light">
+                                    <i class="material-icons left">check</i>Удалить
+                                </button>
+                            </td>
+                            <td>
+                                <a asp-action="Index" class="btn waves-effect waves-light">
+                                    <i class="material-icons left">close</i>Отменить
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">Delete User</a>
+}

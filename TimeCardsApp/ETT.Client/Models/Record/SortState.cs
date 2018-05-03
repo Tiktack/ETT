@@ -1,0 +1,19 @@
+﻿public enum SortState
+{
+    IdAsc,
+    IdDesc,
+    UserIdAsc,
+    UserIdDesc,
+    UserNameAsc,
+    UserNameDesc,
+    ProjectNameAsc,   
+    ProjectNameDesc,   
+    TaskNameAsc,
+    TaskNameDesc,
+    NoteAsc,
+    NoteDesc,
+    HourAsc,
+    HourDesc,
+    DataTimeAsc,
+    DataTimeDesc
+}

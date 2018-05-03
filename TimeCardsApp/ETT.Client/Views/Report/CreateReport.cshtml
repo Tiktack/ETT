@@ -1,0 +1,79 @@
+﻿@model ETT.Web.Models.Report.ReportViewModel
+@{
+    ViewData["Title"] = @Localizer["Title"];
+}
+<div class="container">
+    <div class="row">
+        <h4 class="col s12">
+            <span>@Localizer["Title"]</span>
+        </h4>
+    </div>
+    <div class="row">
+        <div class="ProjectChoose">
+            <select id="create-project-options">
+                <option value="" disabled selected>@Localizer["ChooseProject"]</option>
+                @foreach (var proj in Model.Projects)
+                {
+                    <option value="@proj.Id">@proj.Name</option>
+                }
+            </select>
+            <label asp-for="ProjectId"></label>
+            <input id="ProjId" type="hidden" asp-for="ProjectId" class="">
+        </div>
+        <div>
+            <input id="TaskId" type="hidden" asp-for="TaskId">
+            <input id="UserId" type="hidden" asp-for="UserId">
+        </div>
+        <div id="task-user-selector">
+        </div>
+    </div>
+    <div class="row">
+        <input id="Create-btn" type="button" class="btn @Design.Color" value="@Localizer["Search"]" />
+        <div id="search-list">
+        </div>
+        
+</div>
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+        $('#Create-btn').on('click', function () {
+            UpdateSearchList($('#ProjId').val(), $('#TaskId').val(), $('#UserId').val())
+        });
+
+        // Update task select
+        $('#create-project-options').on('change', function () {
+            $('#ProjId').val($(this).val());
+            UpdateTaskSelect($(this).val());
+        });
+
+        function UpdateTaskSelect(number) {
+            $('#task-user-selector').load(
+                url = '/Report/GetTaskUserList/' + number,
+                success = function (data) {
+                    console.log(data);
+                    $('#create-task-options').material_select();
+                    $('#create-task-options').on('change', function () {
+                        $('#TaskId').val($(this).val());
+                    });
+                    $('#create-user-options').material_select();
+                    $('#create-user-options').on('change', function () {
+                        $('#UserId').val($(this).val());
+                    });
+                }
+            )
+        }
+        function UpdateSearchList(pId, tId, uId) {
+            console.log(pId + tId + uId)
+            $('#search-list').load(
+                //url = "/Report/GetSearchList?" + 'projId=' + pId + '&' + 'taskId=' + tId + '&' + 'userId=' + uId,
+                url = "/Report/GetSearchList?", $.param({ projId: pId, taskId: tId, userId: uId},true),
+                success = function (data) {
+                    console.log(data); 
+                }
+            )
+        }
+    </script>
+}

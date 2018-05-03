@@ -1,0 +1,100 @@
+﻿@model ETT.Web.Models.Record.RecordListViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+<div class="container">
+    <div class="row">
+        <h4 class="col s12">
+            <span>@Localizer["Title"]</span>
+            <span class="right">
+                <a asp-action="Create"><input type="button" class="btn @Design.Color" value=@Localizer["Create"]></a>
+            </span>
+        </h4>
+    </div>
+    <div class="row">
+        <table class="col s12 bordered highlight">
+            <thead>
+                <tr>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["IdSort"]">@Localizer["RecordID"]</a></th>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["ProjectNameSort"]">@Localizer["ProjectName"]</a></th>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["TaskNameSort"]">@Localizer["TaskName"]</a></th>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["NoteSort"]">@Localizer["Note"]</a></th>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["HourSort"]">@Localizer["Hours"]</a></th>
+                    <th><a asp-action="UserList" asp-route-sort="@ViewData["DataTimeSort"]">@Localizer["StartDate"]</a></th>
+                    <th class="right-align">@Localizer["Actions"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var record in Model.Records)
+                {
+                    <tr>
+                        <td>
+                            @record.Id
+                        </td>
+                        <td>
+                            @record.ProjectName
+                        </td>
+                        <td>
+                            @record.TaskName
+                        </td>
+                        <td>
+                            @record.Note
+                        </td>
+                        <td>
+                            @record.Hours
+                        </td>
+                        <td>
+                            @record.RecordDateTime
+                        </td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@record.Id"><span class="new badge red darken-2" data-badge-caption="@Localizer["Delete"]"></span></a>
+                            <a asp-action="Edit" asp-route-id="@record.Id"><span class="new badge orange darken-3" data-badge-caption="@Localizer["Edit"]"></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <form asp-controller="ReportPDF" asp-action="PdfRecordWriter" method="post">
+            @for (int i = 0; i < Model.Records.Count(); i++)
+            {
+                <p>
+                    <input type="hidden" name="records[@i].Id" value="@Model.Records.ToList()[i].Id" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].UserId" value="@Model.Records.ToList()[i].UserId" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].ProjectId" value="@Model.Records.ToList()[i].ProjectId" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].ProjectName" value="@Model.Records.ToList()[i].ProjectName" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].TaskId" value="@Model.Records.ToList()[i].TaskId" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].TaskName" value="@Model.Records.ToList()[i].TaskName" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].Note" value="@Model.Records.ToList()[i].Note" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].Hours" value="@Model.Records.ToList()[i].Hours" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].Date" value="@Model.Records.ToList()[i].Date" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].Time" value="@Model.Records.ToList()[i].Time" />
+                </p>
+                <p>
+                    <input type="hidden" name="records[@i].RecordDateTime" value="@Model.Records.ToList()[i].RecordDateTime" />
+                </p>
+            }
+            <p>
+                <input class="btn @Design.Color right" type="submit" value="@Localizer["CreatePDF"]" />
+            </p>
+        </form>
+    </div>
+</div>

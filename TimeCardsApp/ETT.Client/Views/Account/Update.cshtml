@@ -1,0 +1,132 @@
+﻿@model ETT.Web.Models.Users.UserUpdateViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="section row">
+        <div class="col s2">
+            <form method="post" enctype="multipart/form-data" asp-controller="Account" asp-action="Upload" id="fileForm">
+                <div>
+                    <div>
+                        <img id="avatar" class="avatar" style="margin:auto"
+                             src="@(Model.AvatarPath)" />
+
+                        <input type="file" name="selectedImage" id="selectedImage" style="display: none;" accept="image/*" />
+                    </div>
+                    <div class="">
+                        <input type="button" value="@Localizer["ChooseImageBtn"]" onclick="selectImage();"
+                               class="btn waves-effect waves-light  btn-floating" id="buttonImage" style="width:@Localizer["ChooseImageBtnWidth"]"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col s8 offset-s2">
+            <form asp-action="Update" asp-controller="Account">
+                <div asp-validation-summary="All" class="red-text largetext"></div>
+                <input type="hidden" asp-for="UserId" />
+                <input type="hidden" asp-for="Email" />
+                <br />
+
+                <div class="section row" style="margin-top:-40px">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <label asp-for="NickName" class=""></label>
+                            <input asp-for="NickName" class="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section row" style="margin-top:-40px">
+                    <div class="input-field col s6">
+                        <input asp-for="FirstName" class="" />
+                        <label asp-for="FirstName" class=""></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input asp-for="LastName" class="" />
+                        <label asp-for="LastName" class=""></label>
+                    </div>
+                </div>
+
+                <div class="section row" style="margin-top:-40px">
+                    <div class="input-field col s6">
+                        <input asp-for="Company" class="" />
+                        <label asp-for="Company" class=""></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input asp-for="Position" class="" />
+                        <label asp-for="Position" class=""></label>
+                    </div>
+                </div>
+
+                <div class="section row" style="margin-top:-40px">
+                    <div class="input-field col s12">
+                        <textarea asp-for="About" class="materialize-textarea"
+                                  style="height: @(Model.About != null ? Model.About.Split('\n').Length + 1 : 2)rem;"></textarea>
+                        <label asp-for="About" class=""></label>
+                    </div>
+                </div>
+
+                <div class="section row" style="margin-top:-40px">
+                    <div class="input-field col s12">
+                        <label class="center-align">@Html.DisplayNameFor(x => x.DateOfBirth)<br /></label>
+                        <input type="text" id="scheduled_date" class="datepicker" name="@nameof(Model.DateOfBirth)" />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn waves-effect waves-light"><span>@Localizer["SaveBtn"]</span><i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 30, // Creates a dropdown of 15 years to control year,
+            //today: 'Today',
+            clear: 'Clear',
+            close: 'Ok',
+            closeOnSelect: false // Close upon selecting a date,
+        });
+
+        var $input = $('.datepicker').pickadate();
+        var picker = $input.pickadate('picker');
+
+        picker.set('select',
+            [   @(Model.DateOfBirth?.Year.ToString()),
+                @(Model.DateOfBirth?.Month.ToString()) - 1,
+                @(Model.DateOfBirth?.Day.ToString()),
+            ]);
+
+        $("#selectedImage").change(fileSelected);
+
+        function selectImage() {
+            $("#selectedImage").click();
+        }
+
+        function fileSelected() {
+            var input = $("#selectedImage");
+            var fd = new FormData;
+            fd.append('files', input.prop('files')[0]);
+
+            $.ajax({
+                url: "/Account/Upload",
+                data: fd,
+                processData: false,
+                contentType: false,
+                type: 'POST',
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    if (result.Path !== undefined) {
+                        $("#avatar").attr("src", result.Path);
+                    }
+                }
+            });
+        }
+
+    </script>
+}

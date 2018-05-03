@@ -1,0 +1,1268 @@
+2018-04-04 23:10:09.181 +03:00 [Debug] START WEB SERVER
+2018-04-04 23:10:12.646 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:10:43.844 +03:00 [Error] An error occurred using the connection to database '"helloappdb"' on server '"(localdb)\mssqllocaldb"'.
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11
+2018-04-04 23:10:44.375 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11
+2018-04-04 23:10:44.896 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11
+2018-04-04 23:10:46.029 +03:00 [Error] An error occurred while seeding the database.
+System.AggregateException: One or more errors occurred. (Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273; ) ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+   --- End of inner exception stack trace ---
+   at System.ThrowHelper.ThrowAggregateException(List`1 exceptions)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   at ETT.Web.Program.Main(String[] args) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Program.cs:line 45
+---> (Inner Exception #0) System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=25198; handshake=273;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+ClientConnectionId:438c4e54-5f48-4d2b-b49f-e098fdb6856c
+Error Number:-2,State:0,Class:11<---
+
+2018-04-04 23:10:48.113 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:10:50.026 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:11:00.521 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:11:02.169 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 12645.302ms
+2018-04-04 23:11:02.185 +03:00 [Information] Request finished in 14158.3771ms 200 text/html; charset=utf-8
+2018-04-04 23:11:02.470 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:11:02.504 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:11:02.526 +03:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\site.css"'
+2018-04-04 23:11:02.611 +03:00 [Information] Request finished in 60.575ms 200 text/css
+2018-04-04 23:11:02.706 +03:00 [Information] Sending file. Request path: '"/css/materialize.fix.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\materialize.fix.css"'
+2018-04-04 23:11:02.715 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-04 23:11:02.729 +03:00 [Information] The file "/lib/materialize/dist/css/materialize.css" was not modified
+2018-04-04 23:11:02.958 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-04 23:11:03.006 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-04 23:11:03.191 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:11:03.279 +03:00 [Information] The file "/img/fon.jpg" was not modified
+2018-04-04 23:11:03.497 +03:00 [Information] Request finished in 266.438ms 304 text/css
+2018-04-04 23:11:03.512 +03:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\site.js"'
+2018-04-04 23:11:03.572 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-04-04 23:11:03.669 +03:00 [Information] Request finished in 319.1626ms 304 image/jpeg
+2018-04-04 23:11:03.728 +03:00 [Information] Request finished in 669.5757ms 200 application/javascript
+2018-04-04 23:11:03.743 +03:00 [Information] Request finished in 546.4386ms 200 text/css
+2018-04-04 23:11:03.745 +03:00 [Information] Request finished in 833.9456ms 304 application/javascript
+2018-04-04 23:11:03.770 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-04 23:11:03.788 +03:00 [Information] The file "/lib/materialize/dist/js/materialize.js" was not modified
+2018-04-04 23:11:04.216 +03:00 [Information] Request finished in 107.3001ms 304 application/javascript
+2018-04-04 23:11:04.240 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:11:04.256 +03:00 [Information] Sending file. Request path: '"/js/functions.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\functions.js"'
+2018-04-04 23:11:04.489 +03:00 [Information] Request finished in 31.8983ms 200 application/javascript
+2018-04-04 23:11:17.909 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-04 23:11:18.243 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-04 23:11:19.277 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-04 23:11:19.973 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1754.6339ms
+2018-04-04 23:11:20.009 +03:00 [Information] Request finished in 2091.6655ms 200 text/html; charset=utf-8
+2018-04-04 23:11:21.901 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-04 23:11:22.177 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-04 23:11:22.230 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:11:25.082 +03:00 [Information] Executed DbCommand ("294"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:11:26.053 +03:00 [Information] Executed DbCommand ("317"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-04 23:11:26.419 +03:00 [Information] Executed DbCommand ("221"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-04 23:11:26.451 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-04 23:11:26.473 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-04 23:11:26.480 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 4529.4371ms
+2018-04-04 23:11:26.518 +03:00 [Information] Request finished in 4700.8944ms 302 
+2018-04-04 23:11:26.532 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:11:26.550 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:11:26.615 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:11:27.231 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:11:27.416 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 695.6696ms
+2018-04-04 23:11:27.487 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:11:27.742 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-04 23:11:27.878 +03:00 [Information] Request finished in 905.4678ms 200 text/html; charset=utf-8
+2018-04-04 23:11:27.917 +03:00 [Information] Request finished in 329.4721ms 304 text/css
+2018-04-04 23:11:27.967 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:11:28.012 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-04 23:11:28.112 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:11:28.447 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-04 23:11:28.662 +03:00 [Information] Request finished in 104.2029ms 304 text/css
+2018-04-04 23:11:28.686 +03:00 [Information] Request finished in 518.109ms 304 application/javascript
+2018-04-04 23:11:28.711 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:11:28.728 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-04 23:11:29.133 +03:00 [Information] Request finished in 50.2902ms 304 application/javascript
+2018-04-04 23:11:31.100 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:11:31.209 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:11:31.300 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:11:32.126 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:11:32.955 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 1737.3166ms
+2018-04-04 23:11:33.288 +03:00 [Error] An unhandled exception has occurred while executing the request
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Project.Projects'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at AspNetCore._Views_Project_List_cshtml.<ExecuteAsync>d__11.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Views\Project\List.cshtml:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+ClientConnectionId:216c3635-743a-46d2-b225-8ff26c5b70ab
+Error Number:208,State:1,Class:16
+2018-04-04 23:11:34.943 +03:00 [Information] Request finished in 3782.8469ms 500 text/html; charset=utf-8
+2018-04-04 23:25:38.426 +03:00 [Debug] START WEB SERVER
+2018-04-04 23:25:39.658 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:25:41.083 +03:00 [Information] Executed DbCommand ("280"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:41.331 +03:00 [Information] Executed DbCommand ("182"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:41.744 +03:00 [Information] Executed DbCommand ("176"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:41.940 +03:00 [Information] Executed DbCommand ("92"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:42.143 +03:00 [Information] Executed DbCommand ("182"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:42.394 +03:00 [Information] Executed DbCommand ("209"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:42.539 +03:00 [Information] Executed DbCommand ("99"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:42.665 +03:00 [Information] Executed DbCommand ("114"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:25:42.860 +03:00 [Information] Executed DbCommand ("140"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [AspNetRoles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:43.018 +03:00 [Information] Executed DbCommand ("115"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:25:43.463 +03:00 [Information] Executed DbCommand ("205"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-04 23:25:43.693 +03:00 [Information] Executed DbCommand ("102"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:43.858 +03:00 [Information] Executed DbCommand ("111"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:25:44.114 +03:00 [Information] Executed DbCommand ("150"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:44.344 +03:00 [Information] Executed DbCommand ("112"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-04 23:25:44.455 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:44.644 +03:00 [Information] Executed DbCommand ("116"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-04 23:25:44.791 +03:00 [Information] Executed DbCommand ("121"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:25:44.895 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:45.013 +03:00 [Information] Executed DbCommand ("108"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:25:45.122 +03:00 [Information] Executed DbCommand ("93"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:45.212 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-04 23:25:45.290 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:45.393 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-04 23:25:45.494 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:25:45.661 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:45.755 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:25:45.996 +03:00 [Information] Executed DbCommand ("218"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:46.095 +03:00 [Information] Executed DbCommand ("77"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-04 23:25:46.172 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:46.318 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-04 23:25:46.460 +03:00 [Information] Executed DbCommand ("97"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:25:46.585 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:25:46.678 +03:00 [Information] Executed DbCommand ("77"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:25:46.804 +03:00 [Information] Executed DbCommand ("109"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:46.875 +03:00 [Information] Executed DbCommand ("55"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-04 23:25:46.955 +03:00 [Information] Executed DbCommand ("61"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:25:47.057 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p24='?' (Size = 4000), @p6='?', @p7='?' (Size = 256), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 256), @p15='?' (Size = 256), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [About] = @p2, [AccessFailedCount] = @p3, [Company] = @p4, [ConcurrencyStamp] = @p5, [DateOfBirth] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FirstName] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NickName] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [Position] = @p19, [SecurityStamp] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23 AND [ConcurrencyStamp] = @p24;
+SELECT @@ROWCOUNT;"
+2018-04-04 23:25:47.716 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:25:48.471 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:25:54.992 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:25:56.599 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 8252.2934ms
+2018-04-04 23:25:56.689 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:25:56.710 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-04 23:25:56.720 +03:00 [Information] Request finished in 8944.3321ms 200 text/html; charset=utf-8
+2018-04-04 23:25:56.762 +03:00 [Information] Request finished in 136.6253ms 304 text/css
+2018-04-04 23:25:56.787 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:25:56.846 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:25:56.908 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-04 23:25:57.076 +03:00 [Information] Request finished in 321.7375ms 304 text/css
+2018-04-04 23:25:57.149 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-04 23:25:57.160 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:25:57.179 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-04 23:25:57.229 +03:00 [Information] Request finished in 106.0848ms 304 application/javascript
+2018-04-04 23:25:57.249 +03:00 [Information] Request finished in 338.9147ms 304 application/javascript
+2018-04-04 23:26:01.880 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-04 23:26:02.114 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-04 23:26:02.995 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-04 23:26:03.295 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1229.5219ms
+2018-04-04 23:26:03.740 +03:00 [Information] Request finished in 1528.2073ms 200 text/html; charset=utf-8
+2018-04-04 23:26:04.848 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-04 23:26:04.979 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-04 23:26:05.013 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:26:05.395 +03:00 [Information] Executed DbCommand ("346"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:26:05.457 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-04 23:26:05.996 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 596.779ms
+2018-04-04 23:26:06.211 +03:00 [Information] Request finished in 1179.3959ms 200 text/html; charset=utf-8
+2018-04-04 23:26:09.745 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Register  
+2018-04-04 23:26:09.970 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:10.542 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Register.cshtml".
+2018-04-04 23:26:11.352 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 980.4573ms
+2018-04-04 23:26:11.463 +03:00 [Information] Request finished in 1633.3545ms 200 text/html; charset=utf-8
+2018-04-04 23:26:20.110 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Register application/x-www-form-urlencoded 269
+2018-04-04 23:26:20.183 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (["ETT.Web.Models.Users.RegisterViewModel"]) - ModelState is Valid
+2018-04-04 23:26:20.231 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:26:20.398 +03:00 [Information] Executed DbCommand ("139"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-04 23:26:20.480 +03:00 [Information] Executed DbCommand ("61"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-04 23:26:20.620 +03:00 [Information] Executed DbCommand ("124"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:26:20.710 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-04 23:26:20.871 +03:00 [Information] Executed DbCommand ("143"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-04 23:26:21.284 +03:00 [Information] Executed DbCommand ("152"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-04 23:26:21.570 +03:00 [Warning] User "5" validation failed: "".
+2018-04-04 23:26:22.296 +03:00 [Information] Executed DbCommand ("574"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-04 23:26:22.775 +03:00 [Information] Executed DbCommand ("345"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-04 23:26:22.805 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-04 23:26:22.816 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-04 23:26:22.829 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 2697.1856ms
+2018-04-04 23:26:22.852 +03:00 [Information] Request finished in 2735.3321ms 302 
+2018-04-04 23:26:22.865 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:26:22.881 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:22.945 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:23.265 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:26:23.696 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 393.8906ms
+2018-04-04 23:26:24.177 +03:00 [Information] Request finished in 852.5597ms 200 text/html; charset=utf-8
+2018-04-04 23:26:28.486 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Update?name=khantsevitch.oleg@yandex.ru  
+2018-04-04 23:26:28.571 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:28.680 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Update (ETT.Web)" with arguments (["khantsevitch.oleg@yandex.ru"]) - ModelState is Valid
+2018-04-04 23:26:28.704 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:26:28.946 +03:00 [Information] Executed DbCommand ("131"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:26:29.510 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Update.cshtml".
+2018-04-04 23:26:29.812 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Update (ETT.Web)" in 1115.3179ms
+2018-04-04 23:26:30.065 +03:00 [Information] Request finished in 1516.3793ms 200 text/html; charset=utf-8
+2018-04-04 23:26:31.354 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:26:31.372 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:31.514 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:32.099 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:26:32.655 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 908.7298ms
+2018-04-04 23:26:32.802 +03:00 [Information] Request finished in 1329.2693ms 200 text/html; charset=utf-8
+2018-04-04 23:26:38.687 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:26:38.701 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:38.802 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:38.903 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:26:39.002 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 204.4212ms
+2018-04-04 23:26:39.064 +03:00 [Information] Request finished in 327.2648ms 200 text/html; charset=utf-8
+2018-04-04 23:26:40.950 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Home/About  
+2018-04-04 23:26:40.966 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:41.037 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.About (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:41.517 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/About.cshtml".
+2018-04-04 23:26:42.064 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.About (ETT.Web)" in 557.5614ms
+2018-04-04 23:26:42.156 +03:00 [Information] Request finished in 1129.2626ms 200 text/html; charset=utf-8
+2018-04-04 23:26:43.421 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Home/Contact  
+2018-04-04 23:26:43.432 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:43.475 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Contact (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:43.740 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml".
+2018-04-04 23:26:43.902 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Contact (ETT.Web)" in 334.7477ms
+2018-04-04 23:26:44.338 +03:00 [Information] Request finished in 620.3897ms 200 text/html; charset=utf-8
+2018-04-04 23:26:45.418 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:26:45.437 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:45.485 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:45.493 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:26:45.692 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 103.2315ms
+2018-04-04 23:26:45.868 +03:00 [Information] Request finished in 299.9634ms 200 text/html; charset=utf-8
+2018-04-04 23:26:47.175 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Create  
+2018-04-04 23:26:47.190 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:47.245 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:47.659 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Create.cshtml".
+2018-04-04 23:26:48.041 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 513.7258ms
+2018-04-04 23:26:48.149 +03:00 [Information] Request finished in 876.7246ms 200 text/html; charset=utf-8
+2018-04-04 23:26:51.887 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/Create application/x-www-form-urlencoded 250
+2018-04-04 23:26:51.904 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:52.057 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Projects.ProjectViewModel"]) - ModelState is Valid
+2018-04-04 23:26:52.202 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/List".
+2018-04-04 23:26:52.223 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 295.1178ms
+2018-04-04 23:26:52.311 +03:00 [Information] Request finished in 365.3407ms 302 
+2018-04-04 23:26:52.339 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:26:52.356 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:52.416 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:26:52.435 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:26:52.856 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 173.0861ms
+2018-04-04 23:26:52.970 +03:00 [Information] Request finished in 556.3074ms 200 text/html; charset=utf-8
+2018-04-04 23:26:54.691 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-04 23:26:54.704 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:54.755 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:26:56.112 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-04 23:26:56.671 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 1485.1747ms
+2018-04-04 23:26:56.855 +03:00 [Information] Request finished in 2070.6854ms 200 text/html; charset=utf-8
+2018-04-04 23:26:57.244 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:26:57.284 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:57.407 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:26:57.441 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:26:57.449 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:26:57.545 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:26:57.949 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:26:58.093 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:26:58.140 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 671.2185ms
+2018-04-04 23:26:58.270 +03:00 [Information] Request finished in 1295.9316ms 200 text/html; charset=utf-8
+2018-04-04 23:26:58.287 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 986.5261ms
+2018-04-04 23:26:58.301 +03:00 [Information] Request finished in 1251.9855ms 200 text/html; charset=utf-8
+2018-04-04 23:27:00.100 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Edit/1  
+2018-04-04 23:27:00.110 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:00.171 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Edit (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:00.936 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Edit.cshtml".
+2018-04-04 23:27:01.566 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Edit (ETT.Web)" in 896.2625ms
+2018-04-04 23:27:01.718 +03:00 [Information] Request finished in 1478.1471ms 200 text/html; charset=utf-8
+2018-04-04 23:27:04.443 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/Edit/1 application/x-www-form-urlencoded 255
+2018-04-04 23:27:04.459 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:04.533 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Edit (ETT.Web)" with arguments (["ETT.Web.Models.Projects.ProjectViewModel"]) - ModelState is Valid
+2018-04-04 23:27:04.670 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Details/1".
+2018-04-04 23:27:04.689 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Edit (ETT.Web)" in 209.2391ms
+2018-04-04 23:27:04.735 +03:00 [Information] Request finished in 353.7922ms 302 
+2018-04-04 23:27:04.962 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-04 23:27:04.994 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:05.308 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:05.413 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-04 23:27:05.822 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 423.4959ms
+2018-04-04 23:27:06.043 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:27:06.234 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:06.462 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:27:06.479 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:06.483 +03:00 [Information] Request finished in 1095.9829ms 200 text/html; charset=utf-8
+2018-04-04 23:27:06.555 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:06.576 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:27:06.659 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:06.677 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:27:06.805 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 395.7912ms
+2018-04-04 23:27:06.836 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 313.34ms
+2018-04-04 23:27:06.863 +03:00 [Information] Request finished in 805.2242ms 200 text/html; charset=utf-8
+2018-04-04 23:27:06.886 +03:00 [Information] Request finished in 836.7107ms 200 text/html; charset=utf-8
+2018-04-04 23:27:18.592 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:27:18.599 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:18.646 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:18.658 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:27:18.713 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 102.9496ms
+2018-04-04 23:27:18.746 +03:00 [Information] Request finished in 145.3259ms 200 text/html; charset=utf-8
+2018-04-04 23:27:24.742 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=kh  
+2018-04-04 23:27:24.748 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:24.863 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "kh", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:24.900 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-04 23:27:25.273 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 429.1784ms
+2018-04-04 23:27:25.305 +03:00 [Information] Request finished in 546.9947ms 200 application/json; charset=utf-8
+2018-04-04 23:27:25.574 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=kha  
+2018-04-04 23:27:25.581 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:25.618 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "kha", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:25.626 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-04 23:27:25.727 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 130.2214ms
+2018-04-04 23:27:25.750 +03:00 [Information] Request finished in 162.4711ms 200 application/json; charset=utf-8
+2018-04-04 23:27:30.823 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1/User/Add application/x-www-form-urlencoded; charset=UTF-8 35
+2018-04-04 23:27:30.877 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:30.966 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" with arguments (["1", "khantsevitch.oleg@yandex.ru", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:31.211 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Add (ETT.Web)" in 322.6105ms
+2018-04-04 23:27:31.234 +03:00 [Information] Request finished in 400.5192ms 200 
+2018-04-04 23:27:31.258 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:27:31.281 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:31.341 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:31.348 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:27:31.508 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 205.3993ms
+2018-04-04 23:27:31.541 +03:00 [Information] Request finished in 286.352ms 200 text/html; charset=utf-8
+2018-04-04 23:27:45.962 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/Create  
+2018-04-04 23:27:45.968 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:46.018 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:46.469 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Create.cshtml".
+2018-04-04 23:27:46.952 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 580.319ms
+2018-04-04 23:27:47.097 +03:00 [Information] Request finished in 1014.4192ms 200 text/html; charset=utf-8
+2018-04-04 23:27:50.166 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1/Task/Create application/x-www-form-urlencoded 251
+2018-04-04 23:27:50.188 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:50.300 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1", "ETT.Web.Models.Projects.Task.TaskViewModel"]) - ModelState is Valid
+2018-04-04 23:27:50.651 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Details/1".
+2018-04-04 23:27:50.670 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 451.1536ms
+2018-04-04 23:27:50.738 +03:00 [Information] Request finished in 534.7591ms 302 
+2018-04-04 23:27:50.910 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-04 23:27:51.040 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:51.367 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:51.478 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-04 23:27:51.634 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 438.4839ms
+2018-04-04 23:27:51.778 +03:00 [Information] Request finished in 917.0078ms 200 text/html; charset=utf-8
+2018-04-04 23:27:52.015 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:27:52.027 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:27:52.038 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-04 23:27:52.063 +03:00 [Information] Request finished in 221.8193ms 304 text/css
+2018-04-04 23:27:52.084 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:27:52.131 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-04 23:27:52.246 +03:00 [Information] Request finished in 508.4231ms 304 text/css
+2018-04-04 23:27:52.249 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-04 23:27:52.379 +03:00 [Information] Request finished in 180.1578ms 304 application/javascript
+2018-04-04 23:27:52.466 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:27:52.484 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-04 23:27:52.746 +03:00 [Information] Request finished in 38.5171ms 304 application/javascript
+2018-04-04 23:27:52.773 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:27:52.816 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:27:52.837 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:52.843 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:52.952 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:27:52.983 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:27:53.047 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:53.102 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:27:53.120 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 266.4748ms
+2018-04-04 23:27:53.229 +03:00 [Information] Request finished in 472.4374ms 200 text/html; charset=utf-8
+2018-04-04 23:27:53.534 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 672.109ms
+2018-04-04 23:27:53.566 +03:00 [Information] Request finished in 782.1774ms 200 text/html; charset=utf-8
+2018-04-04 23:27:56.366 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/Details/1  
+2018-04-04 23:27:56.394 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:27:56.488 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:27:57.060 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Details.cshtml".
+2018-04-04 23:27:57.232 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Details (ETT.Web)" in 721.7774ms
+2018-04-04 23:27:57.497 +03:00 [Information] Request finished in 904.3979ms 200 text/html; charset=utf-8
+2018-04-04 23:28:00.141 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:28:00.433 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:28:00.838 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:00.921 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:01.102 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:28:01.188 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:28:01.523 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:28:01.590 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:28:01.780 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 648.3099ms
+2018-04-04 23:28:01.912 +03:00 [Information] Request finished in 1692.6907ms 200 text/html; charset=utf-8
+2018-04-04 23:28:01.928 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 876.2978ms
+2018-04-04 23:28:01.970 +03:00 [Information] Request finished in 1849.5162ms 200 text/html; charset=utf-8
+2018-04-04 23:28:31.147 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=er  
+2018-04-04 23:28:31.153 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:31.229 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "er", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:28:31.242 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-04 23:28:31.297 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 130.865ms
+2018-04-04 23:28:31.313 +03:00 [Information] Request finished in 159.9909ms 200 application/json; charset=utf-8
+2018-04-04 23:28:36.659 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=kh  
+2018-04-04 23:28:36.667 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:36.705 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "kh", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:28:36.713 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-04 23:28:36.797 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 115.7574ms
+2018-04-04 23:28:36.847 +03:00 [Information] Request finished in 146.1856ms 200 application/json; charset=utf-8
+2018-04-04 23:28:36.867 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Search?email=kha  
+2018-04-04 23:28:36.874 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:36.913 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" with arguments (["1", "kha", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:28:36.921 +03:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-04-04 23:28:37.028 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Search (ETT.Web)" in 128.9167ms
+2018-04-04 23:28:37.182 +03:00 [Information] Request finished in 209.7843ms 200 application/json; charset=utf-8
+2018-04-04 23:28:39.880 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/Delete/1  
+2018-04-04 23:28:39.894 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:39.923 +03:00 [Information] Request finished in 32.1923ms 404 
+2018-04-04 23:28:48.314 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:28:48.445 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:28:48.457 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:48.515 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:28:48.599 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:28:48.659 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:28:48.765 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:28:48.942 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:28:49.030 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 385.4382ms
+2018-04-04 23:28:49.089 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 481.4495ms
+2018-04-04 23:28:49.167 +03:00 [Information] Request finished in 1076.4342ms 200 text/html; charset=utf-8
+2018-04-04 23:28:49.181 +03:00 [Information] Request finished in 1291.2544ms 200 text/html; charset=utf-8
+2018-04-04 23:29:16.993 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:29:17.000 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:29:17.043 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:29:17.052 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:29:17.520 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 94.3969ms
+2018-04-04 23:29:17.739 +03:00 [Information] Request finished in 549.5292ms 200 text/html; charset=utf-8
+2018-04-04 23:29:45.852 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Update?name=khantsevitch.oleg@yandex.ru  
+2018-04-04 23:29:45.867 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:29:45.925 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Update (ETT.Web)" with arguments (["khantsevitch.oleg@yandex.ru"]) - ModelState is Valid
+2018-04-04 23:29:45.952 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:29:46.025 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-04-04 23:29:46.052 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Update.cshtml".
+2018-04-04 23:29:46.209 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Update (ETT.Web)" in 186.435ms
+2018-04-04 23:29:46.338 +03:00 [Information] Request finished in 370.3059ms 200 text/html; charset=utf-8
+2018-04-04 23:31:18.656 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:31:18.860 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:31:19.011 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:31:19.110 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:31:19.217 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 260.0884ms
+2018-04-04 23:31:19.332 +03:00 [Information] Request finished in 737.671ms 200 text/html; charset=utf-8
+2018-04-04 23:31:20.506 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:31:20.528 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-04 23:31:20.650 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:31:20.719 +03:00 [Information] Request finished in 181.9654ms 304 text/css
+2018-04-04 23:31:20.726 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-04 23:31:21.121 +03:00 [Information] Request finished in 240.1014ms 304 text/css
+2018-04-04 23:31:21.182 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-04 23:31:21.202 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff2  
+2018-04-04 23:31:21.214 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:31:21.251 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:31:21.257 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:31:21.305 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:31:21.336 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-04 23:31:21.356 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-04 23:31:21.468 +03:00 [Information] Request finished in 142.3446ms 404 
+2018-04-04 23:31:21.632 +03:00 [Information] Request finished in 223.6113ms 304 application/javascript
+2018-04-04 23:31:21.644 +03:00 [Information] Request finished in 189.6922ms 304 application/javascript
+2018-04-04 23:31:21.689 +03:00 [Information] Request finished in 588.9351ms 404 
+2018-04-04 23:31:21.751 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-04 23:31:21.774 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:31:21.828 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Light.woff  
+2018-04-04 23:31:21.851 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:31:21.905 +03:00 [Information] Request finished in 113.4692ms 404 
+2018-04-04 23:31:21.933 +03:00 [Information] Request finished in 127.7834ms 404 
+2018-04-04 23:39:22.079 +03:00 [Debug] START WEB SERVER
+2018-04-04 23:39:23.961 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:39:34.634 +03:00 [Information] Executed DbCommand ("528"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:39:34.930 +03:00 [Information] Executed DbCommand ("121"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:39:35.186 +03:00 [Information] Executed DbCommand ("196"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:39:35.537 +03:00 [Information] Executed DbCommand ("202"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:39:35.830 +03:00 [Information] Executed DbCommand ("212"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:39:35.915 +03:00 [Information] Executed DbCommand ("70"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:39:36.013 +03:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:39:37.082 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:39:37.288 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:39:37.894 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:39:45.028 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:39:46.756 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 9037.7733ms
+2018-04-04 23:39:46.813 +03:00 [Information] Request finished in 9724.7569ms 200 text/html; charset=utf-8
+2018-04-04 23:39:48.351 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:39:48.444 +03:00 [Information] The file "/css/materialize.fix.css" was not modified
+2018-04-04 23:39:48.622 +03:00 [Information] Request finished in 120.1455ms 304 text/css
+2018-04-04 23:39:48.780 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:39:48.796 +03:00 [Information] The file "/css/site.css" was not modified
+2018-04-04 23:39:48.834 +03:00 [Information] Request finished in 34.8494ms 304 text/css
+2018-04-04 23:39:48.970 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:39:49.006 +03:00 [Information] The file "/js/functions.js" was not modified
+2018-04-04 23:39:49.234 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:39:49.265 +03:00 [Information] The file "/js/site.js" was not modified
+2018-04-04 23:39:49.306 +03:00 [Information] Request finished in 397.4908ms 304 application/javascript
+2018-04-04 23:39:49.316 +03:00 [Information] Request finished in 132.7964ms 304 application/javascript
+2018-04-04 23:40:37.014 +03:00 [Debug] START WEB SERVER
+2018-04-04 23:40:39.432 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:40:45.993 +03:00 [Information] Executed DbCommand ("359"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:40:46.795 +03:00 [Information] Executed DbCommand ("599"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:40:47.026 +03:00 [Information] Executed DbCommand ("185"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-04 23:40:47.362 +03:00 [Information] Executed DbCommand ("271"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:40:47.651 +03:00 [Information] Executed DbCommand ("163"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:40:47.893 +03:00 [Information] Executed DbCommand ("134"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:40:48.017 +03:00 [Information] Executed DbCommand ("103"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:40:49.384 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:40:49.394 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:40:51.446 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:40:51.540 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:41:01.748 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:41:01.906 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:41:04.703 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 13145.0276ms
+2018-04-04 23:41:04.965 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-04 23:41:05.136 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-04 23:41:05.162 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-04 23:41:05.216 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-04 23:41:05.267 +03:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\site.css"'
+2018-04-04 23:41:05.292 +03:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\jquery\dist\jquery.js"'
+2018-04-04 23:41:05.480 +03:00 [Information] Sending file. Request path: '"/lib/materialize/dist/css/materialize.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\materialize\dist\css\materialize.css"'
+2018-04-04 23:41:05.694 +03:00 [Information] Request finished in 15613.9718ms 200 text/html; charset=utf-8
+2018-04-04 23:41:05.769 +03:00 [Information] Sending file. Request path: '"/css/materialize.fix.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\materialize.fix.css"'
+2018-04-04 23:41:05.896 +03:00 [Information] Request finished in 770.3029ms 200 text/css
+2018-04-04 23:41:06.653 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 13145.661ms
+2018-04-04 23:41:07.437 +03:00 [Information] Request finished in 1169.393ms 200 text/css
+2018-04-04 23:41:07.936 +03:00 [Information] Request finished in 1951.7558ms 200 application/javascript
+2018-04-04 23:41:08.343 +03:00 [Information] Request finished in 17442.6673ms 200 text/html; charset=utf-8
+2018-04-04 23:41:09.351 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-04 23:41:10.170 +03:00 [Information] Request finished in 2876.0714ms 200 text/css
+2018-04-04 23:41:10.316 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=MSfOWcb1Yos7V1j0fKDz8IkZgBB2oXzWIGrcy7vJYpk  
+2018-04-04 23:41:10.862 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-04 23:41:10.954 +03:00 [Information] Sending file. Request path: '"/js/functions.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\functions.js"'
+2018-04-04 23:41:10.966 +03:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\site.js"'
+2018-04-04 23:41:11.048 +03:00 [Information] Request finished in 3039.0804ms 200 application/javascript
+2018-04-04 23:41:11.055 +03:00 [Information] Sending file. Request path: '"/lib/materialize/dist/js/materialize.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\materialize\dist\js\materialize.js"'
+2018-04-04 23:41:11.064 +03:00 [Information] Request finished in 3018.4836ms 200 application/javascript
+2018-04-04 23:41:11.102 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-04 23:41:11.104 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-04 23:41:11.313 +03:00 [Information] Sending file. Request path: '"/img/fon.jpg"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\img\fon.jpg"'
+2018-04-04 23:41:11.593 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-04 23:41:11.602 +03:00 [Information] Request finished in 3808.36ms 200 application/javascript
+2018-04-04 23:41:12.078 +03:00 [Information] Request finished in 1264.3237ms 200 image/jpeg
+2018-04-04 23:41:12.471 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/favicon.ico  
+2018-04-04 23:41:12.496 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\favicon.ico"'
+2018-04-04 23:41:12.620 +03:00 [Information] Request finished in 188.1991ms 200 image/x-icon
+2018-04-04 23:41:13.082 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-04 23:41:13.551 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 2056.5215ms
+2018-04-04 23:41:13.649 +03:00 [Information] Request finished in 2613.3796ms 200 text/html; charset=utf-8
+2018-04-04 23:41:14.469 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 257
+2018-04-04 23:41:15.074 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-04 23:41:15.110 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-04 23:41:15.270 +03:00 [Information] Executed DbCommand ("144"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-04 23:41:15.570 +03:00 [Information] Executed DbCommand ("112"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-04 23:41:15.735 +03:00 [Information] Executed DbCommand ("71"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-04 23:41:15.760 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-04 23:41:15.779 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-04 23:41:15.788 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1264.7674ms
+2018-04-04 23:41:15.865 +03:00 [Information] Request finished in 1338.218ms 302 
+2018-04-04 23:41:15.881 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-04 23:41:15.929 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:41:16.012 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:41:16.447 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-04 23:41:16.506 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 526.3562ms
+2018-04-04 23:41:16.539 +03:00 [Information] Request finished in 661.6763ms 200 text/html; charset=utf-8
+2018-04-04 23:41:19.971 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-04 23:41:19.987 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:41:20.082 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-04 23:41:20.620 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-04 23:41:20.988 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 964.8172ms
+2018-04-04 23:41:21.053 +03:00 [Information] Request finished in 1059.1321ms 200 text/html; charset=utf-8
+2018-04-04 23:41:23.964 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1  
+2018-04-04 23:41:23.972 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:41:24.020 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:41:24.881 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-04 23:41:25.120 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 953.436ms
+2018-04-04 23:41:25.373 +03:00 [Information] Request finished in 1166.0386ms 200 text/html; charset=utf-8
+2018-04-04 23:41:25.447 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/Task/List  
+2018-04-04 23:41:25.467 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:41:25.524 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1/User/List  
+2018-04-04 23:41:25.581 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1"]) - ModelState is Valid
+2018-04-04 23:41:25.768 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-04 23:41:25.929 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1", "ETT.Logic.Services.UserService"]) - ModelState is Valid
+2018-04-04 23:41:25.982 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-04 23:41:26.167 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 680.8832ms
+2018-04-04 23:41:26.204 +03:00 [Information] Request finished in 905.9206ms 200 text/html; charset=utf-8
+2018-04-04 23:41:26.388 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-04 23:41:26.772 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 989.1856ms
+2018-04-04 23:41:26.789 +03:00 [Information] Request finished in 1499.3114ms 200 text/html; charset=utf-8

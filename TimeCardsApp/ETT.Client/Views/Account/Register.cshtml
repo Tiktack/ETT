@@ -1,0 +1,33 @@
+﻿@model ETT.Web.Models.Users.RegisterViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">    
+    <div class="section row">
+        <div class="col s6 offset-s3">
+            <form method="post" asp-controller="Account" asp-action="Register">
+                <div class="red-text" asp-validation-summary="ModelOnly"></div>
+                <br />
+                <div class="input-field">
+                    <label asp-for="Email" class=""></label>
+                    <input asp-for="Email" class="" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="input-field">
+                    <label asp-for="Password" class=""></label>
+                    <input asp-for="Password" class="" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="input-field">
+                    <label asp-for="PasswordConfirm" class=""></label>
+                    <input asp-for="PasswordConfirm" class="" />
+                    <span asp-validation-for="PasswordConfirm"></span>
+                </div>
+                <br />
+                <button type="submit" class="btn waves-effect waves-light">@Localizer["RegBtn"]<i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model ETT.Web.Models.Record.RecordListViewModel
+
+@{
+    Layout = null;
+}
+
+<table class="col s12 bordered highlight">
+    <thead>
+        <tr>
+            <th>Record ID</th>
+            <th>User ID</th>
+            <th>Project ID</th>
+            <th>Task ID</th>
+            <th>Note</th>
+            <th>Work time</th>
+            <th>Start date</th>
+            <th class="right-align">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model.Records)
+        {
+            <tr>
+                <td>
+                    @record.Id
+                </td>
+                <td>
+                    @record.UserId
+                </td>
+                <td>
+                    @record.ProjectId
+                </td>
+                <td>
+                    @record.TaskId
+                </td>
+                <td>
+                    @record.Note
+                </td>
+                <td>
+                    @record.Hours
+                </td>
+                <td>
+                    @record.RecordDateTime
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@record.Id"><span class="new badge red darken-2" data-badge-caption="Delete"></span></a>
+                    <a asp-action="Edit" asp-route-id="@record.Id"><span class="new badge orange darken-3" data-badge-caption="Edit"></span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

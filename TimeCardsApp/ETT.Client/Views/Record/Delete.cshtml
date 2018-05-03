@@ -1,0 +1,48 @@
+﻿@model ETT.Web.Models.Record.RecordViewModel
+
+@{
+    ViewData["Title"] = Localizer["Title"];
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 offset-l1 l10">
+            <div class="card">
+                <div class="card-content">
+                    <h4 style="margin-top: 0">@Localizer["Title"]</h4>
+                    <span class="card-title">@Localizer["ConfirmQuestion"]</span>
+                    <div class="row">
+                        <table class="col s12 bordered vertical">
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.ProjectId)</th>
+                                <td>@Html.DisplayFor(model => model.ProjectName)</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.TaskId)</th>
+                                <td>@Html.DisplayFor(model => model.TaskName)</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.Note)</th>
+                                <td>@Html.DisplayFor(model => model.Note)</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.Hours)</th>
+                                <td>@Html.DisplayFor(model => model.Hours)</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.RecordDateTime)</th>
+                                <td>@Html.DisplayFor(model => model.RecordDateTime)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <form asp-action="Delete">
+                        <input type="submit" value=@Localizer["Delete"] class="btn red darken-2" />
+                        <a asp-action="UserList"><input type="button" class="btn @Design.Color right" value=@Localizer["BacktoList"] /></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

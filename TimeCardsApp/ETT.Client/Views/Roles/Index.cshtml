@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ETT.Web.Models.Users.Role>
+
+@{
+    ViewData["Title"] = "Список ролей";
+}
+
+<div class="container">
+    <div class="section row" style="">
+        <div class="col s6 offset-s3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><h5>Role</h5></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var role in Model)
+                    {
+                        <tr>
+                            <td class="largetext">@role.Name</td>
+                            <td>
+                                <a asp-action="Delete" asp-route-id="@role.Id" asp-route-name="@role.Name"
+                                   class=" btn waves-effect waves-light
+                                            @(role.Name.ToUpper().CompareTo("ADMIN") == 0 ? "disabled" : "")">
+                                    <i class="material-icons left">delete</i>Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                <tfoot>
+                    <tr>
+                        <td>
+                            <a asp-action="Create" class="btn waves-effect waves-light">
+                                <i class="material-icons left">add</i>Добавить роль
+                            </a>
+                        </td>
+                        <td>
+                            <a asp-action="UserList" class="btn waves-effect waves-light">
+                                <i class="material-icons left">list</i>Список пользователей
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs{
+    <a href="#" class="breadcrumb breadcrumbmargin3">
+        Index
+    </a>
+} 

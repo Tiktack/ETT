@@ -1,0 +1,30 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Добавление роли";
+}
+
+<div class="container">    
+    <div class="section row">
+        <div class="col s6 offset-s3">
+
+            <div asp-validation-summary="All" class="red-text"></div>
+
+            <form asp-action="Create" method="post">
+                <div class="input-field">
+                    <label for="name">Новая роль</label>
+                    <br />
+                    <input name="name" class="" />
+                </div>
+                <button type="submit" class="btn waves-effect waves-light">Добавить<i class="material-icons right">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section breadcrumbs {
+    <a asp-action="Index" class="breadcrumb">
+        Index
+    </a>
+    <a href="#!" class="breadcrumb breadcrumbmargin2">Create</a>
+}

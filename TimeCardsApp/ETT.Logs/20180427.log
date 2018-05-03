@@ -1,0 +1,1544 @@
+2018-04-27 16:29:37.372 +03:00 [Debug] START WEB SERVER
+2018-04-27 16:29:39.414 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 16:30:13.819 +03:00 [Error] An error occurred using the connection to database '"ETT_Database"' on server '"(localdb)\mssqllocaldb"'.
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11
+2018-04-27 16:30:14.899 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11
+2018-04-27 16:30:15.867 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"ETT.Web.Models.ApplicationContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11"
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11
+2018-04-27 16:30:17.805 +03:00 [Error] An error occurred while seeding the database.
+System.AggregateException: One or more errors occurred. (Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133; ) ---> System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+   --- End of inner exception stack trace ---
+   at System.ThrowHelper.ThrowAggregateException(List`1 exceptions)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks, Int32 millisecondsTimeout)
+   at System.Threading.Tasks.Task.WaitAll(Task[] tasks)
+   at ETT.Web.Program.Main(String[] args) in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Program.cs:line 45
+---> (Inner Exception #0) System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=31564; handshake=133;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.<FirstOrDefault_>d__165`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at ETT.Web.Util.Initializers.UserRolesInitializer.<InitializeAsync>d__2.MoveNext() in D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\Util\Initializers\UserRolesInitializer.cs:line 30
+ClientConnectionId:c2efe44b-5edb-44b9-9495-6b5963b97d47
+Error Number:-2,State:0,Class:11<---
+
+2018-04-27 16:30:23.346 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 16:30:31.719 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:30:43.261 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 16:30:45.365 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 17165.3163ms
+2018-04-27 16:30:45.404 +03:00 [Information] Request finished in 22633.478ms 200 text/html; charset=utf-8
+2018-04-27 16:30:46.135 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/materialize.fix.css  
+2018-04-27 16:30:46.147 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/css/materialize.css  
+2018-04-27 16:30:46.165 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/css/site.css  
+2018-04-27 16:30:46.178 +03:00 [Information] Sending file. Request path: '"/lib/materialize/dist/css/materialize.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\materialize\dist\css\materialize.css"'
+2018-04-27 16:30:46.191 +03:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\site.css"'
+2018-04-27 16:30:46.201 +03:00 [Information] Sending file. Request path: '"/css/materialize.fix.css"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\css\materialize.fix.css"'
+2018-04-27 16:30:46.390 +03:00 [Information] Request finished in 153.0766ms 200 text/css
+2018-04-27 16:30:46.671 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/jquery/dist/jquery.js  
+2018-04-27 16:30:46.729 +03:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\jquery\dist\jquery.js"'
+2018-04-27 16:30:46.834 +03:00 [Information] Request finished in 502.4484ms 200 text/css
+2018-04-27 16:30:46.845 +03:00 [Information] Request finished in 693.3637ms 200 text/css
+2018-04-27 16:30:47.065 +03:00 [Information] Request finished in 468.5975ms 200 application/javascript
+2018-04-27 16:30:47.118 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/js/materialize.js  
+2018-04-27 16:30:47.131 +03:00 [Information] Sending file. Request path: '"/lib/materialize/dist/js/materialize.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\lib\materialize\dist\js\materialize.js"'
+2018-04-27 16:30:47.195 +03:00 [Information] Request finished in 57.2479ms 200 application/javascript
+2018-04-27 16:30:47.610 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/functions.js?v=dXQyEwEL4ksQUKc1QbgMspTYkqytGFQWgnFM0wZsftA  
+2018-04-27 16:30:47.659 +03:00 [Information] Sending file. Request path: '"/js/functions.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\functions.js"'
+2018-04-27 16:30:47.772 +03:00 [Information] Request finished in 282.9542ms 200 application/javascript
+2018-04-27 16:30:47.888 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/site.js?v=2sW_k76-IWNQZNRdJmHRFS8rp71HE7-u_x93NcoLh5o  
+2018-04-27 16:30:47.925 +03:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\site.js"'
+2018-04-27 16:30:48.079 +03:00 [Information] Request finished in 162.9738ms 200 application/javascript
+2018-04-27 16:30:48.256 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/img/fon.jpg  
+2018-04-27 16:30:48.450 +03:00 [Information] Sending file. Request path: '"/img/fon.jpg"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\img\fon.jpg"'
+2018-04-27 16:30:48.539 +03:00 [Information] Request finished in 450.5757ms 200 image/jpeg
+2018-04-27 16:30:49.856 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:30:49.911 +03:00 [Information] Request finished in 24.2428ms 404 
+2018-04-27 16:30:51.008 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:30:51.153 +03:00 [Information] Request finished in 61.8931ms 404 
+2018-04-27 16:30:53.029 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/favicon.ico  
+2018-04-27 16:30:53.043 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\favicon.ico"'
+2018-04-27 16:30:53.078 +03:00 [Information] Request finished in 47.3084ms 200 image/x-icon
+2018-04-27 16:31:08.155 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Login  
+2018-04-27 16:31:08.310 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments ([""]) - ModelState is Valid
+2018-04-27 16:31:09.230 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-27 16:31:09.612 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 1293.143ms
+2018-04-27 16:31:09.660 +03:00 [Information] Request finished in 1630.7786ms 200 text/html; charset=utf-8
+2018-04-27 16:31:09.805 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:31:09.918 +03:00 [Information] Request finished in 53.4437ms 404 
+2018-04-27 16:31:10.110 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:31:10.181 +03:00 [Information] Request finished in 128.1599ms 404 
+2018-04-27 16:31:29.166 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 222
+2018-04-27 16:31:29.416 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-27 16:31:29.569 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 16:31:31.396 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:31:31.655 +03:00 [Warning] Invalid password for user "5".
+2018-04-27 16:31:31.665 +03:00 [Warning] User "5" failed to provide the correct password.
+2018-04-27 16:31:31.676 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-27 16:31:31.909 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 2502.5318ms
+2018-04-27 16:31:32.238 +03:00 [Information] Request finished in 2754.8204ms 200 text/html; charset=utf-8
+2018-04-27 16:31:32.318 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:31:32.427 +03:00 [Information] Request finished in 19.9695ms 404 
+2018-04-27 16:31:32.485 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:31:32.649 +03:00 [Information] Request finished in 101.6155ms 404 
+2018-04-27 16:31:43.172 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Login application/x-www-form-urlencoded 222
+2018-04-27 16:31:43.268 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Login (ETT.Web)" with arguments (["ETT.Web.Models.Users.LoginViewModel"]) - ModelState is Valid
+2018-04-27 16:31:43.286 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 16:31:43.560 +03:00 [Information] Executed DbCommand ("229"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:31:43.598 +03:00 [Warning] Invalid password for user "5".
+2018-04-27 16:31:43.613 +03:00 [Warning] User "5" failed to provide the correct password.
+2018-04-27 16:31:43.628 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-04-27 16:31:43.900 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Login (ETT.Web)" in 462.5546ms
+2018-04-27 16:31:44.121 +03:00 [Information] Request finished in 906.9341ms 200 text/html; charset=utf-8
+2018-04-27 16:31:44.140 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:31:44.209 +03:00 [Information] Request finished in 33.3637ms 404 
+2018-04-27 16:31:44.229 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:31:44.365 +03:00 [Information] Request finished in 16.8693ms 404 
+2018-04-27 16:31:50.326 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Account/Register  
+2018-04-27 16:31:50.381 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:31:51.045 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Register.cshtml".
+2018-04-27 16:31:51.193 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 842.4399ms
+2018-04-27 16:31:51.299 +03:00 [Information] Request finished in 884.7475ms 200 text/html; charset=utf-8
+2018-04-27 16:31:51.450 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:31:51.540 +03:00 [Information] Request finished in 13.3995ms 404 
+2018-04-27 16:31:51.556 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:31:51.577 +03:00 [Information] Request finished in 26.7097ms 404 
+2018-04-27 16:32:01.574 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Account/Register application/x-www-form-urlencoded 242
+2018-04-27 16:32:01.638 +03:00 [Information] Executing action method "ETT.Web.Controllers.AccountController.Register (ETT.Web)" with arguments (["ETT.Web.Models.Users.RegisterViewModel"]) - ModelState is Valid
+2018-04-27 16:32:01.809 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 16:32:02.305 +03:00 [Information] Executed DbCommand ("332"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-27 16:32:02.875 +03:00 [Information] Executed DbCommand ("272"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?' (Size = 256), @p6='?', @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?', @p10='?', @p11='?' (Size = 4000), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?', @p20='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([About], [AccessFailedCount], [Company], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NickName], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Position], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2018-04-27 16:32:03.137 +03:00 [Information] Executed DbCommand ("185"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-27 16:32:03.269 +03:00 [Information] Executed DbCommand ("62"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-04-27 16:32:03.352 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-04-27 16:32:03.402 +03:00 [Information] Executed DbCommand ("27"ms) [Parameters=["@__p_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN @__p_0 IN (
+        SELECT [x].[UserName]
+        FROM [AspNetUsers] AS [x]
+    )
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-04-27 16:32:03.409 +03:00 [Warning] User "1005" validation failed: "".
+2018-04-27 16:32:03.561 +03:00 [Information] Executed DbCommand ("69"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-27 16:32:03.714 +03:00 [Information] Executed DbCommand ("69"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-27 16:32:03.738 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-04-27 16:32:03.751 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-04-27 16:32:03.757 +03:00 [Information] Executed action "ETT.Web.Controllers.AccountController.Register (ETT.Web)" in 2164.4131ms
+2018-04-27 16:32:03.770 +03:00 [Information] Request finished in 2198.0521ms 302 
+2018-04-27 16:32:03.774 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 16:32:03.806 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:03.842 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:32:03.854 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 16:32:03.885 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 66.5933ms
+2018-04-27 16:32:04.111 +03:00 [Information] Request finished in 121.4142ms 200 text/html; charset=utf-8
+2018-04-27 16:32:04.201 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:04.244 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:04.262 +03:00 [Information] Request finished in 60.6126ms 404 
+2018-04-27 16:32:04.287 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:04.304 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:04.432 +03:00 [Information] Request finished in 35.0004ms 404 
+2018-04-27 16:32:07.773 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-27 16:32:07.787 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:07.859 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:32:10.698 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-27 16:32:11.507 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 3638.5422ms
+2018-04-27 16:32:11.526 +03:00 [Information] Request finished in 3831.2549ms 200 text/html; charset=utf-8
+2018-04-27 16:32:13.364 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:13.389 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:13.444 +03:00 [Information] Request finished in 40.0701ms 404 
+2018-04-27 16:32:13.633 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:13.658 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:13.696 +03:00 [Information] Request finished in 85.9555ms 404 
+2018-04-27 16:32:34.637 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/List  
+2018-04-27 16:32:34.649 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:34.705 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:32:35.320 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/List.cshtml".
+2018-04-27 16:32:35.499 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.List (ETT.Web)" in 751.2843ms
+2018-04-27 16:32:35.589 +03:00 [Information] Request finished in 877.5895ms 200 text/html; charset=utf-8
+2018-04-27 16:32:36.018 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:36.054 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:36.100 +03:00 [Information] Request finished in 130.7669ms 404 
+2018-04-27 16:32:36.118 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:36.127 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:36.172 +03:00 [Information] Request finished in 28.1575ms 404 
+2018-04-27 16:32:37.049 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Create  
+2018-04-27 16:32:37.084 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:37.142 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:32:37.552 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Create.cshtml".
+2018-04-27 16:32:37.767 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 519.8955ms
+2018-04-27 16:32:37.899 +03:00 [Information] Request finished in 734.9583ms 200 text/html; charset=utf-8
+2018-04-27 16:32:37.920 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:37.949 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:37.998 +03:00 [Information] Request finished in 51.467ms 404 
+2018-04-27 16:32:38.057 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:38.071 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:38.118 +03:00 [Information] Request finished in 26.9845ms 404 
+2018-04-27 16:32:42.105 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/Create application/x-www-form-urlencoded 271
+2018-04-27 16:32:42.119 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:42.247 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Projects.ProjectViewModel"]) - ModelState is Valid
+2018-04-27 16:32:42.698 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/Main/1002".
+2018-04-27 16:32:42.714 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Create (ETT.Web)" in 575.4234ms
+2018-04-27 16:32:42.772 +03:00 [Information] Request finished in 640.9989ms 302 
+2018-04-27 16:32:42.783 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Main/1002  
+2018-04-27 16:32:42.794 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:42.866 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Main (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:43.753 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Main.cshtml".
+2018-04-27 16:32:43.910 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Main (ETT.Web)" in 988.8632ms
+2018-04-27 16:32:44.260 +03:00 [Information] Request finished in 1144.4418ms 200 text/html; charset=utf-8
+2018-04-27 16:32:44.299 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/project/users.js?v=PCi4-wvjHpVNG0HLrXY2aQi-At92RBpp47rY7dVo9fg  
+2018-04-27 16:32:44.343 +03:00 [Information] Sending file. Request path: '"/js/project/users.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\project\users.js"'
+2018-04-27 16:32:44.348 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/project/project.js?v=6vYsmhugCgHl99XP2F9PXOuWZTJl_Eb_BUr1qNXbtUI  
+2018-04-27 16:32:44.354 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:44.465 +03:00 [Information] Sending file. Request path: '"/js/project/project.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\project\project.js"'
+2018-04-27 16:32:44.503 +03:00 [Information] Request finished in 500.889ms 200 application/javascript
+2018-04-27 16:32:44.536 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:44.587 +03:00 [Information] Request finished in 578.9843ms 200 application/javascript
+2018-04-27 16:32:44.589 +03:00 [Information] Request finished in 216.9072ms 404 
+2018-04-27 16:32:44.599 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:44.604 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/js/project/tasks.js?v=aD6M-kM9vxYhBtZdK6tnv3hNDHWqa8RdDg-ZbxFU98c  
+2018-04-27 16:32:44.614 +03:00 [Information] Sending file. Request path: '"/js/project/tasks.js"'. Physical path: '"D:\EpolSoft\ETT\ett\TimeCardsApp\ETT.Client\wwwroot\js\project\tasks.js"'
+2018-04-27 16:32:44.690 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:44.784 +03:00 [Information] Request finished in 120.9807ms 404 
+2018-04-27 16:32:44.825 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/Details/1002  
+2018-04-27 16:32:44.848 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/Task/Main  
+2018-04-27 16:32:44.874 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:44.898 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:45.121 +03:00 [Information] Request finished in 716.3279ms 200 application/javascript
+2018-04-27 16:32:45.213 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/User/Main  
+2018-04-27 16:32:45.301 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:45.305 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:45.356 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Main (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:45.423 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.Main (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:47.103 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Details.cshtml".
+2018-04-27 16:32:47.117 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Main.cshtml".
+2018-04-27 16:32:47.148 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/Main.cshtml".
+2018-04-27 16:32:47.154 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.ProjectController.Details (ETT.Web)" in 2237.7642ms
+2018-04-27 16:32:47.198 +03:00 [Information] Request finished in 2480.8252ms 200 text/html; charset=utf-8
+2018-04-27 16:32:47.249 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Main (ETT.Web)" in 2089.703ms
+2018-04-27 16:32:47.405 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/Task/List  
+2018-04-27 16:32:47.419 +03:00 [Information] Request finished in 2587.6668ms 200 text/html; charset=utf-8
+2018-04-27 16:32:47.557 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:47.630 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.Main (ETT.Web)" in 1877.9765ms
+2018-04-27 16:32:47.650 +03:00 [Information] Request finished in 2495.87ms 200 text/html; charset=utf-8
+2018-04-27 16:32:47.734 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:47.748 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/User/List  
+2018-04-27 16:32:47.885 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:47.986 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:49.333 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/Task/Create  
+2018-04-27 16:32:49.390 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:49.591 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:32:49.619 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/List.cshtml".
+2018-04-27 16:32:49.656 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/User/List.cshtml".
+2018-04-27 16:32:49.887 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.List (ETT.Web)" in 2210.5582ms
+2018-04-27 16:32:50.402 +03:00 [Information] Request finished in 2535.5344ms 200 text/html; charset=utf-8
+2018-04-27 16:32:50.436 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.UserController.List (ETT.Web)" in 2348.8236ms
+2018-04-27 16:32:50.461 +03:00 [Information] Request finished in 2711.9072ms 200 text/html; charset=utf-8
+2018-04-27 16:32:50.544 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Create.cshtml".
+2018-04-27 16:32:50.611 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 1207.8316ms
+2018-04-27 16:32:50.646 +03:00 [Information] Request finished in 1981.0706ms 200 text/html; charset=utf-8
+2018-04-27 16:32:52.622 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Project/1002/Task/Create application/x-www-form-urlencoded; charset=UTF-8 250
+2018-04-27 16:32:52.702 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:52.903 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" with arguments (["1002", "ETT.Web.Models.Projects.Task.TaskViewModel"]) - ModelState is Valid
+2018-04-27 16:32:53.202 +03:00 [Information] Executing RedirectResult, redirecting to "/Project/1002/Task/Details/1003".
+2018-04-27 16:32:53.209 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Create (ETT.Web)" in 496.8046ms
+2018-04-27 16:32:53.228 +03:00 [Information] Request finished in 685.5138ms 302 
+2018-04-27 16:32:53.241 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Project/1002/Task/Details/1003  
+2018-04-27 16:32:53.249 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:53.357 +03:00 [Information] Executing action method "ETT.Web.Controllers.Projects.TaskController.Details (ETT.Web)" with arguments (["1002", "1003"]) - ModelState is Valid
+2018-04-27 16:32:53.893 +03:00 [Information] Executing ViewResult, running view at path "/Views/Project/Task/Details.cshtml".
+2018-04-27 16:32:53.915 +03:00 [Information] Executed action "ETT.Web.Controllers.Projects.TaskController.Details (ETT.Web)" in 648.0259ms
+2018-04-27 16:32:53.944 +03:00 [Information] Request finished in 695.9514ms 200 text/html; charset=utf-8
+2018-04-27 16:32:57.104 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/Create  
+2018-04-27 16:32:57.118 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:57.168 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:32:57.387 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/Create.cshtml".
+2018-04-27 16:32:57.515 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 321.364ms
+2018-04-27 16:32:57.593 +03:00 [Information] Request finished in 425.2961ms 200 text/html; charset=utf-8
+2018-04-27 16:32:58.034 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:32:58.050 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:58.089 +03:00 [Information] Request finished in 158.1782ms 404 
+2018-04-27 16:32:58.183 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:32:58.226 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:58.274 +03:00 [Information] Request finished in 139.0436ms 404 
+2018-04-27 16:32:59.388 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/GetTaskList/1002  
+2018-04-27 16:32:59.404 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:32:59.540 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.GetTaskList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:33:00.284 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/GetTaskList.cshtml".
+2018-04-27 16:33:00.474 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.GetTaskList (ETT.Web)" in 902.5557ms
+2018-04-27 16:33:00.573 +03:00 [Information] Request finished in 1098.8588ms 200 text/html; charset=utf-8
+2018-04-27 16:33:04.866 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/Record/Create application/x-www-form-urlencoded 303
+2018-04-27 16:33:04.886 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:05.042 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.Create (ETT.Web)" with arguments (["ETT.Web.Models.Record.ProjectRecordViewModel"]) - ModelState is Valid
+2018-04-27 16:33:05.323 +03:00 [Information] Executing RedirectResult, redirecting to "/Record/UserList".
+2018-04-27 16:33:05.332 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.Create (ETT.Web)" in 429.1148ms
+2018-04-27 16:33:05.368 +03:00 [Information] Request finished in 482.1341ms 302 
+2018-04-27 16:33:05.382 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Record/UserList  
+2018-04-27 16:33:05.392 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:05.488 +03:00 [Information] Executing action method "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" with arguments (["IdAsc", "0"]) - ModelState is Valid
+2018-04-27 16:33:06.165 +03:00 [Information] Executing ViewResult, running view at path "/Views/Record/List.cshtml".
+2018-04-27 16:33:07.869 +03:00 [Information] Executed action "ETT.Web.Controllers.RecordController.UserList (ETT.Web)" in 2465.5081ms
+2018-04-27 16:33:08.099 +03:00 [Information] Request finished in 2562.9754ms 200 text/html; charset=utf-8
+2018-04-27 16:33:08.189 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:33:08.201 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:08.276 +03:00 [Information] Request finished in 18.8248ms 404 
+2018-04-27 16:33:08.307 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:33:08.318 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:08.355 +03:00 [Information] Request finished in 59.2065ms 404 
+2018-04-27 16:33:10.012 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 16:33:10.069 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:10.233 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:33:11.107 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 16:33:11.306 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 1081.1044ms
+2018-04-27 16:33:11.348 +03:00 [Information] Request finished in 1312.8662ms 200 text/html; charset=utf-8
+2018-04-27 16:33:11.456 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:33:11.466 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:11.494 +03:00 [Information] Request finished in 20.234ms 404 
+2018-04-27 16:33:11.509 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:33:11.524 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:11.538 +03:00 [Information] Request finished in 36.2278ms 404 
+2018-04-27 16:33:12.755 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 16:33:12.761 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:12.809 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:33:13.348 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 16:33:13.395 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 623.6913ms
+2018-04-27 16:33:13.447 +03:00 [Information] Request finished in 650.2266ms 200 text/html; charset=utf-8
+2018-04-27 16:33:14.485 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 16:33:14.494 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:14.567 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 16:33:15.336 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 16:33:15.442 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 894.7371ms
+2018-04-27 16:33:15.501 +03:00 [Information] Request finished in 992.6185ms 200 text/html; charset=utf-8
+2018-04-27 16:33:17.840 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 16:33:17.856 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:33:18.020 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 16:33:19.529 +03:00 [Information] Executing FileResult, sending file as "test.xlsx"
+2018-04-27 16:33:20.174 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 1668.3885ms
+2018-04-27 16:33:20.359 +03:00 [Information] Request finished in 2347.3288ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 16:59:02.582 +03:00 [Debug] START WEB SERVER
+2018-04-27 16:59:04.054 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 16:59:10.792 +03:00 [Information] Executed DbCommand ("194"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 16:59:11.049 +03:00 [Information] Executed DbCommand ("145"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 16:59:11.183 +03:00 [Information] Executed DbCommand ("111"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 16:59:11.378 +03:00 [Information] Executed DbCommand ("138"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:59:11.515 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:59:11.637 +03:00 [Information] Executed DbCommand ("73"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:59:11.715 +03:00 [Information] Executed DbCommand ("66"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 16:59:12.329 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 16:59:12.553 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:13.478 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:59:20.605 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 16:59:22.404 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 8789.973ms
+2018-04-27 16:59:22.908 +03:00 [Information] Request finished in 10153.4847ms 200 text/html; charset=utf-8
+2018-04-27 16:59:23.610 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:59:23.685 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:23.735 +03:00 [Information] Request finished in 386.8127ms 404 
+2018-04-27 16:59:23.748 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:59:23.763 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:23.803 +03:00 [Information] Request finished in 25.137ms 404 
+2018-04-27 16:59:26.206 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 16:59:26.215 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:26.284 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 16:59:29.556 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 16:59:29.907 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3561.5463ms
+2018-04-27 16:59:30.276 +03:00 [Information] Request finished in 3733.7979ms 200 text/html; charset=utf-8
+2018-04-27 16:59:30.372 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 16:59:30.387 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:30.455 +03:00 [Information] Request finished in 66.1973ms 404 
+2018-04-27 16:59:30.475 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 16:59:30.488 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:30.575 +03:00 [Information] Request finished in 27.1764ms 404 
+2018-04-27 16:59:32.612 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 16:59:32.627 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:32.792 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 16:59:33.480 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 16:59:33.541 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 851.8638ms
+2018-04-27 16:59:33.577 +03:00 [Information] Request finished in 986.0063ms 200 text/html; charset=utf-8
+2018-04-27 16:59:36.305 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 16:59:36.315 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:36.372 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 16:59:37.468 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 16:59:37.547 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1201.2146ms
+2018-04-27 16:59:37.640 +03:00 [Information] Request finished in 1279.831ms 200 text/html; charset=utf-8
+2018-04-27 16:59:39.785 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 16:59:39.834 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 16:59:39.969 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 16:59:41.956 +03:00 [Information] Executing FileResult, sending file as "test.xlsx"
+2018-04-27 16:59:42.072 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2113.3602ms
+2018-04-27 16:59:42.113 +03:00 [Information] Request finished in 2333.2276ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 17:06:33.670 +03:00 [Debug] START WEB SERVER
+2018-04-27 17:06:35.779 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 17:06:41.810 +03:00 [Information] Executed DbCommand ("283"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 17:06:42.040 +03:00 [Information] Executed DbCommand ("112"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 17:06:42.126 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 17:06:42.252 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 17:06:42.817 +03:00 [Information] Executed DbCommand ("419"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 17:06:43.117 +03:00 [Information] Executed DbCommand ("286"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 17:06:43.234 +03:00 [Information] Executed DbCommand ("103"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 17:06:43.839 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 17:06:44.142 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 17:06:44.262 +03:00 [Information] Executed DbCommand ("86"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[About], [e].[AccessFailedCount], [e].[Company], [e].[ConcurrencyStamp], [e].[DateOfBirth], [e].[Email], [e].[EmailConfirmed], [e].[FirstName], [e].[LastName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NickName], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[Position], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-04-27 17:06:44.739 +03:00 [Information] Executed DbCommand ("222"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-27 17:06:45.187 +03:00 [Information] Executed DbCommand ("293"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-27 17:06:45.210 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:06:46.516 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 17:06:55.774 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 17:06:58.795 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 12734.5623ms
+2018-04-27 17:06:59.408 +03:00 [Information] Request finished in 15046.7638ms 200 text/html; charset=utf-8
+2018-04-27 17:06:59.856 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 17:07:00.120 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:00.208 +03:00 [Information] Request finished in 465.7835ms 404 
+2018-04-27 17:07:00.233 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 17:07:00.246 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:00.335 +03:00 [Information] Request finished in 26.1434ms 404 
+2018-04-27 17:07:02.411 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 17:07:02.420 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:02.492 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 17:07:05.816 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 17:07:06.404 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3818.4476ms
+2018-04-27 17:07:06.770 +03:00 [Information] Request finished in 4009.9847ms 200 text/html; charset=utf-8
+2018-04-27 17:07:06.801 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 17:07:06.818 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:06.922 +03:00 [Information] Request finished in 37.5573ms 404 
+2018-04-27 17:07:07.005 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 17:07:07.017 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:07.087 +03:00 [Information] Request finished in 80.1921ms 404 
+2018-04-27 17:07:09.321 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 17:07:09.495 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:09.753 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 17:07:09.793 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 17:07:09.809 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:10.445 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 17:07:11.585 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 17:07:11.698 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 2083.293ms
+2018-04-27 17:07:11.829 +03:00 [Information] Request finished in 2631.4899ms 200 text/html; charset=utf-8
+2018-04-27 17:07:12.490 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 17:07:12.589 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 2634.9361ms
+2018-04-27 17:07:12.716 +03:00 [Information] Request finished in 2948.4822ms 200 text/html; charset=utf-8
+2018-04-27 17:07:17.149 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 17:07:17.178 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 17:07:17.425 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 17:07:19.249 +03:00 [Information] Executing FileResult, sending file as "test.xlsx"
+2018-04-27 17:07:19.884 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2057.5305ms
+2018-04-27 17:07:20.239 +03:00 [Information] Request finished in 2770.248ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:11:12.492 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:11:14.192 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:11:23.922 +03:00 [Information] Executed DbCommand ("640"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:11:24.210 +03:00 [Information] Executed DbCommand ("137"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:11:24.395 +03:00 [Information] Executed DbCommand ("152"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:11:24.897 +03:00 [Information] Executed DbCommand ("269"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:11:26.412 +03:00 [Information] Executed DbCommand ("914"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:11:26.830 +03:00 [Information] Executed DbCommand ("342"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:11:27.101 +03:00 [Information] Executed DbCommand ("244"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:11:27.806 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:11:28.014 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:11:28.128 +03:00 [Information] Executed DbCommand ("72"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[About], [e].[AccessFailedCount], [e].[Company], [e].[ConcurrencyStamp], [e].[DateOfBirth], [e].[Email], [e].[EmailConfirmed], [e].[FirstName], [e].[LastName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NickName], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[Position], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-04-27 18:11:28.345 +03:00 [Information] Executed DbCommand ("104"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-27 18:11:28.479 +03:00 [Information] Executed DbCommand ("47"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-27 18:11:28.490 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:29.162 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:11:38.666 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:11:41.173 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 12001.9833ms
+2018-04-27 18:11:41.451 +03:00 [Information] Request finished in 13424.3096ms 200 text/html; charset=utf-8
+2018-04-27 18:11:43.404 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:11:43.496 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:43.542 +03:00 [Information] Request finished in 134.4805ms 404 
+2018-04-27 18:11:43.857 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:11:43.868 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:44.014 +03:00 [Information] Request finished in 27.0792ms 404 
+2018-04-27 18:11:47.728 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:11:47.784 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:47.931 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:11:51.430 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:11:51.851 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3925.224ms
+2018-04-27 18:11:51.913 +03:00 [Information] Request finished in 4236.7439ms 200 text/html; charset=utf-8
+2018-04-27 18:11:52.040 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:11:52.102 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:52.152 +03:00 [Information] Request finished in 95.1506ms 404 
+2018-04-27 18:11:52.167 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:11:52.180 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:52.199 +03:00 [Information] Request finished in 20.1657ms 404 
+2018-04-27 18:11:54.985 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:11:55.037 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:55.268 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:11:56.165 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:11:56.261 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1107.6693ms
+2018-04-27 18:11:56.298 +03:00 [Information] Request finished in 1427.9043ms 200 text/html; charset=utf-8
+2018-04-27 18:11:57.582 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:11:57.602 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:11:57.746 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:11:59.080 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:11:59.163 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1517.166ms
+2018-04-27 18:11:59.282 +03:00 [Information] Request finished in 1615.2442ms 200 text/html; charset=utf-8
+2018-04-27 18:12:00.564 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:12:00.571 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:12:00.781 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:12:03.535 +03:00 [Information] Executing FileResult, sending file as "Report4/27/2018.xlsx"
+2018-04-27 18:12:03.680 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2953.0507ms
+2018-04-27 18:12:03.697 +03:00 [Information] Request finished in 3125.5342ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:24:56.308 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:24:59.011 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:25:06.830 +03:00 [Information] Executed DbCommand ("558"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:25:07.679 +03:00 [Information] Executed DbCommand ("517"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:25:08.315 +03:00 [Information] Executed DbCommand ("518"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:25:08.643 +03:00 [Information] Executed DbCommand ("243"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:25:08.882 +03:00 [Information] Executed DbCommand ("149"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:25:09.299 +03:00 [Information] Executed DbCommand ("384"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:25:09.393 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:25:10.522 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:25:10.717 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:12.401 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:25:22.767 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:25:24.881 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 12837.7566ms
+2018-04-27 18:25:25.310 +03:00 [Information] Request finished in 14688.5845ms 200 text/html; charset=utf-8
+2018-04-27 18:25:25.704 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:25:26.138 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:26.241 +03:00 [Information] Request finished in 604.5814ms 404 
+2018-04-27 18:25:26.270 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:25:26.289 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:26.371 +03:00 [Information] Request finished in 37.0181ms 404 
+2018-04-27 18:25:49.714 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:25:49.727 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:49.798 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:25:53.840 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:25:54.292 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 4374.1629ms
+2018-04-27 18:25:54.322 +03:00 [Information] Request finished in 4593.5697ms 200 text/html; charset=utf-8
+2018-04-27 18:25:54.496 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:25:54.520 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:54.573 +03:00 [Information] Request finished in 94.8487ms 404 
+2018-04-27 18:25:54.585 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:25:54.592 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:54.645 +03:00 [Information] Request finished in 16.67ms 404 
+2018-04-27 18:25:56.977 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:25:57.029 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:57.220 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:25:57.769 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:25:57.807 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 719.8272ms
+2018-04-27 18:25:57.838 +03:00 [Information] Request finished in 843.6516ms 200 text/html; charset=utf-8
+2018-04-27 18:25:59.231 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:25:59.239 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:25:59.299 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:26:00.276 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:26:00.339 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1079.8782ms
+2018-04-27 18:26:00.362 +03:00 [Information] Request finished in 1114.4651ms 200 text/html; charset=utf-8
+2018-04-27 18:26:03.475 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:26:03.491 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:26:03.658 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:26:05.510 +03:00 [Information] Executing FileResult, sending file as "Report2018-04-27--06-26-03.xlsx"
+2018-04-27 18:26:05.951 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2010.0994ms
+2018-04-27 18:26:06.210 +03:00 [Information] Request finished in 2490.9525ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:31:41.671 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:31:43.540 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:31:51.981 +03:00 [Information] Executed DbCommand ("396"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:31:52.681 +03:00 [Information] Executed DbCommand ("550"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:31:52.924 +03:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:31:54.075 +03:00 [Information] Executed DbCommand ("938"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:31:54.218 +03:00 [Information] Executed DbCommand ("73"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:31:54.420 +03:00 [Information] Executed DbCommand ("168"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:31:54.672 +03:00 [Information] Executed DbCommand ("108"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:31:56.090 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:31:56.292 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:31:57.181 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:32:07.181 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:32:09.308 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 12355.4944ms
+2018-04-27 18:32:09.370 +03:00 [Information] Request finished in 13590.3239ms 200 text/html; charset=utf-8
+2018-04-27 18:32:09.617 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:32:09.710 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:10.000 +03:00 [Information] Request finished in 118.6424ms 404 
+2018-04-27 18:32:10.329 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:32:10.349 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:10.396 +03:00 [Information] Request finished in 117.9258ms 404 
+2018-04-27 18:32:11.542 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:32:11.554 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:11.617 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:32:14.723 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:32:15.254 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3404.3799ms
+2018-04-27 18:32:15.399 +03:00 [Information] Request finished in 3727.8933ms 200 text/html; charset=utf-8
+2018-04-27 18:32:15.446 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:32:15.478 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:15.526 +03:00 [Information] Request finished in 69.8204ms 404 
+2018-04-27 18:32:15.537 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:32:15.546 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:15.600 +03:00 [Information] Request finished in 17.8866ms 404 
+2018-04-27 18:32:17.648 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:32:17.667 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:17.863 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:32:18.351 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:32:18.408 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 621.9042ms
+2018-04-27 18:32:18.455 +03:00 [Information] Request finished in 788.512ms 200 text/html; charset=utf-8
+2018-04-27 18:32:19.808 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:32:19.815 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:19.908 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:32:20.941 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:32:21.033 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1184.9907ms
+2018-04-27 18:32:21.136 +03:00 [Information] Request finished in 1286.0568ms 200 text/html; charset=utf-8
+2018-04-27 18:32:22.771 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:32:22.785 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:32:23.132 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:32:25.233 +03:00 [Information] Executing FileResult, sending file as "Report2018-04-27--06-32-23.xlsx"
+2018-04-27 18:32:25.586 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2437.298ms
+2018-04-27 18:32:25.840 +03:00 [Information] Request finished in 2843.2622ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:36:41.436 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:36:43.138 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:36:49.469 +03:00 [Information] Executed DbCommand ("331"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:36:49.733 +03:00 [Information] Executed DbCommand ("130"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:36:49.836 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:36:50.134 +03:00 [Information] Executed DbCommand ("214"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:36:50.333 +03:00 [Information] Executed DbCommand ("111"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:36:50.576 +03:00 [Information] Executed DbCommand ("217"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:36:50.719 +03:00 [Information] Executed DbCommand ("120"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:36:51.620 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:36:51.794 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:36:52.535 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:37:01.239 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:37:03.663 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 11226.901ms
+2018-04-27 18:37:04.246 +03:00 [Information] Request finished in 12089.4192ms 200 text/html; charset=utf-8
+2018-04-27 18:37:04.725 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:37:04.839 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:37:04.908 +03:00 [Information] Request finished in 323.2356ms 404 
+2018-04-27 18:37:04.966 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:37:05.274 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:37:05.538 +03:00 [Information] Request finished in 356.5287ms 404 
+2018-04-27 18:37:15.685 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:37:15.698 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:37:15.777 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:37:20.341 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:37:20.857 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 5052.0225ms
+2018-04-27 18:37:21.164 +03:00 [Information] Request finished in 5191.1024ms 200 text/html; charset=utf-8
+2018-04-27 18:37:22.787 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:37:22.798 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:37:22.820 +03:00 [Information] Request finished in 22.7612ms 404 
+2018-04-27 18:37:22.859 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:37:22.875 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:37:22.920 +03:00 [Information] Request finished in 29.0831ms 404 
+2018-04-27 18:38:56.810 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:38:56.829 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:38:56.916 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:38:57.756 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:38:58.138 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 996.5773ms
+2018-04-27 18:38:58.230 +03:00 [Information] Request finished in 1346.268ms 200 text/html; charset=utf-8
+2018-04-27 18:38:58.799 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:38:58.831 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:38:59.397 +03:00 [Information] Request finished in 129.813ms 404 
+2018-04-27 18:38:59.631 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:38:59.696 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:39:00.186 +03:00 [Information] Request finished in 217.8279ms 404 
+2018-04-27 18:39:00.544 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:39:00.563 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:39:01.219 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:39:01.758 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:39:01.775 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:39:01.863 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:39:02.314 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:39:02.459 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 1729.4177ms
+2018-04-27 18:39:02.746 +03:00 [Information] Request finished in 2058.8177ms 200 text/html; charset=utf-8
+2018-04-27 18:39:03.599 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:39:03.684 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1866.6061ms
+2018-04-27 18:39:03.745 +03:00 [Information] Request finished in 1941.3145ms 200 text/html; charset=utf-8
+2018-04-27 18:39:05.370 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:39:05.404 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:39:05.538 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:40:28.222 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:40:29.895 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:40:35.200 +03:00 [Information] Executed DbCommand ("278"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:40:35.425 +03:00 [Information] Executed DbCommand ("123"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:40:35.494 +03:00 [Information] Executed DbCommand ("61"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:40:35.610 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:40:35.724 +03:00 [Information] Executed DbCommand ("64"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:40:35.813 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:40:35.923 +03:00 [Information] Executed DbCommand ("97"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:40:36.383 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:40:36.528 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:37.039 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:40:44.019 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:40:45.892 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 8825.0773ms
+2018-04-27 18:40:46.334 +03:00 [Information] Request finished in 9553.6626ms 200 text/html; charset=utf-8
+2018-04-27 18:40:46.875 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:40:47.189 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:47.627 +03:00 [Information] Request finished in 537.0293ms 404 
+2018-04-27 18:40:47.647 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:40:47.677 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:47.771 +03:00 [Information] Request finished in 43.3828ms 404 
+2018-04-27 18:40:48.553 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:40:48.677 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:48.774 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:40:52.173 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:40:52.555 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3726.7286ms
+2018-04-27 18:40:52.615 +03:00 [Information] Request finished in 4237.2215ms 200 text/html; charset=utf-8
+2018-04-27 18:40:52.698 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:40:52.784 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:52.869 +03:00 [Information] Request finished in 97.4358ms 404 
+2018-04-27 18:40:53.085 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:40:53.236 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:53.302 +03:00 [Information] Request finished in 354.7102ms 404 
+2018-04-27 18:40:54.864 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:40:54.874 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:55.097 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:40:55.720 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:40:55.759 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 838.4769ms
+2018-04-27 18:40:55.817 +03:00 [Information] Request finished in 913.4406ms 200 text/html; charset=utf-8
+2018-04-27 18:40:57.020 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:40:57.039 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:40:57.102 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:40:58.681 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:40:58.770 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1695.4992ms
+2018-04-27 18:40:58.833 +03:00 [Information] Request finished in 1813.8899ms 200 text/html; charset=utf-8
+2018-04-27 18:41:00.744 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:41:00.754 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:41:01.004 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:41:03.018 +03:00 [Information] Executing FileResult, sending file as "Report_2018-04-27--06-41-01.xlsx"
+2018-04-27 18:41:03.063 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2256.28ms
+2018-04-27 18:41:03.294 +03:00 [Information] Request finished in 2332.5508ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:45:02.525 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:45:04.045 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:45:09.829 +03:00 [Information] Executed DbCommand ("361"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:45:10.155 +03:00 [Information] Executed DbCommand ("192"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:45:10.316 +03:00 [Information] Executed DbCommand ("111"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:45:10.469 +03:00 [Information] Executed DbCommand ("102"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:45:10.660 +03:00 [Information] Executed DbCommand ("96"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:45:10.745 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:45:10.852 +03:00 [Information] Executed DbCommand ("93"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:45:11.804 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:45:12.485 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:45:12.716 +03:00 [Information] Executed DbCommand ("187"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[About], [e].[AccessFailedCount], [e].[Company], [e].[ConcurrencyStamp], [e].[DateOfBirth], [e].[Email], [e].[EmailConfirmed], [e].[FirstName], [e].[LastName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NickName], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[Position], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-04-27 18:45:13.248 +03:00 [Information] Executed DbCommand ("349"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-04-27 18:45:13.474 +03:00 [Information] Executed DbCommand ("115"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-04-27 18:45:13.485 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:14.682 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:45:22.217 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:45:25.010 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 10592.0941ms
+2018-04-27 18:45:25.974 +03:00 [Information] Request finished in 13307.6758ms 200 text/html; charset=utf-8
+2018-04-27 18:45:26.683 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:45:26.773 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:26.866 +03:00 [Information] Request finished in 396.6531ms 404 
+2018-04-27 18:45:27.365 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:45:27.404 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:27.645 +03:00 [Information] Request finished in 533.4358ms 404 
+2018-04-27 18:45:34.280 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:45:34.294 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:34.346 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:45:37.376 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:45:37.683 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3280.605ms
+2018-04-27 18:45:37.719 +03:00 [Information] Request finished in 3418.7171ms 200 text/html; charset=utf-8
+2018-04-27 18:45:37.841 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:45:37.850 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:37.948 +03:00 [Information] Request finished in 16.2245ms 404 
+2018-04-27 18:45:37.972 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:45:37.985 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:38.032 +03:00 [Information] Request finished in 28.9225ms 404 
+2018-04-27 18:45:40.118 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:45:40.133 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:40.287 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:45:40.742 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:45:40.776 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 603.057ms
+2018-04-27 18:45:40.805 +03:00 [Information] Request finished in 672.6661ms 200 text/html; charset=utf-8
+2018-04-27 18:45:44.432 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:45:44.440 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:44.505 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:45:45.541 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:45:45.601 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1138.5009ms
+2018-04-27 18:45:45.626 +03:00 [Information] Request finished in 1178.0868ms 200 text/html; charset=utf-8
+2018-04-27 18:45:48.461 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:45:48.492 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:45:48.619 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:45:50.403 +03:00 [Information] Executing FileResult, sending file as "Report_2018-04-27--06-45-48.xlsx"
+2018-04-27 18:45:50.785 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 1904.5215ms
+2018-04-27 18:45:50.926 +03:00 [Information] Request finished in 2346.5348ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:47:54.040 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:47:55.541 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:48:03.000 +03:00 [Information] Executed DbCommand ("458"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:48:03.243 +03:00 [Information] Executed DbCommand ("130"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:48:03.383 +03:00 [Information] Executed DbCommand ("78"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:48:03.552 +03:00 [Information] Executed DbCommand ("106"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:48:03.729 +03:00 [Information] Executed DbCommand ("85"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:48:03.854 +03:00 [Information] Executed DbCommand ("104"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:48:04.231 +03:00 [Information] Executed DbCommand ("358"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:48:04.947 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:48:05.255 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:06.351 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:48:14.080 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:48:16.303 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 10561.9526ms
+2018-04-27 18:48:16.516 +03:00 [Information] Request finished in 11528.3504ms 200 text/html; charset=utf-8
+2018-04-27 18:48:17.016 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:48:17.354 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:17.487 +03:00 [Information] Request finished in 568.2497ms 404 
+2018-04-27 18:48:17.557 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:48:17.576 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:17.615 +03:00 [Information] Request finished in 54.1229ms 404 
+2018-04-27 18:48:20.479 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:48:20.495 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:20.588 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:48:24.358 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:48:25.261 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 4112.623ms
+2018-04-27 18:48:26.167 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:48:26.216 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:26.345 +03:00 [Information] Request finished in 1013.8354ms 404 
+2018-04-27 18:48:26.382 +03:00 [Information] Request finished in 4877.9409ms 200 text/html; charset=utf-8
+2018-04-27 18:48:26.398 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:48:26.408 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:26.465 +03:00 [Information] Request finished in 18.5912ms 404 
+2018-04-27 18:48:27.372 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:48:27.398 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:27.568 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:48:28.074 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:48:28.125 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 666.3593ms
+2018-04-27 18:48:28.163 +03:00 [Information] Request finished in 780.9277ms 200 text/html; charset=utf-8
+2018-04-27 18:48:29.479 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:48:29.487 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:29.593 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:48:31.446 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:48:31.508 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1998.2968ms
+2018-04-27 18:48:31.535 +03:00 [Information] Request finished in 2040.2585ms 200 text/html; charset=utf-8
+2018-04-27 18:48:37.872 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:48:37.888 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:48:38.043 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:48:39.552 +03:00 [Information] Executing FileResult, sending file as "Report_2018-04-27--06-48-38.xlsx"
+2018-04-27 18:48:39.650 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 1655.5927ms
+2018-04-27 18:48:39.658 +03:00 [Information] Request finished in 1785.4141ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 18:51:25.543 +03:00 [Debug] START WEB SERVER
+2018-04-27 18:51:27.695 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 18:51:34.550 +03:00 [Information] Executed DbCommand ("475"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:51:34.978 +03:00 [Information] Executed DbCommand ("160"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:51:35.116 +03:00 [Information] Executed DbCommand ("119"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 18:51:35.401 +03:00 [Information] Executed DbCommand ("147"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:51:35.670 +03:00 [Information] Executed DbCommand ("202"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:51:35.809 +03:00 [Information] Executed DbCommand ("117"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:51:35.895 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 18:51:36.759 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 18:51:36.916 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:38.036 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:51:46.192 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 18:51:48.201 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 10511.2535ms
+2018-04-27 18:51:48.297 +03:00 [Information] Request finished in 11577.7388ms 200 text/html; charset=utf-8
+2018-04-27 18:51:48.719 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:51:48.900 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:49.219 +03:00 [Information] Request finished in 419.0214ms 404 
+2018-04-27 18:51:49.316 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:51:49.334 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:49.418 +03:00 [Information] Request finished in 31.5216ms 404 
+2018-04-27 18:51:52.447 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 18:51:52.458 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:52.507 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 18:51:55.601 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 18:51:56.112 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3363.249ms
+2018-04-27 18:51:56.324 +03:00 [Information] Request finished in 3679.521ms 200 text/html; charset=utf-8
+2018-04-27 18:51:56.385 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 18:51:56.421 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:56.491 +03:00 [Information] Request finished in 52.8049ms 404 
+2018-04-27 18:51:56.532 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 18:51:56.585 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:56.660 +03:00 [Information] Request finished in 84.6146ms 404 
+2018-04-27 18:51:57.971 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 18:51:57.979 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:51:58.140 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 18:51:58.749 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 18:51:58.813 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 786.6735ms
+2018-04-27 18:51:58.848 +03:00 [Information] Request finished in 861.8806ms 200 text/html; charset=utf-8
+2018-04-27 18:51:59.936 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 18:51:59.946 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:52:00.017 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 18:52:01.134 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 18:52:01.197 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1225.5583ms
+2018-04-27 18:52:01.224 +03:00 [Information] Request finished in 1273.0292ms 200 text/html; charset=utf-8
+2018-04-27 18:52:03.061 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 18:52:03.135 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 18:52:03.288 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 18:52:04.849 +03:00 [Information] Executing FileResult, sending file as "Report_2018-04-27--06-52-03.xlsx"
+2018-04-27 18:52:04.889 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 1702.755ms
+2018-04-27 18:52:05.119 +03:00 [Information] Request finished in 1959.0061ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2018-04-27 19:10:12.887 +03:00 [Debug] START WEB SERVER
+2018-04-27 19:10:15.282 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-04-27 19:10:23.239 +03:00 [Information] Executed DbCommand ("640"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 19:10:23.959 +03:00 [Information] Executed DbCommand ("159"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 19:10:24.427 +03:00 [Information] Executed DbCommand ("417"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-04-27 19:10:24.880 +03:00 [Information] Executed DbCommand ("120"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 19:10:25.333 +03:00 [Information] Executed DbCommand ("336"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 19:10:25.432 +03:00 [Information] Executed DbCommand ("84"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 19:10:25.517 +03:00 [Information] Executed DbCommand ("70"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[About], [u].[AccessFailedCount], [u].[Company], [u].[ConcurrencyStamp], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NickName], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[Position], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-04-27 19:10:26.131 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/  
+2018-04-27 19:10:26.270 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:10:26.739 +03:00 [Information] Executing action method "ETT.Web.Controllers.HomeController.Index (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 19:10:36.480 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-04-27 19:10:38.273 +03:00 [Information] Executed action "ETT.Web.Controllers.HomeController.Index (ETT.Web)" in 11664.4436ms
+2018-04-27 19:10:38.354 +03:00 [Information] Request finished in 12245.1885ms 200 text/html; charset=utf-8
+2018-04-27 19:10:38.846 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 19:10:38.864 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:10:38.887 +03:00 [Information] Request finished in 33.0684ms 404 
+2018-04-27 19:10:39.347 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 19:10:39.354 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:10:39.367 +03:00 [Information] Request finished in 26.2841ms 404 
+2018-04-27 19:11:42.479 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/CreateReport  
+2018-04-27 19:11:42.516 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:42.701 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" with arguments (null) - ModelState is Valid
+2018-04-27 19:11:45.834 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/CreateReport.cshtml".
+2018-04-27 19:11:46.268 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.CreateReport (ETT.Web)" in 3590.665ms
+2018-04-27 19:11:46.414 +03:00 [Information] Request finished in 3913.8065ms 200 text/html; charset=utf-8
+2018-04-27 19:11:46.935 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff2  
+2018-04-27 19:11:47.001 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:47.117 +03:00 [Information] Request finished in 301.3455ms 404 
+2018-04-27 19:11:47.145 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/lib/materialize/dist/fonts/roboto/Roboto-Regular.woff  
+2018-04-27 19:11:47.160 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:47.248 +03:00 [Information] Request finished in 32.8028ms 404 
+2018-04-27 19:11:48.814 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetTaskUserList/1002  
+2018-04-27 19:11:48.822 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:49.009 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" with arguments (["1002"]) - ModelState is Valid
+2018-04-27 19:11:49.711 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetTaskUserList.cshtml".
+2018-04-27 19:11:49.751 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetTaskUserList (ETT.Web)" in 881.2416ms
+2018-04-27 19:11:49.787 +03:00 [Information] Request finished in 950.3991ms 200 text/html; charset=utf-8
+2018-04-27 19:11:50.670 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63433/Report/GetSearchList?&projId=1002&taskId=&userId=  
+2018-04-27 19:11:50.681 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:50.764 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" with arguments (["1002", "", ""]) - ModelState is Valid
+2018-04-27 19:11:51.802 +03:00 [Information] Executing ViewResult, running view at path "/Views/Report/GetSearchList.cshtml".
+2018-04-27 19:11:51.918 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportController.GetSearchList (ETT.Web)" in 1202.9111ms
+2018-04-27 19:11:51.950 +03:00 [Information] Request finished in 1256.3663ms 200 text/html; charset=utf-8
+2018-04-27 19:11:53.728 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63433/ReportPDF/GetExcel application/x-www-form-urlencoded 473
+2018-04-27 19:11:53.739 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-04-27 19:11:53.888 +03:00 [Information] Executing action method "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" with arguments (["System.Collections.Generic.List`1[ETT.Web.Models.Report.ReportRecordsViewModel]"]) - ModelState is Valid
+2018-04-27 19:11:55.841 +03:00 [Information] Executing FileResult, sending file as "Report_2018-04-27--07-11-53.xlsx"
+2018-04-27 19:11:56.014 +03:00 [Information] Executed action "ETT.Web.Controllers.ReportPDFController.GetExcel (ETT.Web)" in 2096.64ms
+2018-04-27 19:11:56.115 +03:00 [Information] Request finished in 2300.3264ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
